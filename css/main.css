@@ -74,8 +74,6 @@ form {
 	margin: 0;
 }
 .header {
-	border-top: 30px solid #262626;
-	padding: 15px 0;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -90,7 +88,23 @@ form {
 	width: 120px;
 	height: auto;
 }
+.header__top {
+	text-align: center;
+	padding: 5px 15px;
+	font-weight: 500;
+	color: #fff;
+	background: #262626;
+}
+.header__top a {
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	transition: all 0.3s;
+}
+.header__top a:hover {
+	border-color: transparent;
+}
 .header__wrap {
+	padding: 15px 0;
 	display: flex;
 	align-items: center;
 }
@@ -112,6 +126,9 @@ form {
 .menu a:hover {
 	color: #262626;
 	border-color: #262626;
+}
+.menu__special a {
+	color: #262626;
 }
 .btn-header {
 	font-weight: 500;
@@ -137,7 +154,8 @@ form {
 	margin-left: 2px;
 }
 .slider-billbord__image {
-	height: 780px;
+	min-height: 450px;
+	height: calc(100vh - 101px);
 }
 .slider-billbord__image img {
 	width: 100%;
@@ -167,6 +185,10 @@ form {
 	font-size: 48px;
 	line-height: 72px;
 	font-weight: 500;
+}
+.title-big strong {
+	font-size: 64px;
+	line-height: 96px;
 }
 .btn-main {
 	font-weight: 500;
@@ -360,7 +382,34 @@ form {
 }
 .btn-like {
 	font-size: 16px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-image: url(../img/heart.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
 	color: #353535;
+}
+.btn-like::after {
+	position: absolute;
+	display: block;
+	content: " ";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/heart_active.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0;
+	transition: all 0.3s;
+}
+.btn-like:hover {
+	background-color: #EBEBEB;
+}
+.btn-like.active::after {
+	opacity: 1;
 }
 .btn-like.active i {
 	font-weight: 700;
@@ -379,24 +428,35 @@ form {
 	opacity: 1;
 }
 .wrap-sizes {
-	background: #262626;
+	background-color: #fff;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	bottom: 0;
 	left: 0;
 	font-size: 12px;
 	text-transform: uppercase;
 	width: 100%;
-	color: #fff;
+	color: #000000;
 	font-family: "Roboto";
 	position: absolute;
 	opacity: 0;
 	transition: all 0.3s;
+	flex-wrap: wrap;
+	border: 1px solid #E1E1E1;
 }
 .size-item {
-	color: #fff;
-	margin: 0 5px;
+	width: 25%;
+	margin-bottom: -1px;
+	border-right: 1px solid #E1E1E1;
+		border-bottom: 1px solid #E1E1E1;
+	color: #000000;
+}
+.size-item:nth-child(-n+4) {
+border-top: none;
+}
+.size-item:nth-child(4n+4) {
+	border-right: none;
 }
 .col-main {
 	width: 20%;
@@ -450,7 +510,7 @@ form {
 }
 .row_news {
 	margin: 0 -32px;
-	margin-bottom: 60px;
+	margin-bottom: 20px;
 }
 .row_news > div {
 	padding: 0 32px;
@@ -538,8 +598,8 @@ form {
 	border-bottom: 1px solid #fff;
 }
 .title-middle {
-	font-size: 18px;
-	line-height: 28px;
+	font-size: 24px;
+	line-height: 42px;
 	font-weight: 500;
 }
 .text-page {
@@ -549,7 +609,7 @@ form {
 	color: #262626;
 }
 .article-page .title-middle {
-	padding-bottom: 60px;
+	padding-bottom: 30px;
 }
 .article-page .bottom-link {
 	padding-top: 60px;
@@ -558,13 +618,25 @@ form {
 	max-width: 100%;
 }
 .article-page {
+	border-top: 1px solid #E1E1E1;
+	padding-top: 80px;
 	padding-bottom: 160px;
+}
+.catalog-category + .article-page {
+	margin-top: -40px;
 }
 .catalog-page {
 	padding-bottom: 60px;
 }
+.news-page {
+	margin-bottom: 77px;
+	border-bottom: 2px solid #E1E1E1;
+}
 .news-page + .catalog-page .head-section {
 	padding-top: 20px;
+}
+.catalog-category + .catalog-page .head-section {
+	padding-top: 0;
 }
 .item-catalog-big__content img {
 	max-width: 100%;
@@ -630,7 +702,7 @@ form {
 	width: 100%;
 	border: none;
 	background-color: transparent;
-		border-bottom: 1px solid #C4C4C4;
+	border-bottom: 1px solid #C4C4C4;
 }
 .item-form textarea {
 	height: 110px;
@@ -651,7 +723,21 @@ form {
 	flex-wrap: wrap;
 }
 .list-social a {
-	display: inline-block;
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s;
+}
+.list-social a:hover {
+	background-color: #ebebeb;
+}
+.list-social a img {
+		max-width: 100%;
+		max-height: 100%;
 }
 .list-social li {
 	margin-right: 17px;
@@ -667,10 +753,10 @@ form {
 	padding: 8px 0;
 	margin-top: 30px;
 	font-weight: 500;
-font-size: 12px;
-line-height: 14px;
-color: #807F7D;
-border-top: 1px solid #E1E1E1;
+	font-size: 12px;
+	line-height: 14px;
+	color: #807F7D;
+	border-top: 1px solid #E1E1E1;
 }
 .footer__bottom p {
 	margin: 0;
@@ -699,4 +785,97 @@ border-top: 1px solid #E1E1E1;
 }
 .footer__name {
 	padding-left: 30px;
+}
+.slick-arrow {
+	font-size: 20px;
+	color: #fff;
+	width: 23px;
+	height: 42px;
+	top: 50%;
+}
+.slick-arrow::before {
+	display: none;
+}
+.slick-prev {
+	left: 20px;
+}
+.slick-next {
+	right: 20px;
+}
+.title-page {
+	font-size: 36px;
+line-height: 42px;
+padding-bottom: 25px;
+font-weight: 500;
+}
+.footer__bottom .row {
+	align-items: center;
+}
+/*Style Sandwich*/
+.btn_nav {
+	margin-left: 18px;
+	border: none;
+	z-index: 60;
+	display: none;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	vertical-align: middle;
+	position: relative;
+}
+.btn_nav:hover {
+	opacity: 1;
+} 
+.sandwich span {
+	display: block;
+}
+.sandwich {
+	width: 20px;
+	height: 38px;
+	padding-top: 11px;
+	border-radius: 6px;
+	margin: auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	z-index: 20;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.sw-topper {
+	position: relative;
+	top: 4px;
+	width: 20px;
+	height: 2px;
+	display: block;
+	margin: 0 auto;
+	background-color: #000;
+	border: medium none;
+	transition: transform 0.5s, top 0.2s;
+	/* transition-delay: 0.2s, 0s; */
+}
+.sw-bottom {
+	position: relative;
+	top: 9px;
+	width: 20px;
+	height: 2px;
+	display: block;
+	margin: 0 auto;
+	background-color: #000;
+	border: medium none;
+	transition: transform 0.5s, top 0.2s;
+	transition-delay: 0.2s, 0s;
+}
+
+.btn_nav .sandwich.active .sw-topper {
+	top: 9px;
+	transform: rotate(45deg);
+}
+.btn_nav .sandwich.active .sw-bottom {
+	top: 7px;
+	transform: rotate(-45deg);
 }
