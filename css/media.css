@@ -220,6 +220,7 @@
 	}
 	.slider-billbord__image {
 		min-height: 360px;
+		    height: calc(100vh - 130px);
 	}
 	.title-section {
 		font-size: 14px;
