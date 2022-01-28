@@ -449,11 +449,11 @@ form {
 	width: 25%;
 	margin-bottom: -1px;
 	border-right: 1px solid #E1E1E1;
-		border-bottom: 1px solid #E1E1E1;
+	border-bottom: 1px solid #E1E1E1;
 	color: #000000;
 }
 .size-item:nth-child(-n+4) {
-border-top: none;
+	border-top: none;
 }
 .size-item:nth-child(4n+4) {
 	border-right: none;
@@ -736,8 +736,8 @@ border-top: none;
 	background-color: #ebebeb;
 }
 .list-social a img {
-		max-width: 100%;
-		max-height: 100%;
+	max-width: 100%;
+	max-height: 100%;
 }
 .list-social li {
 	margin-right: 17px;
@@ -804,9 +804,9 @@ border-top: none;
 }
 .title-page {
 	font-size: 36px;
-line-height: 42px;
-padding-bottom: 25px;
-font-weight: 500;
+	line-height: 42px;
+	padding-bottom: 25px;
+	font-weight: 500;
 }
 .footer__bottom .row {
 	align-items: center;
