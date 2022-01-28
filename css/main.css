@@ -861,7 +861,7 @@ form {
 .sw-bottom {
 	position: relative;
 	top: 9px;
-	width: 20px;
+	width: 20px; 
 	height: 2px;
 	display: block;
 	margin: 0 auto;
