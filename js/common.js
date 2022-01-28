@@ -25,18 +25,18 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	//кнопка sandwich
 	$(".btn_nav").click(function() {
 		$(".sandwich").toggleClass("active");
-		if ($(".menu").is(":hidden")) {
-			$(".menu").slideDown(200);
+		if ($(".menu-mobile").is(":hidden")) {
+			$(".menu-mobile").slideDown(200);
 		} else {
-			$(".menu").slideUp(200);
+			$(".menu-mobile").slideUp(200);
 		}
 		
 	});
 
-	$(".menu a").click(function() {
-			$(".menu").slideUp(200);
-			$(".sandwich").removeClass("active");
-		});
+	$(".menu-mobile li a").click(function() {
+		$(".menu-mobile").slideUp(200);
+		$(".sandwich").removeClass("active");
+	});
 
 	$(".btn-like").click(function(e) {
 		e.preventDefault();
@@ -46,14 +46,22 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	//слайдер
 
 	$('.slider-billbord').slick({
-		arrows: false,
+		arrows: true,
 		dots: true,
 		infinite: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
-		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
-	});
+		prevArrow: '<div class="slick-prev slick-arrow"><svg width="23" height="42" viewBox="0 0 23 42" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 41L2 21.5L22 1" stroke="white" stroke-width="2"/></svg><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><svg width="23" height="42" viewBox="0 0 23 42" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 41L21 21.5L1 1" stroke="white" stroke-width="2"/></svg><div/>',
+		responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				arrows: false,
+			}
+		}
+		]
+		});
 
 	$(".input-phone").mask("+7 (999) 999-99-99");
 
