@@ -1,4 +1,15 @@
 /*==========  Desktop First Method  ==========*/
+@media only screen and (min-height : 800px) {
+	.slider-billbord__image {
+		height: calc(100vh - 205px);
+	}
+}
+@media only screen and (min-height : 1020px) {
+	.slider-billbord__image {
+		height: calc(100vh - 381px);
+	}
+}
+
 @media only screen and (max-width : 1270px) {
 	.menu {
 		margin-left: 140px;
@@ -157,6 +168,9 @@
 		display: block;
 		margin: 0;
 	}
+	.header.fixed {
+		transform: translateY(-28px);
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -234,7 +248,9 @@
 		font-size: 10px;
 		line-height: 12px;
 	}
-	.row_category > div,
+	.row_category > div {
+		padding: 0;
+	}
 	.col-main {
 		padding: 0 8px;
 	}
@@ -385,6 +401,42 @@
 	.item-catalog-big__content {
 		padding-top: 47px;
 	}
+	.header.fixed {
+		transform: translateY(-20px);
+	}
+	.row_catalog .col-main {
+		display: block !important;
+	}
+	.row_slider .slick-track > div {
+		padding: 0 8px;
+	}
+	.row_category {
+		margin: 0 -4px;
+	}
+	.slick-dots li button:before,
+	.slick-dots li.slick-active button:before {
+		display: none;
+	}
+	.row_slider {
+		padding-bottom: 20px;
+	}
+	.row_slider .slick-dots li button {
+		background-color: #fff;
+		border-color: #464645;
+	}
+	.row_slider .slick-dots li.slick-active button {
+		background-color: #464645;
+	}
+	.row_slider .slick-dots {
+		bottom: 8px;
+	}
+	.btn-like {
+		background-color: transparent !important;
+	}
+	.item-catalog .btn-like {
+		top: 4px;
+		right: 4px;
+	}
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 640px) {
@@ -399,7 +451,10 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+	.wrap-sizes {
+		font-size: 10px;
+		line-height: 16px;
+	}
 }
 
 /* Custom, iPhone Retina */
