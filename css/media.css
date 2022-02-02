@@ -1,14 +1,5 @@
 /*==========  Desktop First Method  ==========*/
-@media only screen and (min-height : 800px) {
-	.slider-billbord__image {
-		height: calc(100vh - 205px);
-	}
-}
-@media only screen and (min-height : 1020px) {
-	.slider-billbord__image {
-		height: calc(100vh - 381px);
-	}
-}
+
 
 @media only screen and (max-width : 1270px) {
 	.menu {
@@ -65,12 +56,10 @@
 	.text-page {
 		font-size: 16px;
 		line-height: 30px;
-		letter-spacing: initial;
-		display: -webkit-box;
-		-webkit-line-clamp: 6;
-		-webkit-box-orient: vertical;  
-		overflow: hidden;
 	}
+.article-page .text-page {
+    max-height: 184px;
+}
 	.article-page .title-middle {
 		padding-bottom: 20px;
 	}
@@ -321,7 +310,13 @@
 	}
 	.text-page {
 		font-size: 14px;
-		-webkit-line-clamp: 4;
+	}
+	.article-page .text-page {
+		           display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+		max-height: initial;
 	}
 	.article-page .bottom-link {
 		padding-top: 40px;
