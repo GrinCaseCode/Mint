@@ -18,6 +18,20 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	$menu.removeClass("fixed").addClass("default");
 }
 
+
+$(".item-sidebar__title").click(function() {
+        $(this).parent().toggleClass("active");
+        $(this).siblings(".item-sidebar__content").slideToggle(200);
+      });
+
+$(".tab-pane__title").click(function() {
+	 $(this).parent().siblings().find(".tab-pane__title").removeClass("active");
+	 $(this).parent().siblings().find(".tab-pane__content").slideUp(200);
+        $(this).toggleClass("active");
+        $(this).siblings(".tab-pane__content").slideToggle(200);
+      });
+
+
 	//плавный скролл
 	$(".navigat li a").mPageScroll2id();
 
@@ -38,7 +52,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		$(".sandwich").removeClass("active");
 	});
 
-	$(".btn-like").click(function(e) {
+	$(".btn-like, .btn-main_like").click(function(e) {
 		e.preventDefault();
 		$(this).toggleClass("active");
 	});
@@ -83,9 +97,87 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	});
 
 
+	$('.row_slider-page').slick({
+		arrows: false,
+		dots: true,
+		infinite: true,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><svg width="23" height="42" viewBox="0 0 23 42" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 41L2 21.5L22 1" stroke="white" stroke-width="2"/></svg><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><svg width="23" height="42" viewBox="0 0 23 42" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 41L21 21.5L1 1" stroke="white" stroke-width="2"/></svg><div/>',
+		mobileFirst: true,
+		responsive: [
+		
+		{
+			breakpoint: 992,
+			settings: 'unslick',
+		},
+		{
+			breakpoint: 600,
+			settings: {
+				slidesToShow: 3
+			}
+		}
+		]
+	});
+
+	$('.slider-for').slick({
+		arrows: false,
+		dots: true,
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		asNavFor: '.slider-nav',
+		touchThreshold: 1000,
+		prevArrow: '<div class="slick-prev slick-arrow"><svg width="23" height="42" viewBox="0 0 23 42" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 41L2 21.5L22 1" stroke="white" stroke-width="2"/></svg><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><svg width="23" height="42" viewBox="0 0 23 42" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 41L21 21.5L1 1" stroke="white" stroke-width="2"/></svg><div/>',
+		responsive: [
+		{
+			breakpoint: 767,
+			settings: {
+				dots: false,
+			}
+		}
+		]
+	});
+
+	$('.slider-nav').slick({
+		arrows: false,
+		dots: false,
+		infinite: true,
+		slidesToShow: 6,
+		verticalSwiping: true,
+		vertical: true,
+		slidesToScroll: 1,
+		asNavFor: '.slider-for',
+		touchThreshold: 1000,
+		focusOnSelect: true,
+prevArrow: '<div class="slick-prev slick-arrow"><svg width="23" height="42" viewBox="0 0 23 42" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 41L2 21.5L22 1" stroke="white" stroke-width="2"/></svg><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><svg width="23" height="42" viewBox="0 0 23 42" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 41L21 21.5L1 1" stroke="white" stroke-width="2"/></svg><div/>',
+		
+	});
+
+	$('.tabs li a').click(function(event) {
+		event.preventDefault();
+		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().addClass('active');
+		$(this).parent().parent().siblings(".tab-container").find(".tab-pane").fadeOut(0);
+		var selectTab = $(this).attr("href");
+		$(selectTab).fadeIn(200);
+	});
+
+
+
 	$(window).resize(function () {
 		if ($(window).width() < 768) {
 			$('.row_slider').slick('refresh');
+		}
+	})
+
+
+$(window).resize(function () {
+		if ($(window).width() < 992) {
+			$('.row_slider-page').slick('refresh');
 		}
 	})
 
