@@ -600,7 +600,7 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 640px) {
 	.col-main {
-		width: 50%;
+		width: 50%; 
 	}
 	.header__wrap .logo {
 		position: relative;
