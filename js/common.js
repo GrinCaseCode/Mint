@@ -18,18 +18,38 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	$menu.removeClass("fixed").addClass("default");
 }
 
+$('.item-input input').each(function() {
+	$(this).on('keyup blur', function (e) {
+		if($(this).val()){
+			$(this).addClass("input-valid");
+		}
+		else {
+			$(this).removeClass("input-valid");
+		}
+	});
+});
+
+$(".sidebar-open").click(function() {
+	$(".sidebar-catalog").slideToggle(200);
+});
+
+$('.show-password').click(function(){
+	var type = $(this).siblings("input").attr('type') == "text" ? "password" : 'text';
+	$(this).siblings("input").prop('type', type);
+});
+
 
 $(".item-sidebar__title").click(function() {
-        $(this).parent().toggleClass("active");
-        $(this).siblings(".item-sidebar__content").slideToggle(200);
-      });
+	$(this).parent().toggleClass("active");
+	$(this).siblings(".item-sidebar__content").slideToggle(200);
+});
 
 $(".tab-pane__title").click(function() {
-	 $(this).parent().siblings().find(".tab-pane__title").removeClass("active");
-	 $(this).parent().siblings().find(".tab-pane__content").slideUp(200);
-        $(this).toggleClass("active");
-        $(this).siblings(".tab-pane__content").slideToggle(200);
-      });
+	$(this).parent().siblings().find(".tab-pane__title").removeClass("active");
+	$(this).parent().siblings().find(".tab-pane__content").slideUp(200);
+	$(this).toggleClass("active");
+	$(this).siblings(".tab-pane__content").slideToggle(200);
+});
 
 
 	//плавный скролл
@@ -56,6 +76,28 @@ $(".tab-pane__title").click(function() {
 		e.preventDefault();
 		$(this).toggleClass("active");
 	});
+
+	$(".btn-main_like").click(function(e) {
+		e.preventDefault();
+		if ($(this).hasClass("active")) {
+			$(this).find("span").html("добавлено");
+		} else {
+			$(this).find("span").html(" В избранное");
+		}
+	});
+
+	$(".btn-main_basket").click(function(e) {
+		e.preventDefault();
+		$(this).toggleClass("active");
+		if ($(this).hasClass("active")) {
+			$(this).find("span").html("добавлено");
+		} else {
+			$(this).find("span").html("В КОРЗИНУ");
+		}
+	});
+
+	var austDay = new Date($(".countdown").attr("date-time"));
+	$(".countdown").countdown({until: austDay, format: 'dHMS'});
 
 	//слайдер
 
@@ -152,7 +194,7 @@ $(".tab-pane__title").click(function() {
 		asNavFor: '.slider-for',
 		touchThreshold: 1000,
 		focusOnSelect: true,
-prevArrow: '<div class="slick-prev slick-arrow"><svg width="23" height="42" viewBox="0 0 23 42" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 41L2 21.5L22 1" stroke="white" stroke-width="2"/></svg><div/>',
+		prevArrow: '<div class="slick-prev slick-arrow"><svg width="23" height="42" viewBox="0 0 23 42" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 41L2 21.5L22 1" stroke="white" stroke-width="2"/></svg><div/>',
 		nextArrow: '<div class="slick-next slick-arrow"><svg width="23" height="42" viewBox="0 0 23 42" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 41L21 21.5L1 1" stroke="white" stroke-width="2"/></svg><div/>',
 		
 	});
@@ -175,7 +217,7 @@ prevArrow: '<div class="slick-prev slick-arrow"><svg width="23" height="42" view
 	})
 
 
-$(window).resize(function () {
+	$(window).resize(function () {
 		if ($(window).width() < 992) {
 			$('.row_slider-page').slick('refresh');
 		}
