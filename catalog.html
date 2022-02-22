@@ -16,11 +16,12 @@
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
 	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.5" />
-	<link rel="stylesheet" href="css/media.css?ver=1.5" />
+	<link rel="stylesheet" href="css/main.css?ver=1.7" />
+	<link rel="stylesheet" href="css/media.css?ver=1.7" />
 </head>
 <body>
 
@@ -32,17 +33,17 @@
 			</div>
 			<div class="container">
 				<div class="header__wrap">
+					<a href="#" class="logo"> 
+						<img src="img/logo.svg" alt="alt">
+					</a>
 					<ul class="menu">
 						<li><a href="#">скидки</a></li>
 						<li><a href="#">одежда</a></li>
 						<li><a href="#">обувь</a></li>
 						<li><a href="#">аксессуары</a></li>
 						<li><a href="#">бренды</a></li>
+						<li class="menu__special"><a href="#">новинки</a></li>
 					</ul>
-					<a href="#" class="logo"> 
-						<img src="img/logo.svg" alt="alt">
-					</a>
-					
 					<div class="form-search">
 						<form>
 							<input type="text" placeholder="Поиск">
@@ -51,7 +52,7 @@
 					</div>
 					<a href="#" class="btn-header btn-header_like"><img src="img/ic_like.svg" alt="alt">3</a>
 					<a href="#" class="btn-header"><img src="img/ic_bag.svg" alt="alt">12</a>
-					<a href="#" class="btn-header btn-header_user"><img src="img/ic_user.svg" alt="alt"></a>
+					<a href="#" class="btn-header btn-header_user"><img src="img/ic_user.svg" alt="alt"> Виктор</a>
 					<span class="btn_nav">
 						<span class="sandwich">
 							<span class="sw-topper"></span>
@@ -73,66 +74,133 @@
 		</header>
 
 		<section class="catalog-page">
+			<div class="breadcrumbs-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-9 offset-md-3">
+							<ul class="breadcrumb">
+								<li><a href="#">главная</a></li>
+								<li><a href="#">Одежда</a></li>
+								<li><span>Куртки</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3">
+						<div class="sidebar-open">Фильтр</div>
 						<div class="sidebar-catalog">
 							<div class="item-sidebar active">
-								<div class="item-sidebar__title">Одежда <div class="arrow-sidebar"></div></div>
+								<div class="item-sidebar__title">Сортировать <div class="arrow-sidebar"></div></div>
 								<div class="item-sidebar__content" style="display: block;">
 									<div class="checkbox">
 										<label>
 											<input type="checkbox" />
-											<span>БРЮКИ</span>
+											<span>цена По возрастанию </span>
 										</label>
 									</div>
 									<div class="checkbox">
 										<label>
 											<input type="checkbox" />
-											<span>Джинсы  </span>
+											<span>цена по убыванию  </span>
 										</label>
 									</div>
+								</div>
+							</div>
+							<div class="item-sidebar active">
+								<div class="item-sidebar__title">ФИЛЬТР <div class="arrow-sidebar"></div></div>
+								<div class="item-sidebar__content" style="display: block;">
 									<div class="checkbox">
 										<label>
-											<input type="checkbox" checked="checked" />
-											<span>Куртки  </span>
+											<input type="checkbox" />
+											<span>новинки</span>
 										</label>
 									</div>
 									<div class="checkbox">
 										<label>
 											<input type="checkbox" />
-											<span>Пиджаки  </span>
+											<span>скидки  </span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="item-sidebar active">
+								<div class="item-sidebar__title">ПОЛ <div class="arrow-sidebar"></div></div>
+								<div class="item-sidebar__content" style="display: block;">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" />
+											<span>мужское</span>
 										</label>
 									</div>
 									<div class="checkbox">
 										<label>
 											<input type="checkbox" />
-											<span>Рубашки  </span>
+											<span>женское  </span>
 										</label>
 									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>Свитера  </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>Толстовки  </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>Футболки  </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>Шорты</span>
-										</label>
+								</div>
+							</div>
+							<div class="item-sidebar active">
+								<div class="item-sidebar__title">Одежда <div class="arrow-sidebar"></div></div>
+								<div class="item-sidebar__content" style="display: block;">
+									<div class="checkboxes-wrap">
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>БРЮКИ</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>Джинсы  </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" checked="checked" />
+												<span>Куртки  </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>Пиджаки  </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>Рубашки  </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>Свитера  </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>Толстовки  </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>Футболки  </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>Шорты</span>
+											</label>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -257,617 +325,354 @@
 							<div class="item-sidebar active">
 								<div class="item-sidebar__title">Бренды <div class="arrow-sidebar"></div></div>
 								<div class="item-sidebar__content" style="display: block;">
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>Arc'teryx</span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>Blue Blue Japan    </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>Carhartt  </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>Circle Of Unity   </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>GJO.E    </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>Gitman Vintage    </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>Han Kjobenhavn    </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>Howlin  </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>Nanamica  </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>Norse Projects    </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" checked="checked" />
-											<span>Our Legacy    </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>Stone Island   </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>Stussy  </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>The North Face  </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>YMC</span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>premiata</span>
-										</label>
+									<div class="checkboxes-wrap">
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>Arc'teryx</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>Blue Blue Japan    </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>Carhartt  </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>Circle Of Unity   </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>GJO.E    </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>Gitman Vintage    </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>Han Kjobenhavn    </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>Howlin  </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>Nanamica  </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>Norse Projects    </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" checked="checked" />
+												<span>Our Legacy    </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>Stone Island   </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>Stussy  </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>The North Face  </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>YMC</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>premiata</span>
+											</label>
+										</div>
 									</div>
 								</div>
 							</div>
 							<div class="item-sidebar active">
 								<div class="item-sidebar__title">размеры <div class="arrow-sidebar"></div></div>
 								<div class="item-sidebar__content" style="display: block;">
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>xs</span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>s  </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>m  </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>l  </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>xl  </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>xxl    </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>xxxl  </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>46  </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>48</span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>50</span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" checked="checked" />
-											<span>52 </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>54</span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>56</span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>58</span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>60</span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>62</span>
-										</label>
+									<div class="checkboxes-size">
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" checked="checked" />
+												<span>xs</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>s  </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>m  </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>l  </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>46 </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>48 </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>50 </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>52 </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>54</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>4.5 uk</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox"/>
+												<span>5 uk </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>5.5 uk</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>6 uk</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>7 us</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>xl</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>62</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>xxl</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>xxxl  </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>xxxxl</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>56</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>58</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>60</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>30/40</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>32/30</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>35.5 ru</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>39 eu</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>40.5 eu</span>
+											</label>
+										</div>
 									</div>
 								</div>
 							</div>
 							<div class="item-sidebar active">
 								<div class="item-sidebar__title">цвет <div class="arrow-sidebar"></div></div>
 								<div class="item-sidebar__content" style="display: block;">
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>чёрный</span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>красный  </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox"/>
-											<span>жёлтый  </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>зелёный  </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>бордовый  </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>синий  </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>голубой  </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>оранжевый  </span>
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />
-											<span>белый</span>
-										</label>
+									<div class="checkboxes-wrap">
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>чёрный</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>красный  </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox"/>
+												<span>жёлтый  </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>зелёный  </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>бордовый  </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>синий  </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>голубой  </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>оранжевый  </span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" />
+												<span>белый</span>
+											</label>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-9 col_pl">
-						<ul class="breadcrumb">
-							<li><a href="#">Одежда</a></li>
-							<li><span>Куртки</span></li>
-						</ul>
+						<div class="tags-catalog">
+							<ul>
+								<li><div class="item-tag">Куртки <i class="far fa-times"></i></div></li>
+								<li><div class="item-tag">Our Legacy <i class="far fa-times"></i></div></li>
+								<li><div class="item-tag">Зелёный <i class="far fa-times"></i></div></li>
+								<li><div class="item-tag">xS <i class="far fa-times"></i></div></li>
+							</ul>
+							<a href="#" class="link-page">очистить всё</a>
+						</div>
 						<div class="row row_main">
-							<div class="col-xl-3 col-lg-4 col-6">
+							<div class="col-lg-3 col-md-4 col-6">
 								<div class="item-catalog">
 									<a href="#" class="btn-like"></a>
 									<a href="#" class="item-catalog__image">
-										<img src="img/catalog_page1.jpg" alt="alt">
-										<span class="wrap-sizes">
-											<span class="size-item">XS</span>
-											<span class="size-item">S</span>
-											<span class="size-item">M</span>
-											<span class="size-item">L</span>
-											<span class="size-item">XL</span>
-											<span class="size-item">XXL</span>
-											<span class="size-item">XXXL</span>
-											<span class="size-item">XXXXL</span>
-										</span>
-									</a>
-									<a href="#" class="item-catalog__title">STONE ISLAND</a>
-									<a href="#" class="item-catalog__name">Куртка NYLON RASO-TC</a>
-									<div class="price-main">74.999 ₽</div>
-								</div>
-							</div>
-							<div class="col-xl-3 col-lg-4 col-6">
-								<div class="item-catalog">
-									<a href="#" class="btn-like"></a>
-									<a href="#" class="item-catalog__image">
-										<img src="img/catalog_page2.jpg" alt="alt">
-										<span class="wrap-sizes">
-											<span class="size-item">XS</span>
-											<span class="size-item">S</span>
-											<span class="size-item">M</span>
-											<span class="size-item">L</span>
-											<span class="size-item">XL</span>
-											<span class="size-item">XXL</span>
-											<span class="size-item">XXXL</span>
-											<span class="size-item">XXXXL</span>
-										</span>
-									</a>
-									<a href="#" class="item-catalog__title">STONE ISLAND</a>
-									<a href="#" class="item-catalog__name">Куртка NYLON RASO-TC</a>
-									<div class="price-main">74.999 ₽</div>
-								</div>
-							</div>
-							<div class="col-xl-3 col-lg-4 col-6">
-								<div class="item-catalog">
-									<a href="#" class="btn-like"></a>
-									<a href="#" class="item-catalog__image">
-										<img src="img/catalog_page3.jpg" alt="alt">
-										<span class="wrap-sizes">
-											<span class="size-item">XS</span>
-											<span class="size-item">S</span>
-											<span class="size-item">M</span>
-											<span class="size-item">L</span>
-											<span class="size-item">XL</span>
-											<span class="size-item">XXL</span>
-											<span class="size-item">XXXL</span>
-											<span class="size-item">XXXXL</span>
-										</span>
-									</a>
-									<a href="#" class="item-catalog__title">C.P. Company</a>
-									<a href="#" class="item-catalog__name">Брюки Garment Dyed Stretch Sateen Lens Pocket Cargo</a>
-									<div class="price-old">32.299 ₽</div>
-									<div class="price-main">27.999 ₽</div>
-								</div>
-							</div>
-							<div class="col-xl-3 col-lg-4 col-6">
-								<div class="item-catalog">
-									<a href="#" class="btn-like"></a>
-									<a href="#" class="item-catalog__image">
-										<img src="img/catalog_page4.jpg" alt="alt">
-										<span class="wrap-sizes">
-											<span class="size-item">XS</span>
-											<span class="size-item">S</span>
-											<span class="size-item">M</span>
-											<span class="size-item">L</span>
-											<span class="size-item">XL</span>
-											<span class="size-item">XXL</span>
-											<span class="size-item">XXXL</span>
-											<span class="size-item">XXXXL</span>
-										</span>
-									</a>
-									<a href="#" class="item-catalog__title">STONE ISLAND</a>
-									<a href="#" class="item-catalog__name">Брюки Cargo Black Sweet Pontalini</a>
-									<div class="price-main">29.690 ₽</div>
-								</div>
-							</div>
-							<div class="col-xl-3 col-lg-4 col-6">
-								<div class="item-catalog">
-									<a href="#" class="btn-like"></a>
-									<a href="#" class="item-catalog__image">
-										<img src="img/catalog_page5.jpg" alt="alt">
-										<span class="wrap-sizes">
-											<span class="size-item">XS</span>
-											<span class="size-item">S</span>
-											<span class="size-item">M</span>
-											<span class="size-item">L</span>
-											<span class="size-item">XL</span>
-											<span class="size-item">XXL</span>
-											<span class="size-item">XXXL</span>
-											<span class="size-item">XXXXL</span>
-										</span>
-									</a>
-									<a href="#" class="item-catalog__title">STONE ISLAND</a>
-									<a href="#" class="item-catalog__name">Куртка NYLON RASO-TC</a>
-									<div class="price-main">74.999 ₽</div>
-								</div>
-							</div>
-							<div class="col-xl-3 col-lg-4 col-6">
-								<div class="item-catalog">
-									<a href="#" class="btn-like"></a>
-									<a href="#" class="item-catalog__image">
-										<img src="img/catalog_page6.jpg" alt="alt">
-										<span class="wrap-sizes">
-											<span class="size-item">XS</span>
-											<span class="size-item">S</span>
-											<span class="size-item">M</span>
-											<span class="size-item">L</span>
-											<span class="size-item">XL</span>
-											<span class="size-item">XXL</span>
-											<span class="size-item">XXXL</span>
-											<span class="size-item">XXXXL</span>
-										</span>
-									</a>
-									<a href="#" class="item-catalog__title">YMC</a>
-									<a href="#" class="item-catalog__name"> Рубашка Malick</a>
-									<div class="price-main">16.999 ₽</div>
-								</div>
-							</div>
-							<div class="col-xl-3 col-lg-4 col-6">
-								<div class="item-catalog">
-									<a href="#" class="btn-like"></a>
-									<a href="#" class="item-catalog__image">
-										<img src="img/catalog_page7.jpg" alt="alt">
-										<span class="wrap-sizes">
-											<span class="size-item">XS</span>
-											<span class="size-item">S</span>
-											<span class="size-item">M</span>
-											<span class="size-item">L</span>
-											<span class="size-item">XL</span>
-											<span class="size-item">XXL</span>
-											<span class="size-item">XXXL</span>
-											<span class="size-item">XXXXL</span>
-										</span>
-									</a>
-									<a href="#" class="item-catalog__title">A.P.C.</a>
-									<a href="#" class="item-catalog__name">Брюки Dejavu</a>
-									<div class="price-main">19.999 ₽</div>
-								</div>
-							</div>
-							<div class="col-xl-3 col-lg-4 col-6">
-								<div class="item-catalog">
-									<a href="#" class="btn-like"></a>
-									<a href="#" class="item-catalog__image">
-										<img src="img/catalog_page8.jpg" alt="alt">
-										<span class="wrap-sizes">
-											<span class="size-item">XS</span>
-											<span class="size-item">S</span>
-											<span class="size-item">M</span>
-											<span class="size-item">L</span>
-											<span class="size-item">XL</span>
-											<span class="size-item">XXL</span>
-											<span class="size-item">XXXL</span>
-											<span class="size-item">XXXXL</span>
-										</span>
-									</a>
-									<a href="#" class="item-catalog__title">STONE ISLAND</a>
-									<a href="#" class="item-catalog__name">Брюки Cargo Black Sweet Pontalini</a>
-									<div class="price-main">29.690 ₽</div>
-								</div>
-							</div>
-							<div class="col-xl-3 col-lg-4 col-6">
-								<div class="item-catalog">
-									<a href="#" class="btn-like"></a>
-									<a href="#" class="item-catalog__image">
-										<img src="img/catalog1.jpg" alt="alt">
-										<span class="wrap-sizes">
-											<span class="size-item">XS</span>
-											<span class="size-item">S</span>
-											<span class="size-item">M</span>
-											<span class="size-item">L</span>
-											<span class="size-item">XL</span>
-											<span class="size-item">XXL</span>
-											<span class="size-item">XXXL</span>
-											<span class="size-item">XXXXL</span>
-										</span>
-									</a>
-									<a href="#" class="item-catalog__title">C.P. Company</a>
-									<a href="#" class="item-catalog__name">Куртка Flet Jacket Overwide</a>
-									<div class="price-main">87.990 ₽</div>
-								</div>
-							</div>
-							<div class="col-xl-3 col-lg-4 col-6">
-								<div class="item-catalog">
-									<a href="#" class="btn-like"></a>
-									<a href="#" class="item-catalog__image">
-										<img src="img/catalog2.jpg" alt="alt">
-										<span class="wrap-sizes">
-											<span class="size-item">XS</span>
-											<span class="size-item">S</span>
-											<span class="size-item">M</span>
-											<span class="size-item">L</span>
-											<span class="size-item">XL</span>
-											<span class="size-item">XXL</span>
-											<span class="size-item">XXXL</span>
-											<span class="size-item">XXXXL</span>
-										</span>
-									</a>
-									<a href="#" class="item-catalog__title">Stone Island</a>
-									<a href="#" class="item-catalog__name">Куртка Olive Button Jacket</a>
-									<div class="price-main">37.999 ₽</div>
-								</div>
-							</div>
-							<div class="col-xl-3 col-lg-4 col-6">
-								<div class="item-catalog">
-									<a href="#" class="btn-like"></a>
-									<a href="#" class="item-catalog__image">
-										<img src="img/catalog3.jpg" alt="alt">
-										<span class="wrap-sizes">
-											<span class="size-item">XS</span>
-											<span class="size-item">S</span>
-											<span class="size-item">M</span>
-											<span class="size-item">L</span>
-											<span class="size-item">XL</span>
-											<span class="size-item">XXL</span>
-											<span class="size-item">XXXL</span>
-											<span class="size-item">XXXXL</span>
-										</span>
-									</a>
-									<a href="#" class="item-catalog__title">Stone Island</a>
-									<a href="#" class="item-catalog__name">Пуховик Garment Dyed Crinkle</a>
-									<div class="price-old">56.299 ₽</div>
-									<div class="price-main">49.999 ₽</div>
-								</div>
-							</div>
-							<div class="col-xl-3 col-lg-4 col-6">
-								<div class="item-catalog">
-									<a href="#" class="btn-like"></a>
-									<a href="#" class="item-catalog__image">
-										<img src="img/catalog4.jpg" alt="alt">
-										<span class="wrap-sizes">
-											<span class="size-item">XS</span>
-											<span class="size-item">S</span>
-											<span class="size-item">M</span>
-											<span class="size-item">L</span>
-											<span class="size-item">XL</span>
-											<span class="size-item">XXL</span>
-											<span class="size-item">XXXL</span>
-											<span class="size-item">XXXXL</span>
-										</span>
-									</a>
-									<a href="#" class="item-catalog__title">Gitman Vintage</a>
-									<a href="#" class="item-catalog__name">Рубашки Owned Classic </a>
-									<div class="price-main">19.999 ₽</div>
-								</div>
-							</div>
-							<div class="col-xl-3 col-lg-4 col-6">
-								<div class="item-catalog">
-									<a href="#" class="btn-like"></a>
-									<a href="#" class="item-catalog__image">
-										<img src="img/catalog_page9.jpg" alt="alt">
-										<span class="wrap-sizes">
-											<span class="size-item">XS</span>
-											<span class="size-item">S</span>
-											<span class="size-item">M</span>
-											<span class="size-item">L</span>
-											<span class="size-item">XL</span>
-											<span class="size-item">XXL</span>
-											<span class="size-item">XXXL</span>
-											<span class="size-item">XXXXL</span>
-										</span>
-									</a>
-									<a href="#" class="item-catalog__title">Premiata</a>
-									<a href="#" class="item-catalog__name">Кроссовки Mick 1894</a>
-									<div class="price-main">22.999 ₽</div>
-								</div>
-							</div>
-							<div class="col-xl-3 col-lg-4 col-6">
-								<div class="item-catalog">
-									<a href="#" class="btn-like"></a>
-									<a href="#" class="item-catalog__image">
-										<img src="img/catalog_page10.jpg" alt="alt">
-										<span class="wrap-sizes">
-											<span class="size-item">XS</span>
-											<span class="size-item">S</span>
-											<span class="size-item">M</span>
-											<span class="size-item">L</span>
-											<span class="size-item">XL</span>
-											<span class="size-item">XXL</span>
-											<span class="size-item">XXXL</span>
-											<span class="size-item">XXXXL</span>
-										</span>
-									</a>
-									<a href="#" class="item-catalog__title">Premiata</a>
-									<a href="#" class="item-catalog__name"> Кроссовки Lucy 4802</a>
-									<div class="price-old">16.999 ₽</div>
-									<div class="price-main">12.999 ₽</div>
-								</div>
-							</div>
-							<div class="col-xl-3 col-lg-4 col-6">
-								<div class="item-catalog">
-									<a href="#" class="btn-like"></a>
-									<a href="#" class="item-catalog__image">
-										<img src="img/catalog_page11.jpg" alt="alt">
-										<span class="wrap-sizes">
-											<span class="size-item">XS</span>
-											<span class="size-item">S</span>
-											<span class="size-item">M</span>
-											<span class="size-item">L</span>
-											<span class="size-item">XL</span>
-											<span class="size-item">XXL</span>
-											<span class="size-item">XXXL</span>
-											<span class="size-item">XXXXL</span>
-										</span>
-									</a>
-									<a href="#" class="item-catalog__title">C.P. Company</a>
-									<a href="#" class="item-catalog__name">Брюки Cargo Garment Dyed Stretch Sateen</a>
-									<div class="price-old">36.299 ₽</div>
-									<div class="price-main">29.999 ₽</div>
-								</div>
-							</div>
-							<div class="col-xl-3 col-lg-4 col-6">
-								<div class="item-catalog">
-									<a href="#" class="btn-like"></a>
-									<a href="#" class="item-catalog__image">
-										<img src="img/catalog_page12.jpg" alt="alt">
-										<span class="wrap-sizes">
-											<span class="size-item">XS</span>
-											<span class="size-item">S</span>
-											<span class="size-item">M</span>
-											<span class="size-item">L</span>
-											<span class="size-item">XL</span>
-											<span class="size-item">XXL</span>
-											<span class="size-item">XXXL</span>
-											<span class="size-item">XXXXL</span>
-										</span>
-									</a>
-									<a href="#" class="item-catalog__title">C.P. Company</a>
-									<a href="#" class="item-catalog__name">Брюки Garment Dyed Stretch Sateen Lens Pocket Cargo</a>
-									<div class="price-old">32.299 ₽</div>
-									<div class="price-main">27.999 ₽</div>
-								</div>
-							</div>
-							<div class="col-xl-3 col-lg-4 col-6">
-								<div class="item-catalog">
-									<a href="#" class="btn-like"></a>
-									<a href="#" class="item-catalog__image">
+										<span class="item-catalog__status">НОВИНКА</span>
 										<img src="img/catalog6.jpg" alt="alt">
 										<span class="wrap-sizes">
 											<span class="size-item">XS</span>
@@ -885,7 +690,7 @@
 									<div class="price-main">17.990 ₽</div>
 								</div>
 							</div>
-							<div class="col-xl-3 col-lg-4 col-6">
+							<div class="col-lg-3 col-md-4 col-6">
 								<div class="item-catalog">
 									<a href="#" class="btn-like"></a>
 									<a href="#" class="item-catalog__image">
@@ -906,7 +711,178 @@
 									<div class="price-main">37.999 ₽</div>
 								</div>
 							</div>
-							<div class="col-xl-3 col-lg-4 col-6">
+							<div class="col-lg-3 col-md-4 col-6">
+								<div class="item-catalog">
+									<a href="#" class="btn-like active"></a>
+									<a href="#" class="item-catalog__image">
+										<span class="item-catalog__status item-catalog__status_percent">-60%</span>
+										<img src="img/catalog8.jpg" alt="alt">
+										<span class="wrap-sizes">
+											<span class="size-item">XS</span>
+											<span class="size-item">S</span>
+											<span class="size-item">M</span>
+											<span class="size-item">L</span>
+											<span class="size-item">XL</span>
+											<span class="size-item">XXL</span>
+											<span class="size-item">XXXL</span>
+											<span class="size-item">XXXXL</span>
+										</span>
+									</a>
+									<a href="#" class="item-catalog__title">C.P. Company</a>
+									<a href="#" class="item-catalog__name">Пуховик Garment Dyed Crinkle</a>
+									<div class="price-old">56.299 ₽</div>
+									<div class="price-main">49.999 ₽</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-6">
+								<div class="item-catalog">
+									<a href="#" class="btn-like"></a>
+									<a href="#" class="item-catalog__image">
+										<img src="img/catalog9.jpg" alt="alt">
+										<span class="wrap-sizes">
+											<span class="size-item">XS</span>
+											<span class="size-item">S</span>
+											<span class="size-item">M</span>
+											<span class="size-item">L</span>
+											<span class="size-item">XL</span>
+											<span class="size-item">XXL</span>
+											<span class="size-item">XXXL</span>
+											<span class="size-item">XXXXL</span>
+										</span>
+									</a>
+									<a href="#" class="item-catalog__title">Stone Island</a>
+									<a href="#" class="item-catalog__name">Пуховик Dyemend Cryspoonw</a>
+									<div class="price-main">19.999 ₽</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-6">
+								<div class="item-catalog">
+									<a href="#" class="btn-like"></a>
+									<a href="#" class="item-catalog__image">
+										<img src="img/cat1.jpg" alt="alt">
+										<span class="wrap-sizes">
+											<span class="size-item">XS</span>
+											<span class="size-item">S</span>
+											<span class="size-item">M</span>
+											<span class="size-item">L</span>
+											<span class="size-item">XL</span>
+											<span class="size-item">XXL</span>
+											<span class="size-item">XXXL</span>
+											<span class="size-item">XXXXL</span>
+										</span>
+									</a>
+									<a href="#" class="item-catalog__title">A.P.C.</a>
+									<a href="#" class="item-catalog__name">Джинсы Flet Jacket Overwide</a>
+									<div class="price-main">17.990 ₽</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-6">
+								<div class="item-catalog">
+									<a href="#" class="btn-like"></a>
+									<a href="#" class="item-catalog__image">
+										<img src="img/cat2.jpg" alt="alt">
+										<span class="wrap-sizes">
+											<span class="size-item">XS</span>
+											<span class="size-item">S</span>
+											<span class="size-item">M</span>
+											<span class="size-item">L</span>
+											<span class="size-item">XL</span>
+											<span class="size-item">XXL</span>
+											<span class="size-item">XXXL</span>
+											<span class="size-item">XXXXL</span>
+										</span>
+									</a>
+									<a href="#" class="item-catalog__title">You Must Create</a>
+									<a href="#" class="item-catalog__name">Брюки Olive Brown Spunch</a>
+									<div class="price-main">37.999 ₽</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-6">
+								<div class="item-catalog">
+									<a href="#" class="btn-like"></a>
+									<a href="#" class="item-catalog__image">
+										<img src="img/cat3.jpg" alt="alt">
+										<span class="wrap-sizes">
+											<span class="size-item">XS</span>
+											<span class="size-item">S</span>
+											<span class="size-item">M</span>
+											<span class="size-item">L</span>
+											<span class="size-item">XL</span>
+											<span class="size-item">XXL</span>
+											<span class="size-item">XXXL</span>
+											<span class="size-item">XXXXL</span>
+										</span>
+									</a>
+									<a href="#" class="item-catalog__title">C.P. Company</a>
+									<a href="#" class="item-catalog__name">Пуховик Garment Dyed Crinkle</a>
+									<div class="price-old">56.299 ₽</div>
+									<div class="price-main">49.999 ₽</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-6">
+								<div class="item-catalog">
+									<a href="#" class="btn-like"></a>
+									<a href="#" class="item-catalog__image">
+										<img src="img/cat4.jpg" alt="alt">
+										<span class="wrap-sizes">
+											<span class="size-item">XS</span>
+											<span class="size-item">S</span>
+											<span class="size-item">M</span>
+											<span class="size-item">L</span>
+											<span class="size-item">XL</span>
+											<span class="size-item">XXL</span>
+											<span class="size-item">XXXL</span>
+											<span class="size-item">XXXXL</span>
+										</span>
+									</a>
+									<a href="#" class="item-catalog__title">Stone Island</a>
+									<a href="#" class="item-catalog__name">Пуховик Dyemend Cryspoonw</a>
+									<div class="price-main">19.999 ₽</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-6">
+								<div class="item-catalog">
+									<a href="#" class="btn-like"></a>
+									<a href="#" class="item-catalog__image">
+										<img src="img/catalog6.jpg" alt="alt">
+										<span class="wrap-sizes">
+											<span class="size-item">XS</span>
+											<span class="size-item">S</span>
+											<span class="size-item">M</span>
+											<span class="size-item">L</span>
+											<span class="size-item">XL</span>
+											<span class="size-item">XXL</span>
+											<span class="size-item">XXXL</span>
+											<span class="size-item">XXXXL</span>
+										</span>
+									</a>
+									<a href="#" class="item-catalog__title">A.P.C.</a>
+									<a href="#" class="item-catalog__name">Джинсы Flet Jacket Overwide</a>
+									<div class="price-main">17.990 ₽</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-6">
+								<div class="item-catalog">
+									<a href="#" class="btn-like"></a>
+									<a href="#" class="item-catalog__image">
+										<img src="img/catalog7.jpg" alt="alt">
+										<span class="wrap-sizes">
+											<span class="size-item">XS</span>
+											<span class="size-item">S</span>
+											<span class="size-item">M</span>
+											<span class="size-item">L</span>
+											<span class="size-item">XL</span>
+											<span class="size-item">XXL</span>
+											<span class="size-item">XXXL</span>
+											<span class="size-item">XXXXL</span>
+										</span>
+									</a>
+									<a href="#" class="item-catalog__title">You Must Create</a>
+									<a href="#" class="item-catalog__name">Брюки Olive Brown Spunch</a>
+									<div class="price-main">37.999 ₽</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-6">
 								<div class="item-catalog">
 									<a href="#" class="btn-like"></a>
 									<a href="#" class="item-catalog__image">
@@ -928,7 +904,7 @@
 									<div class="price-main">49.999 ₽</div>
 								</div>
 							</div>
-							<div class="col-xl-3 col-lg-4 col-6">
+							<div class="col-lg-3 col-md-4 col-6">
 								<div class="item-catalog">
 									<a href="#" class="btn-like"></a>
 									<a href="#" class="item-catalog__image">
@@ -949,6 +925,102 @@
 									<div class="price-main">19.999 ₽</div>
 								</div>
 							</div>
+							<div class="col-lg-3 col-md-4 col-6">
+								<div class="item-catalog">
+									<a href="#" class="btn-like"></a>
+									<a href="#" class="item-catalog__image">
+										<img src="img/cat1.jpg" alt="alt">
+										<span class="wrap-sizes">
+											<span class="size-item">XS</span>
+											<span class="size-item">S</span>
+											<span class="size-item">M</span>
+											<span class="size-item">L</span>
+											<span class="size-item">XL</span>
+											<span class="size-item">XXL</span>
+											<span class="size-item">XXXL</span>
+											<span class="size-item">XXXXL</span>
+										</span>
+									</a>
+									<a href="#" class="item-catalog__title">A.P.C.</a>
+									<a href="#" class="item-catalog__name">Джинсы Flet Jacket Overwide</a>
+									<div class="price-main">17.990 ₽</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-6">
+								<div class="item-catalog">
+									<a href="#" class="btn-like"></a>
+									<a href="#" class="item-catalog__image">
+										<img src="img/cat2.jpg" alt="alt">
+										<span class="wrap-sizes">
+											<span class="size-item">XS</span>
+											<span class="size-item">S</span>
+											<span class="size-item">M</span>
+											<span class="size-item">L</span>
+											<span class="size-item">XL</span>
+											<span class="size-item">XXL</span>
+											<span class="size-item">XXXL</span>
+											<span class="size-item">XXXXL</span>
+										</span>
+									</a>
+									<a href="#" class="item-catalog__title">You Must Create</a>
+									<a href="#" class="item-catalog__name">Брюки Olive Brown Spunch</a>
+									<div class="price-main">37.999 ₽</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-6">
+								<div class="item-catalog">
+									<a href="#" class="btn-like"></a>
+									<a href="#" class="item-catalog__image">
+										<img src="img/cat3.jpg" alt="alt">
+										<span class="wrap-sizes">
+											<span class="size-item">XS</span>
+											<span class="size-item">S</span>
+											<span class="size-item">M</span>
+											<span class="size-item">L</span>
+											<span class="size-item">XL</span>
+											<span class="size-item">XXL</span>
+											<span class="size-item">XXXL</span>
+											<span class="size-item">XXXXL</span>
+										</span>
+									</a>
+									<a href="#" class="item-catalog__title">C.P. Company</a>
+									<a href="#" class="item-catalog__name">Пуховик Garment Dyed Crinkle</a>
+									<div class="price-old">56.299 ₽</div>
+									<div class="price-main">49.999 ₽</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-6">
+								<div class="item-catalog">
+									<a href="#" class="btn-like"></a>
+									<a href="#" class="item-catalog__image">
+										<img src="img/cat4.jpg" alt="alt">
+										<span class="wrap-sizes">
+											<span class="size-item">XS</span>
+											<span class="size-item">S</span>
+											<span class="size-item">M</span>
+											<span class="size-item">L</span>
+											<span class="size-item">XL</span>
+											<span class="size-item">XXL</span>
+											<span class="size-item">XXXL</span>
+											<span class="size-item">XXXXL</span>
+										</span>
+									</a>
+									<a href="#" class="item-catalog__title">Stone Island</a>
+									<a href="#" class="item-catalog__name">Пуховик Dyemend Cryspoonw</a>
+									<div class="price-main">19.999 ₽</div>
+								</div>
+							</div>
+						</div>
+						<div class="pager">
+							<a class="prev page-numbers disabled" href="#">назад</a> 
+							<span aria-current="page" class="page-numbers current" href="#">1</span> 
+							<a class="page-numbers" href="#">2</a> 
+							<a class="page-numbers" href="#">3</a>
+							<a class="page-numbers" href="#">4</a>
+							<a class="page-numbers" href="#">5</a>
+							<a class="page-numbers" href="#">6</a>
+							<span class="page-numbers dots">…</span> 
+							<a class="next page-numbers" href="#">вперёд</a>
 						</div>
 						<div class="bottom-link">
 							<a href="#" class="link-page">Показать ещё</a>
@@ -1059,11 +1131,14 @@
 <script src="libs/jquery/jquery-1.11.1.min.js"></script>
 <script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
 <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+<script src="libs/countdown/jquery.plugin.js"></script>
+<script src="libs/countdown/jquery.countdown.min.js"></script>
+<script src="libs/countdown/jquery.countdown-ru.js"></script>
 <script src="libs/slick-1.5.9/slick/slick.min.js"></script>
 <script src="libs/scroll2id/PageScroll2id.min.js"></script>
 <script src="libs/mask/jquery.maskedinput.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.5"></script>
+<script src="js/common.js?ver=1.7"></script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
