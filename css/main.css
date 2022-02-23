@@ -1714,7 +1714,7 @@ transition: all 0.3s;
 .tab-pane-main {
 	display: none;
 }
-.tab-pane-main:nth-child(3) {
+.tab-pane-main:nth-child(1) {
 	display: block;
 }
 .input-pretel ~ .item-input__placeholder {
