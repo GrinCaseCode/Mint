@@ -16,7 +16,7 @@
 	}
 	.title-big strong {
 		font-size: 48px;
-		line-height: 72px;
+		line-height: 72px; 
 	}
 	.slider-billbord .slick-dots {
 		bottom: 20px;
@@ -675,6 +675,213 @@
 	.checkboxes-wrap {
 		columns: 2; 
 	}
+	.item-input {
+		margin-bottom: 40px;
+	}
+	.form-personal__bottom .btn-main_right {
+		width: 70%;
+		margin: 0 auto;
+	}
+.input-pretel ~ .item-input__placeholder {
+	font-size: 14px !important;
+}
+.form-personal .item-input__placeholder {
+    font-size: 14px;
+}
+.tabs-main {
+	flex-direction: column;
+	align-items: flex-start;
+}
+.tabs-main a {
+	margin: 0;
+	padding: 12px 10px;
+	color: #000000;
+	font-size: 12px;
+	display: block;
+	text-align: left;
+	border-bottom: 1px solid #CBCBCB !important;
+}
+.tabs-main li {
+	width: 100%;
+	display: none;
+}
+.tabs-main .active a {
+	background-color: #F5F5F5;
+}
+.tabs-main .active {
+	order: -1;
+	display: block;
+}
+.tab-container-main {
+	padding-top: 30px;
+}
+.tab-container-main .title-section {
+	padding-bottom: 20px;
+}
+.tab-container-main {
+	position: relative;
+}
+.tab-main-btn {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 42px;
+	z-index: 2;
+}
+.tab-main-btn::after,
+.tab-main-btn::before {
+	position: absolute;
+	display: block;
+	content: " ";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-image: url(../img/arrow_tab1.svg);
+	background-repeat: no-repeat;
+	background-position: right 15px center;
+}
+.tab-main-btn::after {
+	background-image: url(../img/arrow_tab2.svg);
+	opacity: 0;
+}
+.tab-main-btn.active::after {
+	opacity: 1;
+}
+.tab-main-btn.active::before {
+	opacity: 0;
+} 
+.tabs-main-wrap {
+	position: relative;
+	margin: 0 -15px;
+}
+.order-history__head .row,
+.history-head .row {
+	margin: 0 -5px;
+}
+.order-history__head .row > div,
+.history-head .row > div {
+	padding: 0 5px;
+}
+.order-history__head .row > div:nth-child(1),
+.history-head .row > div:nth-child(1) {
+	width: 19%;
+}
+.order-history__head .row > div:nth-child(2),
+.history-head .row > div:nth-child(2) {
+	width: 28%;
+}
+.order-history__head .row > div:nth-child(3),
+.history-head .row > div:nth-child(3) {
+	width: 27%;
+}
+.order-history__head .row > div:nth-child(4),
+.history-head .row > div:nth-child(4) {
+	width: 20%;
+}
+.history-head .row > div:nth-child(5) {
+	width: 0%;
+	padding: 0;
+}
+.order-history__head .row > div:nth-child(5) {
+	width: 6%;
+	padding: 0;
+}
+.history-head {
+	font-size: 10px;
+}
+.history-head span {
+	display: none;
+}
+.order-history__head {
+	font-size: 10px;
+}
+.arrow-history {
+	margin-left: -3px;
+	background-image: url(../img/arrow_tab1.svg);
+}
+.table-order tr,
+.table-order td,
+.table-order th,
+.table-order thead,
+.table-order tbody,
+.table-order table {
+	display: block;
+}
+.order-history__content table th {
+	display: none;
+	border: none;
+}
+.order-history__content table th:nth-child(2) {
+	display: block;
+	padding-left: 15px;
+	padding-bottom: 0;
+	font-size: 12px;
+}
+.table-order table {
+	font-size: 12px;
+	line-height: 19px;
+}
+.table-order table td {
+	border: none;
+}
+.table-order table tr {
+	padding-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 125px;
+	border-top: 1px solid #C4C4C4;
+	position: relative;
+}
+.table-order table td:nth-child(1) {
+	position: absolute;
+	top: 10px;
+	left: 0;
+}
+.info-td {
+	min-height: initial;
+}
+.table-order table td {
+	padding: 0;
+	padding-right: 10px;
+}
+.history-orders {
+	margin: 0 -15px;
+	border-left: none;
+	border-right: none;
+}
+.table-order table thead tr {
+	padding-left: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.table-order table td::before {
+	margin-right: 4px;
+	content: attr(data-title);
+}
+.table-order table strong {
+	font-weight: 400; 
+}
+.table-order table td:last-child {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.descr-td {
+	order: -1;
+}
+.title-td {
+	order: -2;
+}
+.table-order table td:nth-child(1)::before {
+	display: none;
+}
+.history-orders-descr {
+	text-align: center;
+}
+.personal {
+	padding-bottom: 95px;
+}
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 640px) {
@@ -719,6 +926,7 @@
 	.show-mob {
 		display: none !important;
 	}
+	.tabs-main li,
 	.sidebar-catalog,
 	.tab-pane__content {
 		display: block !important;
