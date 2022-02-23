@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css?ver=1.8" />
+	<link rel="stylesheet" href="css/media.css?ver=1.8" />
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<header class="header default">
+			<div class="header__top">
+				<span>Бесплатная доставка при заказе на сумму от 3000 рублей</span>
+			</div>
+			<div class="container">
+				<div class="header__wrap">
+					<a href="#" class="logo"> 
+						<img src="img/logo.svg" alt="alt">
+					</a>
+					<ul class="menu">
+						<li><a href="#">скидки</a></li>
+						<li><a href="#">одежда</a></li>
+						<li><a href="#">обувь</a></li>
+						<li><a href="#">аксессуары</a></li>
+						<li><a href="#">бренды</a></li>
+						<li class="menu__special"><a href="#">новинки</a></li>
+					</ul>
+					<div class="form-search">
+						<form>
+							<input type="text" placeholder="Поиск">
+							<div class="search-btn"><i class="far fa-search"></i></div>
+						</form>
+					</div>
+					<a href="#" class="btn-header btn-header_like"><img src="img/ic_like.svg" alt="alt">3</a>
+					<a href="#" class="btn-header"><img src="img/ic_bag.svg" alt="alt">12</a>
+					<a href="#" class="btn-header btn-header_user"><img src="img/ic_user.svg" alt="alt"> Виктор</a>
+					<span class="btn_nav">
+						<span class="sandwich">
+							<span class="sw-topper"></span>
+							<span class="sw-bottom"></span>
+						</span>
+					</span>
+				</div>
+			</div>
+			<div class="menu-mobile">
+				<ul class="menu">
+					<li><a href="#">скидки</a></li>
+					<li><a href="#">одежда</a></li>
+					<li><a href="#">обувь</a></li>
+					<li><a href="#">аксессуары</a></li>
+					<li><a href="#">бренды</a></li>
+					<li class="menu__special"><a href="#">новинки</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<section class="personal">
+			<div class="breadcrumbs-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-9 offset-md-3">
+							<ul class="breadcrumb">
+								<li><a href="#">главная</a></li>
+								<li><a href="#">личный кабинет</a></li>
+								<li><span>профиль</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="tabs-main-wrap">
+					<div class="tab-main-btn"></div>
+					<ul class="tabs-main">
+						<li class="active"><a href="#tab_personal1">профиль</a></li>
+						<li><a href="#tab_personal2">адрес доставки</a></li>
+						<li><a href="#tab_personal3">Заказы</a></li>
+						<li><a href="#tab_personal4">ИзБРАННОЕ</a></li>
+						<li><a href="#tab_personal5">КОРЗИНА</a></li>
+						<li><a href="#tab_personal6">Выйти</a></li>
+					</ul>
+				</div>
+				<div class="tab-container-main">
+					<div class="tab-pane-main" id="tab_personal1">
+						<div class="title-section">ПЕРСОНАЛЬНЫЕ ДАННЫЕ</div>
+						<div class="form-personal">
+							<form>
+								<div class="item-input">
+									<input type="text" required="required" class="input-valid" value="Олег">
+									<div class="item-input__placeholder">Имя:</div>
+									<div class="item-input__arrow"></div>
+								</div>
+								<div class="item-input">
+									<input type="text" required="required" class="input-valid" value="Масляков">
+									<div class="item-input__placeholder">Отчество:</div>
+									<div class="item-input__arrow"></div>
+								</div>
+								<div class="item-input">
+									<input type="text" required="required" class="input-invalid">
+									<div class="item-input__placeholder">Фамилия:</div>
+									<div class="item-input__arrow"></div>
+									<div class="descr-input">введите данные</div>
+								</div>
+								<div class="row">
+									<div class="col-3">
+										<div class="item-input">
+											<input type="text" required="required" readonly="readonly" class="input-invalid input-pretel">
+											<div class="item-input__placeholder">+7</div>
+										</div>
+									</div>
+									<div class="col-9">
+										<div class="item-input">
+											<input type="text" required="required" class="input-invalid" value="9215689924">
+											<div class="item-input__placeholder">Мобильный телефон:</div>
+											<div class="item-input__arrow"></div>
+											<div class="descr-input">ошибка в номере телефона</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-9 offset-lg-3">
+										<div class="row">
+											<div class="col-4">
+												<div class="item-input">
+													<input type="text" required="required" value="17" class="input-valid">
+													<div class="item-input__placeholder">дд</div>
+												</div>
+											</div>
+											<div class="col-4">
+												<div class="item-input">
+													<input type="text" required="required" value="12" class="input-valid">
+													<div class="item-input__placeholder">мм</div>
+												</div>
+											</div>
+											<div class="col-4">
+												<div class="item-input">
+													<input type="text" required="required" value="1993" class="input-valid">
+													<div class="item-input__placeholder">гггг</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-input">
+									<input type="email" required="required" value="maslakovans43@yandex.ru" class="input-invalid">
+									<div class="item-input__placeholder">E-mail:</div>
+									<div class="item-input__arrow"></div>
+									<div class="descr-input">указан неправильный e-mail</div>
+								</div>
+								<div class="item-input">
+									<input type="password" required="required">
+									<div class="item-input__placeholder">пароль: <span>*</span></div>
+									<div class="item-input__arrow"></div>
+									<div class="descr-input">пароль должен содержать как минимум 8 знаков, 1 цифру, прописные и строчные буквы</div>
+									<div class="show-password">показать</div>
+								</div>
+								<div class="item-input">
+									<div class="show-password">показать</div>
+									<input type="password" required="required" class="input-invalid" value="fd">
+									<div class="item-input__placeholder">Повторите пароль: <span>*</span></div>
+									<div class="item-input__arrow"></div>
+									<div class="descr-input">пароли не совпадают</div>
+								</div>
+								<div class="form-personal__bottom">
+									<button class="btn-main btn-main_right">Сохранить</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="tab-pane-main" id="tab_personal2">2</div>
+					<div class="tab-pane-main" id="tab_personal3">3</div>
+					<div class="tab-pane-main" id="tab_personal4">4</div>
+					<div class="tab-pane-main" id="tab_personal5">5</div>
+					<div class="tab-pane-main" id="tab_personal6">6</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__top">
+					<div class="row">
+						<div class="col-xl-7">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="footer__contacts">
+										<div>
+											<p>г.Санкт-Петербург</p>
+											<p>Большой проспект П.С., 48</p>
+										</div>
+										<div>
+											<p><a href="tel:+78124495171">+7 812 449-51-71</a></p>
+											<p><a href="mailto:shop@mintstore.ru">shop@mintstore.ru</a></p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-8 od_mob">
+									<ul class="footer__nav">
+										<li class="footer__nav_big"><a href="#">магазин</a></li>
+										<li class="footer__nav_big"><a href="#">онлайн-магазин</a></li>
+										<li><a href="#">о нас </a></li>
+										<li><a href="#">доставка</a></li>
+										<li><a href="#">программа лояльности</a></li>
+										<li><a href="#">Оплата</a></li>
+										<li><a href="#">Блог</a></li>
+										<li><a href="#">Обмен и возврат</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-5">
+							<ul class="list-social hidden-desc">
+								<li><a href="#"><img src="img/insta.svg" alt="alt"></a></li>
+								<li><a href="#"><img src="img/vk.svg" alt="alt"></a></li>
+								<li><a href="#"><img src="img/fb.svg" alt="alt"></a></li>
+							</ul>
+							<div class="title-min">Подпишитесь на рассылку наших новостей и акций</div>
+							<form>
+								<div class="row">
+									<div class="col-6">
+										<div class="item-form">
+											<input type="email" placeholder="введите ваш email ..." required="required">
+										</div>
+									</div>
+									<div class="col-6">
+										<button class="btn-main">ПОДПИСАТЬСЯ</button>
+									</div>
+								</div>
+							</form>
+							<ul class="list-social hidden-mob">
+								<li><a href="#"><img src="img/insta.svg" alt="alt"></a></li>
+								<li><a href="#"><img src="img/vk.svg" alt="alt"></a></li>
+								<li><a href="#"><img src="img/fb.svg" alt="alt"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="row">
+						<div class="col-lg-2">
+							<div class="copyright">© MINTSTORE, 2021</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="footer__name">ИП Волох Анна Валерьевна</div>
+						</div>
+						<div class="col show-mob">
+							<ul class="list-payments">
+								<li><img src="img/ic_payment1.png" alt="alt"></li>
+								<li><img src="img/ic_payment2.png" alt="alt"></li>
+							</ul>
+						</div>
+						<div class="col-lg-4">
+							<div class="center__footer">
+								<ul class="list-payments">
+									<li><img src="img/ic_payment1.png" alt="alt"></li>
+									<li><img src="img/ic_payment2.png" alt="alt"></li>
+								</ul>
+								<a href="#">пользовательское соглашение</a>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="footer__right"><a href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+<script src="libs/countdown/jquery.plugin.js"></script>
+<script src="libs/countdown/jquery.countdown.min.js"></script>
+<script src="libs/countdown/jquery.countdown-ru.js"></script>
+<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+<script src="libs/mask/jquery.maskedinput.js"></script>
+<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+<script src="js/common.js?ver=1.8"></script>
+<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
