@@ -91,16 +91,16 @@
 				<div class="tabs-main-wrap">
 					<div class="tab-main-btn"></div>
 					<ul class="tabs-main">
-						<li class="active"><a href="#tab_personal1">профиль</a></li>
+						<li><a href="#tab_personal1">профиль</a></li>
 						<li><a href="#tab_personal2">адрес доставки</a></li>
 						<li><a href="#tab_personal3">Заказы</a></li>
 						<li><a href="#tab_personal4">ИзБРАННОЕ</a></li>
-						<li><a href="#tab_personal5">КОРЗИНА</a></li>
+						<li class="active"><a href="#tab_personal5">КОРЗИНА</a></li>
 						<li><a href="#" class="tabs-main__quit">Выйти</a></li>
 					</ul>
 				</div>
 				<div class="tab-container-main">
-					<div class="tab-pane-main" id="tab_personal1">
+					<div class="tab-pane-main" style="display: none;" id="tab_personal1">
 						<div class="title-section">ПЕРСОНАЛЬНЫЕ ДАННЫЕ</div>
 						<div class="form-personal">
 							<form>
@@ -764,7 +764,7 @@
 							<a href="#" class="link-page">Показать ещё</a>
 						</div>
 					</div>
-					<div class="tab-pane-main" id="tab_personal5">
+					<div class="tab-pane-main" style="display: block;" id="tab_personal5">
 						<div class="title-section">КОРЗИНА</div>
 						<div class="basket-wrap">
 							<div class="table-order table-order_basket">
@@ -872,9 +872,9 @@
 								<div class="bottom-basket">
 									<div class="form-line">
 										<div class="item-input">
-											<input type="text" required="required">
+											<input type="text" class="input-invalid" value="Qdzxc2" required="required">
 											<div class="item-input__placeholder">Введите промокод: <span> *</span></div>
-											<div class="item-input__arrow"></div>
+											<div class="descr-input">неверный промокод</div>
 										</div>
 										<button class="btn-main">ПРИМЕНИТЬ</button>
 									</div>
