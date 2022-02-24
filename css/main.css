@@ -1455,12 +1455,18 @@ break-inside: avoid-column;
 }
 .item-input__placeholder span {
 	color: #FF0202;
+	opacity: 0;
 }
 .item-input input.input-invalid + .item-input__placeholder,
 .item-input input.input-valid + .item-input__placeholder,
 .item-input input:focus + .item-input__placeholder {
 	font-size: 12px;
 	top: -7px;
+}
+.item-input input.input-invalid + .item-input__placeholder span,
+.item-input input.input-valid + .item-input__placeholder span,
+.item-input input:focus + .item-input__placeholder span {
+	opacity: 1;
 }
 .item-input input.input-valid {
 	border-bottom: 1px solid #13BC04;
@@ -1510,6 +1516,10 @@ break-inside: avoid-column;
 .item-input input.input-invalid ~ .descr-input {
 	color: #ff2020;
 	border-color: #FF0202;
+}
+.item-input input.input-valid ~ .descr-input {
+color: #13BC04;
+border-color: #13BC04;
 }
 .success-input {
 	font-size: 12px;
@@ -1773,11 +1783,11 @@ text-transform: uppercase;
 .order-history__content {
 	display: none;
 }
-.order-history__content table {
+.table-order table {
 width: 100%;
 border-spacing: 0;
 }
-.order-history__content table th {
+.table-order table th {
 	padding: 8px 0;
 	font-weight: 500;
 font-size: 12px;
@@ -1793,6 +1803,10 @@ text-align: left;
 }
 .descr-td {
 	font-size: 12px;
+}
+.table-order table {
+	width: 100%;
+	border-spacing: 0;
 }
 .table-order table strong {
 	font-weight: 500;
@@ -1855,3 +1869,98 @@ opacity: 1;
 .item-catalog:hover .remove-like {
 	opacity: 1;
 } 
+.table-order td {
+	position: relative;
+}
+.table-order_basket table th {
+	text-transform: uppercase;
+	background-color: #F5F5F5;
+}
+.table-order_basket {
+	border: 1px solid #CBCBCB;
+}
+.table-order_basket table th:first-child {
+	padding-left: 10px;
+}
+.remove-tr {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+.basket-wrap {
+	max-width: 964px;
+	margin: 0 auto;
+}
+.form-line {
+	display: flex;
+}
+.form-line .item-input {
+	width: 183px;
+}
+.form-line .btn-main {
+	color: #fff;
+}
+.form-line .item-input input {
+	height: 44px;
+}
+.form-line .item-input .item-input__placeholder {
+	top: 15px;
+}
+.line-basket {
+	padding: 4px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #CBCBCB;
+}
+.line-basket strong {
+	font-weight: 500;
+}
+.wrap-bottom-basket {
+	display: flex;
+	justify-content: flex-end;
+}
+.bottom-basket__button {
+	padding-top: 40px;
+	text-align: right;
+}
+.bottom-basket .btn-main {
+	color: #fff;
+}
+.table-order .quantity {
+	display: none;
+}
+.bottom-basket .item-input input.input-invalid + .item-input__placeholder, 
+.bottom-basket .item-input input.input-valid + .item-input__placeholder, 
+.bottom-basket .item-input input:focus + .item-input__placeholder {
+font-size: 10px;
+}
+.table-order .quantity {
+	display: inline-flex;
+}
+.table-order .quantity input {
+	width: 30px;
+	font-size: 14px;
+line-height: 14px;
+font-family: 'TTNorms';
+	border: none;
+	text-align: center;
+	background-color: transparent;
+}
+.table-order .quantity .quantity-button {
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type=number]
+{
+	-moz-appearance: textfield;
+}

@@ -873,6 +873,7 @@
 .title-td {
 	order: -2;
 }
+.table-order table td:nth-child(2)::before,
 .table-order table td:nth-child(1)::before {
 	display: none;
 }
@@ -881,6 +882,70 @@
 }
 .personal {
 	padding-bottom: 95px;
+}
+.table-order_basket table th {
+	display: none;
+}
+.table-order_basket table th::before {
+		margin-right: 4px;
+	content: attr(data-title);
+}
+.table-order_basket table th:first-child {
+	padding-right: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.table-order_basket table th:nth-child(2) {
+	padding-bottom: 0;
+	display: block;
+	padding-left: 10px;
+	text-transform: none;
+	background-color: #fff;
+}
+.table-order_basket table thead tr {
+	border: none;
+}
+.table-order_basket {
+	margin: 0 -15px;
+}
+.table-order_basket table th:nth-child(2)::before {
+	display: none;
+}
+.table-order table td {
+	position: static;
+}
+.table-order_basket table td:last-child {
+	align-items: flex-end;
+}
+.table-order_basket .price-old {
+	margin-top: -23px;
+}
+.bottom-basket .form-line .btn-main {
+	padding: 0 20px;
+}
+.form-line .item-input {
+	margin-bottom: 20px;
+}
+.bottom-basket__button {
+	text-align: center;
+}
+.bottom-basket__button .btn-main {
+	width: 100%;
+}
+.wrap-bottom-basket {
+	margin-top: 30px;
+	justify-content: center;
+}
+.hidden-mob {
+	display: none;
+}
+.table-order .quantity input {
+	font-size: 12px;
+	width: 20px;
+}
+.table-order .quantity .quantity-button {
+	font-size: 14px;
 }
 }
 /* Small Devices, Tablets */
