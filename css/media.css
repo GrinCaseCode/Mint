@@ -947,6 +947,24 @@
 .table-order .quantity .quantity-button {
 	font-size: 14px;
 }
+.authorization-links {
+	margin-top: 50px;
+}
+.social-authorization__title {
+	font-size: 13px;
+}
+.social-authorization {
+	padding-top: 39px;
+}
+.authorization-wrap_login {
+	margin: 0 -15px;
+	margin-top: 44px;
+	padding: 20px 15px;
+	padding-bottom: 90px;
+}
+.authorization-wrap .item-input__placeholder {
+	font-size: 16px;
+}
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 640px) {
