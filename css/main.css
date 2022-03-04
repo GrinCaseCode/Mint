@@ -2009,7 +2009,7 @@ input[type=number]
 	color: #000;
 	border-color: #000;
 }
-.buttons-authorization {
+.buttons-authorization { 
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
