@@ -2017,6 +2017,7 @@ input[type=number]
 .buttons-authorization .btn-main {
 	width: 45%;
 	color: #fff;
+	padding: 0 10px;
 	text-transform: uppercase;
 }
 .btn-main_gray {
