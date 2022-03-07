@@ -292,6 +292,16 @@
 	.row_main .item-catalog__image {
 		height: 245px;
 	}
+	.registration-wrap {
+		max-width: 544px;
+		margin: 0 auto;
+	}
+	.col_date {
+		padding-top: 60px !important;
+	}
+	.checkbox_main {
+		font-size: 9px;
+	}
 }
 @media only screen and (max-width : 767px) {
 
@@ -681,6 +691,8 @@
 	.form-personal__bottom .btn-main_right {
 		width: 70%;
 		margin: 0 auto;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 .input-pretel ~ .item-input__placeholder {
 	font-size: 14px !important;
@@ -967,6 +979,57 @@
 }
 .buttons-authorization .btn-main {
 	width: 46%;
+}
+.registration-wrap {
+	padding-top: 34px;
+}
+.registration-wrap .title-authorization {
+	padding-bottom: 33px;
+}
+.title-block_hiddenmob {
+	display: none;
+}
+.title-block {
+	font-size: 14px;
+	line-height: 17px;
+}
+.registration-wrap .title-block {
+	text-align: center;
+}
+.col_date {
+	padding-top: 40px !important;
+}
+.registration-wrap .descr-input {
+	font-size: 8px;
+}
+.social-register {
+	margin-bottom: 20px;
+	display: block;
+}
+.social-register .title-block {
+	padding-bottom: 13px;
+}
+.registration-wrap .form-personal__bottom {
+	flex-direction: column-reverse;
+}
+.agreement-main {
+	margin: 0 auto;
+	margin-bottom: 23px;
+}
+.checkbox_main label > span:after {
+    top: 7px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    background-image: none;
+    background-color: #282828;
+}
+.registration-wrap .form-personal__bottom .btn-main {
+	min-width: 250px;
+}
+.registration-wrap .form-personal__bottom .btn-main ~ .btn-main {
+	margin-top: 30px;
+	order: -1;
 }
 }
 /* Small Devices, Tablets */

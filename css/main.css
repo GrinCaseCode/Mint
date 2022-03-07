@@ -2052,6 +2052,7 @@ input[type=number]
 }
 .social-list a {
 	margin: 0 30px;
+	display: inline-block;
 }
 .authorization {
 	padding-bottom: 100px;
@@ -2093,4 +2094,94 @@ box-shadow: 1px 0px 3px 3px rgba(0, 0, 0, 0.12);
 }
 .authorization-wrap .title-authorization {
 	padding-bottom: 60px;
+}
+.title-block {
+	font-size: 18px;
+line-height: 21px;
+padding-bottom: 30px;
+font-weight: 500;
+text-transform: uppercase;
+}
+.registration-wrap .item-input__placeholder {
+	font-size: 16px;
+}
+.registration-wrap .btn-main {
+	color: #fff;
+}
+.registration-wrap .show-password {
+	visibility: hidden;
+}
+.registration-wrap .item-input input.input-invalid ~ .show-password, 
+.registration-wrap .item-input input.input-valid ~ .show-password, 
+.registration-wrap .item-input input:focus ~ .show-password  {
+	visibility: visible;
+}
+.registration-wrap .descr-input {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	color: #807F7D;
+}
+.social-register {
+	margin-bottom: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.social-register .social-list a {
+    margin: 0 10px;
+}
+.social-register .social-list li:last-child a {
+	margin-right: 0;
+}
+.social-register .title-block {
+	padding: 0;
+}
+.checkbox_main label > span:after {
+	width: 16px;
+	height: 16px;
+	top: 4px;
+	left: 0;
+	background-color: transparent;
+	background-image: url(../img/arrow_check.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.checkbox_main {
+	font-size: 9px;
+}
+.checkbox_main label > span {
+	padding-bottom: 5px;
+}
+.agreement-main {
+	font-size: 13px;
+line-height: 18px;
+font-weight: 500;
+color: #807F7D;
+max-width: 240px;
+margin-left: auto;
+}
+.agreement-main a {
+	color: #464645;
+	border-bottom: 1px solid #464645;
+	transition: all 0.3s;
+}
+.agreement-main a:hover {
+	border-color: transparent;
+}
+.registration-wrap .checkbox_main {
+	margin-bottom: 20px;
+}
+.descr-input_static {
+	color: #807F7D !important;
+	border-color: #807F7D !important;
+}
+.row_registration {
+	margin: 0 -35px;
+}
+.row_registration > div {
+	padding: 0 35px;
+}
+.registration-wrap .form-personal__bottom .btn-main {
+	width: 43%;
 }
