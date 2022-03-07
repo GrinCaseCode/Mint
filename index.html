@@ -16,477 +16,972 @@
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
 	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.4" />
-	<link rel="stylesheet" href="css/media.css?ver=1.4" />
+	<link rel="stylesheet" href="css/main.css?ver=1.7" />
+	<link rel="stylesheet" href="css/media.css?ver=1.7" />
 </head>
 <body>
 
 	<div class="wrapper">
-
-		<header class="header">
-			<div class="container-fluid">
+		
+		<header class="header default">
+			<div class="header__top">
+				<span>Бесплатная доставка при заказе на сумму от 3000 рублей</span>
+			</div>
+			<div class="container">
 				<div class="header__wrap">
-					<a href="#" class="logo">
+					<a href="#" class="logo"> 
 						<img src="img/logo.svg" alt="alt">
 					</a>
 					<ul class="menu">
-						<li><a href="#">О компании</a></li>
-						<li><a href="#">Карьера в компании</a></li>
-						<li><a href="#">Направление деятельности</a></li>
-						<li><a href="#">Услуги</a></li>
-						<li><a href="#">Пресс-центр</a></li>
-						<li><a href="#">Контакты</a></li>
+						<li><a href="#">скидки</a></li>
+						<li><a href="#">одежда</a></li>
+						<li><a href="#">обувь</a></li>
+						<li><a href="#">аксессуары</a></li>
+						<li><a href="#">бренды</a></li>
+						<li class="menu__special"><a href="#">новинки</a></li>
 					</ul>
-					<a href="tel:+73412637800" class="phone-main">+7 (3412) 63-78-00</a>
-					<ul class="social-list">
-						<li><a href="#"><img src="img/instagram.svg" alt="alt"></a></li>
-						<li><a href="#"><img src="img/fb.svg" alt="alt"></a></li>
-						<li><a href="#"><img src="img/youtube.svg" alt="alt"></a></li>
-						<li><a href="#"><img src="img/vk.svg" alt="alt"></a></li>
-					</ul>
-					<a href="#" class="btn-search"><img src="img/search.svg" alt="alt"></a>
+					<div class="form-search">
+						<form>
+							<input type="text" placeholder="Поиск">
+							<div class="search-btn"><i class="far fa-search"></i></div>
+						</form>
+					</div>
+					<a href="#" class="btn-header btn-header_like"><img src="img/ic_like.svg" alt="alt">3</a>
+					<a href="#" class="btn-header"><img src="img/ic_bag.svg" alt="alt">12</a>
+					<a href="#" class="btn-header btn-header_user"><img src="img/ic_user.svg" alt="alt"> Виктор</a>
+					<span class="btn_nav">
+						<span class="sandwich">
+							<span class="sw-topper"></span>
+							<span class="sw-bottom"></span>
+						</span>
+					</span>
 				</div>
+			</div>
+			<div class="menu-mobile">
+				<ul class="menu">
+					<li><a href="#">скидки</a></li>
+					<li><a href="#">одежда</a></li>
+					<li><a href="#">обувь</a></li>
+					<li><a href="#">аксессуары</a></li>
+					<li><a href="#">бренды</a></li>
+					<li class="menu__special"><a href="#">новинки</a></li>
+				</ul>
 			</div>
 		</header>
 
 		<section class="billbord">
 			<ul class="slider-billbord">
 				<li>
-					<div class="item-billbord">
-						<div class="item-billbord__image">
+					<div class="slider-billbord__item">
+						<div class="slider-billbord__image">
 							<img src="img/billbord1.jpg" alt="alt">
 						</div>
-						<div class="container">
-							<div class="row">
-								<div class="col-lg-6">
-									<h2 class="title-big">ChERRY TIGGO 7 PRO <div class="special-descr">выгода до 160 000₽</div></h2>
-									<div class="descr-big">Всегда достигает большего. <br>Как и ты!</div>
-									<a href="#" class="btn-main">Задать вопрос</a>
-								</div>
+						<div class="slider-billbord__content">
+							<div class="container">
+								<h2 class="title-big"><strong>NIKE ACG</strong> <br>НОВАЯ КОЛЛЕКЦИЯ ОСЕНЬ-ЗИМА <br>2021/2022 </h2>
+								<div class="descr-min">УЖЕ В ПРОДАЖЕ </div>
+								<a href="#" class="btn-main btn-main_page">ПОДПИСАТЬСЯ</a>
 							</div>
 						</div>
 					</div>
 				</li>
 				<li>
-					<div class="item-billbord">
-						<div class="item-billbord__image">
+					<div class="slider-billbord__item">
+						<div class="slider-billbord__image">
 							<img src="img/billbord1.jpg" alt="alt">
 						</div>
-						<div class="container">
-							<div class="row">
-								<div class="col-lg-6">
-									<h2 class="title-big">ChERRY TIGGO 7 PRO <div class="special-descr">выгода до 160 000₽</div></h2>
-									<div class="descr-big">Всегда достигает большего. <br>Как и ты!</div>
-									<a href="#" class="btn-main">Задать вопрос</a>
-								</div>
+						<div class="slider-billbord__content">
+							<div class="container">
+								<h2 class="title-big"><strong>NIKE ACG</strong> <br>НОВАЯ КОЛЛЕКЦИЯ ОСЕНЬ-ЗИМА <br>2021/2022 </h2>
+								<div class="descr-min">УЖЕ В ПРОДАЖЕ </div>
+								<a href="#" class="btn-main btn-main_page">ПОДПИСАТЬСЯ</a>
 							</div>
 						</div>
 					</div>
 				</li>
 				<li>
-					<div class="item-billbord">
-						<div class="item-billbord__image">
+					<div class="slider-billbord__item">
+						<div class="slider-billbord__image">
 							<img src="img/billbord1.jpg" alt="alt">
 						</div>
-						<div class="container">
-							<div class="row">
-								<div class="col-lg-6">
-									<h2 class="title-big">ChERRY TIGGO 7 PRO <div class="special-descr">выгода до 160 000₽</div></h2>
-									<div class="descr-big">Всегда достигает большего. <br>Как и ты!</div>
-									<a href="#" class="btn-main">Задать вопрос</a>
-								</div>
+						<div class="slider-billbord__content">
+							<div class="container">
+								<h2 class="title-big"><strong>NIKE ACG</strong> <br>НОВАЯ КОЛЛЕКЦИЯ ОСЕНЬ-ЗИМА <br>2021/2022 </h2>
+								<div class="descr-min">УЖЕ В ПРОДАЖЕ </div>
+								<a href="#" class="btn-main btn-main_page">ПОДПИСАТЬСЯ</a>
 							</div>
 						</div>
 					</div>
 				</li>
 				<li>
-					<div class="item-billbord">
-						<div class="item-billbord__image">
+					<div class="slider-billbord__item">
+						<div class="slider-billbord__image">
 							<img src="img/billbord1.jpg" alt="alt">
 						</div>
-						<div class="container">
-							<div class="row">
-								<div class="col-lg-6">
-									<h2 class="title-big">ChERRY TIGGO 7 PRO <div class="special-descr">выгода до 160 000₽</div></h2>
-									<div class="descr-big">Всегда достигает большего. <br>Как и ты!</div>
-									<a href="#" class="btn-main">Задать вопрос</a>
-								</div>
+						<div class="slider-billbord__content">
+							<div class="container">
+								<h2 class="title-big"><strong>NIKE ACG</strong> <br>НОВАЯ КОЛЛЕКЦИЯ ОСЕНЬ-ЗИМА <br>2021/2022 </h2>
+								<div class="descr-min">УЖЕ В ПРОДАЖЕ </div>
+								<a href="#" class="btn-main btn-main_page">ПОДПИСАТЬСЯ</a>
 							</div>
 						</div>
 					</div>
 				</li>
 			</ul>
-			<div class="container">
-				<div class="dots-wrap"></div>
-			</div>
 		</section>
 
-		<div class="advantages">
-			<div class="container">
-				<div class="advantages-wrap">
-					<div class="row align-items-center">
-						<div class="col-lg-3 col-md-6">
-							<div class="item-advantage"><img src="img/ic_avd1.svg" alt="alt">24 года <br>на рынке</div>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<div class="item-advantage"><img src="img/ic_avd2.svg" alt="alt">30 брендов</div>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<div class="item-advantage"><img src="img/ic_avd3.svg" alt="alt">10 000 <br>автомобилей</div>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<div class="item-advantage"><img src="img/ic_avd4.svg" alt="alt">64 000 <br>запасных частей</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="activities">
-			<div class="container">
-				<h2 class="title-section">Направления деятельности</h2>
-				<div class="row row_activities">
-					<div class="col-lg-4 col-md-6">
-						<div class="item-activity">
-							<div class="title-block">Сельхозтехника</div>
-							<p>Техника разрабатывается и совершенствуется </p>
-							<a href="#" class="link-main">подробнее</a>
-							<div class="item-activity__image">
-								<img src="img/activity1.png" alt="alt">
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="item-activity">
-							<div class="title-block">Спецтехника</div>
-							<p>Современная техника является продуктом </p>
-							<a href="#" class="link-main">подробнее</a>
-							<div class="item-activity__image">
-								<img src="img/activity2.png" alt="alt">
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="item-activity">
-							<div class="title-block">Грузовые автомобили</div>
-							<p>Более 2919 вариантов</p>
-							<a href="#" class="link-main">подробнее</a>
-							<div class="item-activity__image">
-								<img src="img/activity3.png" alt="alt">
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="item-activity">
-							<div class="title-block">Легковые автомобили</div>
-							<p>В более широком смысле под техникой</p>
-							<a href="#" class="link-main">подробнее</a>
-							<div class="item-activity__image">
-								<img src="img/activity4.png" alt="alt">
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="item-activity">
-							<div class="title-block">Авто с пробегом</div>
-							<p>Современная техника является продуктом </p>
-							<a href="#" class="link-main">подробнее</a>
-							<div class="item-activity__image">
-								<img src="img/activity5.png" alt="alt">
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="item-activity">
-							<div class="title-block">Запасные части</div>
-							<p>Основное назначение техники — избавление человека </p>
-							<a href="#" class="link-main">подробнее</a>
-							<div class="item-activity__image">
-								<img src="img/activity6.png" alt="alt">
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="item-activity">
-							<div class="title-block">Техника в наличии</div>
-							<p>Более 20100 вариантов в наличии</p>
-							<a href="#" class="link-main">подробнее</a>
-							<div class="item-activity__image">
-								<img src="img/activity7.png" alt="alt">
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<div class="item-activity">
-							<div class="title-block">Автобусы</div>
-							<p>Создание материальных и культурных ценностей</p>
-							<a href="#" class="link-main">подробнее</a>
-							<div class="item-activity__image">
-								<img src="img/activity8.png" alt="alt">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<section class="about">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-7 about__left">
-						<h2 class="title-section">Компания <img src="img/logo_about.svg" alt="alt"></h2>
-						<ul class="slider-images">
-							<li>
-								<div class="slider-images__image">
-									<img src="img/slide_about1.jpg" alt="alt">
-								</div>
-							</li>
-							<li>
-								<div class="slider-images__image">
-									<img src="img/slide_about1.jpg" alt="alt">
-								</div>
-							</li>
-							<li>
-								<div class="slider-images__image">
-									<img src="img/slide_about1.jpg" alt="alt">
-								</div>
-							</li>
-						</ul>
-						<div class="text-big">
-							<p>Компания «Интерпартнер» является официальным дилером более 30 брендов строительной, дорожной, коммунальной, специальной техники, автобусов, сельскохозяйственной техники, легковых, коммерческих автомобилей и внедорожников отечественных и зарубежных автопроизводителей.</p>
-						</div>
-						<div class="gray-text">
-							<p>Основную долю среди поставляемых новых автомобилей составляют внедорожники, грузовые и коммерческие автомобили, тягачи и т.д.</p>
-						</div>
-						<div class="text-middle">
-							<p>Благодаря безукоризненному выполнению своих партнерских обязательств, компания занимает лидирующие позиции в этом бизнесе. </p>
-						</div>
-						<a href="#" class="link-main">подробнее</a>
-					</div>
-					<div class="col-lg-5">
-						<div class="title-middle">Дополнительные услуги</div>
-						<div class="item-service">
-							<div class="item-service__head"><img src="img/ic_service1.svg" alt="alt"><span>АвтоCтрахование</span></div>
-							<div class="item-service__content">
-								<div class="item-service__text">
-									<p>Не только свобода передвижения и удовольствие от вождения. </p>
-								</div>
-								<a href="#" class="btn-page">Застроховать</a>
-							</div>
-						</div>
-						<div class="item-service">
-							<div class="item-service__head"><img src="img/ic_service2.svg" alt="alt"><span>АвтоКредит</span></div>
-							<div class="item-service__content">
-								<div class="item-service__text">
-									<p>Специалисты компании Интерпартнер подберут наиболее выгодные и удобные </p>
-								</div>
-								<a href="#" class="btn-page">Консультация</a>
-							</div>
-						</div>
-						<div class="item-service">
-							<div class="item-service__head"><img src="img/ic_service3.svg" alt="alt"><span>Лизинг</span></div>
-							<div class="item-service__content">
-								<div class="item-service__text">
-									<p>По сравнению с традиционным банковским кредитованием </p>
-								</div>
-								<a href="#" class="btn-page">Консультация</a>
-							</div>
-						</div>
-						<div class="item-service">
-							<div class="item-service__head"><img src="img/ic_service4.svg" alt="alt"><span>Сервисное обслужвание</span></div>
-							<div class="item-service__content">
-								<div class="item-service__text">
-									<p>Ремонт, гарантийное обслуживание, запчасти в наличии</p>
-								</div>
-								<a href="#" class="btn-page">Консультация</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<section class="news">
+		<section class="catalog-page">
 			<div class="container">
 				<div class="head-section">
-					<h2 class="title-section">Новости</h2>
-					<a href="#" class="link-main">все новости</a>
+					<h2 class="title-section">НОВЫЕ ПОСТУПЛЕНИЯ</h2>
+					<a href="#" class="link-page">ПОСМОТРЕТЬ</a>
 				</div>
-				<div class="wrap-arrows"></div>
-			</div>
-			<ul class="slider-news">
-				<li>
-					<a href="#" class="item-news">
-						<span class="item-news__image">
-							<img src="img/news1.jpg" alt="alt">
-						</span>
-						<span class="date-main">20 июля 2021</span>
-						<span class="title-small">Клиенты компании «Коммерческий транспорт Удмуртии» совместно с ее руководством посетили одну из масштабных презентаций</span>
-						<span class="text-main">На презентации в Казани присутствовало более 150 клиентов MAN и представителей профильной пресс ...</span>
-					</a>
-				</li>
-				<li>
-					<a href="#" class="item-news">
-						<span class="item-news__image">
-							<img src="img/news2.jpg" alt="alt">
-						</span>
-						<span class="date-main">20 июля 2021</span>
-						<span class="title-small">«День поля» вместе с CHERY и УАЗ</span>
-						<span class="text-main">24-25 июня прошло празднование  "Дня Поля" в Музее-заповеднике "Лудорвай" на фестивале "AGRO.PRO 2021"</span>
-					</a>
-				</li>
-				<li>
-					<a href="#" class="item-news">
-						<span class="item-news__image">
-							<img src="img/news3.jpg" alt="alt">
-						</span>
-						<span class="date-main">20 июля 2021</span>
-						<span class="title-small">Сhery Tiggo 7 pro возглавил рейтинг самых продаваемых китайских автомобилей в рф</span>
-						<span class="text-main">За первый квартал 2021 года в нашей стране было продано почти 19 тыс. новых легковых автомобилей китайских марок </span>
-					</a>
-				</li>
-				<li>
-					<a href="#" class="item-news">
-						<span class="item-news__image">
-							<img src="img/news4.jpg" alt="alt">
-						</span>
-						<span class="date-main">20 июля 2021</span>
-						<span class="title-small">Выгода до 150 000 рублей на автомобили Fiat</span>
-						<span class="text-main">Официальный дилер Fiat в Ижевске ООО фирма «Интерпартнер» </span>
-					</a>
-				</li>
-				<li>
-					<a href="#" class="item-news">
-						<span class="item-news__image">
-							<img src="img/news1.jpg" alt="alt">
-						</span>
-						<span class="date-main">20 июля 2021</span>
-						<span class="title-small">Клиенты компании «Коммерческий транспорт Удмуртии» совместно с ее руководством посетили одну из масштабных презентаций</span>
-						<span class="text-main">На презентации в Казани присутствовало более 150 клиентов MAN и представителей профильной пресс ...</span>
-					</a>
-				</li>
-				<li>
-					<a href="#" class="item-news">
-						<span class="item-news__image">
-							<img src="img/news2.jpg" alt="alt">
-						</span>
-						<span class="date-main">20 июля 2021</span>
-						<span class="title-small">«День поля» вместе с CHERY и УАЗ</span>
-						<span class="text-main">24-25 июня прошло празднование  "Дня Поля" в Музее-заповеднике "Лудорвай" на фестивале "AGRO.PRO 2021"</span>
-					</a>
-				</li>
-				<li>
-					<a href="#" class="item-news">
-						<span class="item-news__image">
-							<img src="img/news3.jpg" alt="alt">
-						</span>
-						<span class="date-main">20 июля 2021</span>
-						<span class="title-small">Сhery Tiggo 7 pro возглавил рейтинг самых продаваемых китайских автомобилей в рф</span>
-						<span class="text-main">За первый квартал 2021 года в нашей стране было продано почти 19 тыс. новых легковых автомобилей китайских марок </span>
-					</a>
-				</li>
-				<li>
-					<a href="#" class="item-news">
-						<span class="item-news__image">
-							<img src="img/news4.jpg" alt="alt">
-						</span>
-						<span class="date-main">20 июля 2021</span>
-						<span class="title-small">Выгода до 150 000 рублей на автомобили Fiat</span>
-						<span class="text-main">Официальный дилер Fiat в Ижевске ООО фирма «Интерпартнер» </span>
-					</a>
-				</li>
-			</ul>
+				<div class="row row_catalog row_slider">
+					<div class="col-main">
+						<div class="item-catalog">
+							<a href="#" class="btn-like"></a>
+							<a href="#" class="item-catalog__image">
+								<img src="img/catalog1.jpg" alt="alt">
+								<span class="wrap-sizes">
+									<span class="size-item">XS</span>
+									<span class="size-item">S</span>
+									<span class="size-item">M</span>
+									<span class="size-item">L</span>
+									<span class="size-item">XL</span>
+									<span class="size-item">XXL</span>
+									<span class="size-item">XXXL</span>
+									<span class="size-item">XXXXL</span>
+								</span>
+							</a>
+							<a href="#" class="item-catalog__title">C.P. Company</a>
+							<a href="#" class="item-catalog__name">Куртка Flet Jacket Overwide</a>
+							<div class="price-main">87.990 ₽</div>
+						</div>
+					</div>
+					<div class="col-main">
+						<div class="item-catalog">
+							<a href="#" class="btn-like"></a>
+							<a href="#" class="item-catalog__image">
+								<img src="img/catalog2.jpg" alt="alt">
+								<span class="wrap-sizes">
+									<span class="size-item">XS</span>
+									<span class="size-item">S</span>
+									<span class="size-item">M</span>
+									<span class="size-item">L</span>
+									<span class="size-item">XL</span>
+									<span class="size-item">XXL</span>
+									<span class="size-item">XXXL</span>
+									<span class="size-item">XXXXL</span>
+								</span>
+							</a>
+							<a href="#" class="item-catalog__title">Stone Island</a>
+							<a href="#" class="item-catalog__name">Куртка Olive Button Jacket</a>
+							<div class="price-main">37.999 ₽</div>
+						</div>
+					</div>
+					<div class="col-main">
+						<div class="item-catalog">
+							<a href="#" class="btn-like"></a>
+							<a href="#" class="item-catalog__image">
+								<img src="img/catalog3.jpg" alt="alt">
+								<span class="wrap-sizes">
+									<span class="size-item">XS</span>
+									<span class="size-item">S</span>
+									<span class="size-item">M</span>
+									<span class="size-item">L</span>
+									<span class="size-item">XL</span>
+									<span class="size-item">XXL</span>
+									<span class="size-item">XXXL</span>
+									<span class="size-item">XXXXL</span>
+								</span>
+							</a>
+							<a href="#" class="item-catalog__title">Stone Island</a>
+							<a href="#" class="item-catalog__name">Пуховик Garment Dyed Crinkle</a>
+							<div class="price-old">56.299 ₽</div>
+							<div class="price-main">49.999 ₽</div>
+						</div>
+					</div>
+					<div class="col-main">
+						<div class="item-catalog">
+							<a href="#" class="btn-like"></a>
+							<a href="#" class="item-catalog__image">
+								<img src="img/catalog4.jpg" alt="alt">
+								<span class="wrap-sizes">
+									<span class="size-item">XS</span>
+									<span class="size-item">S</span>
+									<span class="size-item">M</span>
+									<span class="size-item">L</span>
+									<span class="size-item">XL</span>
+									<span class="size-item">XXL</span>
+									<span class="size-item">XXXL</span>
+									<span class="size-item">XXXXL</span>
+								</span>
+							</a>
+							<a href="#" class="item-catalog__title">Gitman Vintage</a>
+							<a href="#" class="item-catalog__name">Рубашки Owned Classic </a>
+							<div class="price-main">19.999 ₽</div>
+						</div>
+					</div>
+					<div class="col-main">
+						<div class="item-catalog">
+							<a href="#" class="btn-like"></a>
+							<a href="#" class="item-catalog__image">
+								<img src="img/catalog5.jpg" alt="alt">
+								<span class="wrap-sizes">
+									<span class="size-item">6.5 UK</span>
+									<span class="size-item">7 UK</span>
+									<span class="size-item">7.5 UK</span>
+									<span class="size-item">8 UK</span>
+									<span class="size-item">8.5 UK</span>
+									<span class="size-item">9 UK</span>
+									<span class="size-item">9.5 UK</span>
+									<span class="size-item">10 UK</span>
+									<span class="size-item">10.5 UK</span>
+									<span class="size-item">11 UK</span>
+									<span class="size-item">11.5 UK</span>
+									<span class="size-item">12 UK</span>
+									<span class="size-item">12.5 UK</span>
+									<span class="size-item">13 UK</span>
+									<span class="size-item">13.5 UK</span>
+									<span class="size-item">14 UK</span>
+								</span>
+							</a>
+							<a href="#" class="item-catalog__title">Premiata</a>
+							<a href="#" class="item-catalog__name"> Кроссовки женские Lucy 4802</a>
+							<div class="price-old">16.999 ₽</div>
+							<div class="price-main">12.999 ₽</div>
+						</div>
+					</div>
+					<div class="col-main">
+						<div class="item-catalog">
+							<a href="#" class="btn-like"></a>
+							<a href="#" class="item-catalog__image">
+								<img src="img/catalog6.jpg" alt="alt">
+								<span class="wrap-sizes">
+									<span class="size-item">XS</span>
+									<span class="size-item">S</span>
+									<span class="size-item">M</span>
+									<span class="size-item">L</span>
+									<span class="size-item">XL</span>
+									<span class="size-item">XXL</span>
+									<span class="size-item">XXXL</span>
+									<span class="size-item">XXXXL</span>
+								</span>
+							</a>
+							<a href="#" class="item-catalog__title">A.P.C.</a>
+							<a href="#" class="item-catalog__name">Джинсы Flet Jacket Overwide</a>
+							<div class="price-main">17.990 ₽</div>
+						</div>
+					</div>
+					<div class="col-main">
+						<div class="item-catalog">
+							<a href="#" class="btn-like"></a>
+							<a href="#" class="item-catalog__image">
+								<img src="img/catalog7.jpg" alt="alt">
+								<span class="wrap-sizes">
+									<span class="size-item">XS</span>
+									<span class="size-item">S</span>
+									<span class="size-item">M</span>
+									<span class="size-item">L</span>
+									<span class="size-item">XL</span>
+									<span class="size-item">XXL</span>
+									<span class="size-item">XXXL</span>
+									<span class="size-item">XXXXL</span>
+								</span>
+							</a>
+							<a href="#" class="item-catalog__title">You Must Create</a>
+							<a href="#" class="item-catalog__name">Брюки Olive Brown Spunch</a>
+							<div class="price-main">37.999 ₽</div>
+						</div>
+					</div>
+					<div class="col-main">
+						<div class="item-catalog">
+							<a href="#" class="btn-like"></a>
+							<a href="#" class="item-catalog__image">
+								<img src="img/catalog8.jpg" alt="alt">
+								<span class="wrap-sizes">
+									<span class="size-item">XS</span>
+									<span class="size-item">S</span>
+									<span class="size-item">M</span>
+									<span class="size-item">L</span>
+									<span class="size-item">XL</span>
+									<span class="size-item">XXL</span>
+									<span class="size-item">XXXL</span>
+									<span class="size-item">XXXXL</span>
+								</span>
+							</a>
+							<a href="#" class="item-catalog__title">C.P. Company</a>
+							<a href="#" class="item-catalog__name">Пуховик Garment Dyed Crinkle</a>
+							<div class="price-old">56.299 ₽</div>
+							<div class="price-main">49.999 ₽</div>
+						</div>
+					</div>
+					<div class="col-main">
+						<div class="item-catalog">
+							<a href="#" class="btn-like"></a>
+							<a href="#" class="item-catalog__image">
+								<img src="img/catalog9.jpg" alt="alt">
+								<span class="wrap-sizes">
+									<span class="size-item">XS</span>
+									<span class="size-item">S</span>
+									<span class="size-item">M</span>
+									<span class="size-item">L</span>
+									<span class="size-item">XL</span>
+									<span class="size-item">XXL</span>
+									<span class="size-item">XXXL</span>
+									<span class="size-item">XXXXL</span>
+								</span>
+							</a>
+							<a href="#" class="item-catalog__title">Stone Island</a>
+							<a href="#" class="item-catalog__name">Пуховик Dyemend Cryspoonw</a>
+							<div class="price-main">19.999 ₽</div>
+						</div>
+					</div>
+					<div class="col-main">
+						<div class="item-catalog">
+							<a href="#" class="btn-like"></a>
+							<a href="#" class="item-catalog__image">
+								<img src="img/catalog10.jpg" alt="alt">
+								<span class="wrap-sizes">
+									<span class="size-item">XS</span>
+									<span class="size-item">S</span>
+									<span class="size-item">M</span>
+									<span class="size-item">L</span>
+									<span class="size-item">XL</span>
+									<span class="size-item">XXL</span>
+									<span class="size-item">XXXL</span>
+									<span class="size-item">XXXXL</span>
+								</span>
+							</a>
+							<a href="#" class="item-catalog__title">Premiata</a>
+							<a href="#" class="item-catalog__name"> Кроссовки женские Lucy 4802</a>
+							<div class="price-old">16.999 ₽</div>
+							<div class="price-main">12.999 ₽</div>
+						</div>
+					</div>
+				</div>
+			</div> 
 		</section>
 
-		<footer class="footer">
-			<a href="#" class="btn_top default"><i class="far fa-arrow-up"></i></a>
+		<section class="catalog-category">
 			<div class="container">
-				<div class="footer__top">
-					<a href="#" class="logo">
-						<img src="img/logo2.svg" alt="alt">
-					</a>
-					<ul class="social-list">
-						<li><a href="#"><img src="img/instagram2.svg" alt="alt"></a></li>
-						<li><a href="#"><img src="img/fb2.svg" alt="alt"></a></li>
-						<li><a href="#"><img src="img/youtube2.svg" alt="alt"></a></li>
-						<li><a href="#"><img src="img/vk2.svg" alt="alt"></a></li>
-					</ul>
-				</div>
-				<div class="row">
-					<div class="col-lg">
-						<div class="footer__title">О компании</div>
-						<div class="footer__content">
-							<ul class="footer__nav">
-								<li><a href="#">История компании</a></li>
-								<li><a href="#">Руководство</a></li>
-								<li><a href="#">Карьера в компании</a></li>
-								<li><a href="#">Документы и реквизиты</a></li>
-							</ul>
-						</div>
-						<br>
-						<br>
-						<div class="footer__title">Услуги</div>
-						<div class="footer__content">
-							<ul class="footer__nav">
-								<li><a href="#">Автокредитование</a></li>
-								<li><a href="#">Автострахование</a></li>
-								<li><a href="#">Лизинг</a></li>
-								<li><a href="#">Обучение и консультирование</a></li>
-								<li><a href="#">Сервисное обслуживание</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-footer">
-						<div class="footer__title">Направления деятельности</div>
-						<div class="footer__content">
-							<ul class="footer__nav">
-								<li><a href="#">Сельхозтехника</a></li>
-								<li><a href="#">Спецтехника</a></li>
-								<li><a href="#">Автобусы</a></li>
-								<li><a href="#">Грузовые автомобили</a></li>
-								<li><a href="#">Легковые автомобили и внедорожники</a></li>
-								<li><a href="#">Автомобили с пробегом</a></li>
-								<li><a href="#">Запасные части</a></li>
-								<li><a href="#">Техника в наличии</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-lg">
-						<div class="footer__title">ООО фирма "Интерпартнер"/</div>
-						<div class="footer__content">
-							<div class="footer__contacts">
-								<p>Россия, УР, 426049, г. <br>Ижевск, ул. Гагарина, 81</p>
-								<div><a href="tel:+73412637800">+7 (3412) 63-78-00 </a></div>
-								<div><a href="tel:+73412630036">+7 (3412) 63-00-36</a> <span>Сервис</span></div>
-								<br>
-								<p>Запчасти</p>
-								<div><a href="tel:+73412630007">+7 (3412) 63-00-07</a> <span>Спецтехника</span></div>
-								<div><a href="tel:+73412630003">+7 (3412) 63-00-03</a> <span>Сельхозтехника</span></div>
+				<div class="row row_category">
+					<div class="col-lg-6">
+						<a href="#" class="item-catalog-big">
+							<span class="item-catalog-big__image">
+								<picture>
+									<source srcset="img/catalog_big1_mob.jpg" media="(max-width: 380px)">
+										<source srcset="img/catalog_big1_laptop.jpg" media="(max-width: 992px)">
+											<img src="img/catalog_big1.jpg" alt="alt">
+										</picture>
+										<span class="item-catalog-big__content">
+											<span class="item-catalog-big__name">HOWLIN`</span><br>
+											<span class="item-catalog-big__descr">winter 21/22</span>
+										</span>
+									</span>
+									<span class="item-catalog-big__title">СВИТЕРА ИЗ ШОТЛАНДИИ</span>
+								</a>
+							</div>
+							<div class="col-lg-6">
+								<div class="row row_category row_slider">
+									<div class="col-lg-6 col-md-4 col-6">
+										<div class="item-catalog">
+											<a href="#" class="btn-like"></a>
+											<a href="#" class="item-catalog__image">
+												<img src="img/catalog2_1.jpg" alt="alt">
+												<span class="wrap-sizes">
+													<span class="size-item">XS</span>
+													<span class="size-item">S</span>
+													<span class="size-item">M</span>
+													<span class="size-item">L</span>
+													<span class="size-item">XL</span>
+													<span class="size-item">XXL</span>
+													<span class="size-item">XXXL</span>
+													<span class="size-item">XXXXL</span>
+												</span>
+											</a>
+											<a href="#" class="item-catalog__title">Howlin`</a>
+											<a href="#" class="item-catalog__name">Свитер Sylvester Black Robo</a>
+											<div class="price-main">12.999 ₽</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-4 col-6">
+										<div class="item-catalog">
+											<a href="#" class="btn-like"></a>
+											<a href="#" class="item-catalog__image">
+												<img src="img/catalog2_2.jpg" alt="alt">
+												<span class="wrap-sizes">
+													<span class="size-item">XS</span>
+													<span class="size-item">S</span>
+													<span class="size-item">M</span>
+													<span class="size-item">L</span>
+													<span class="size-item">XL</span>
+													<span class="size-item">XXL</span>
+													<span class="size-item">XXXL</span>
+													<span class="size-item">XXXXL</span>
+												</span>
+											</a>
+											<a href="#" class="item-catalog__title">Howlin`</a>
+											<a href="#" class="item-catalog__name">Свитер Clatch in Load</a>
+											<div class="price-main">18.999 ₽</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-4 col-6">
+										<div class="item-catalog">
+											<a href="#" class="btn-like"></a>
+											<a href="#" class="item-catalog__image">
+												<img src="img/catalog2_3.jpg" alt="alt">
+												<span class="wrap-sizes">
+													<span class="size-item">XS</span>
+													<span class="size-item">S</span>
+													<span class="size-item">M</span>
+													<span class="size-item">L</span>
+													<span class="size-item">XL</span>
+													<span class="size-item">XXL</span>
+													<span class="size-item">XXXL</span>
+													<span class="size-item">XXXXL</span>
+												</span>
+											</a>
+											<a href="#" class="item-catalog__title">Howlin`</a>
+											<a href="#" class="item-catalog__name">Свитер Pumpkin Pie</a>
+											<div class="price-main">29.999 ₽</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-4 col-6">
+										<div class="item-catalog">
+											<a href="#" class="btn-like"></a>
+											<a href="#" class="item-catalog__image">
+												<img src="img/catalog2_4.jpg" alt="alt">
+												<span class="wrap-sizes">
+													<span class="size-item">XS</span>
+													<span class="size-item">S</span>
+													<span class="size-item">M</span>
+													<span class="size-item">L</span>
+													<span class="size-item">XL</span>
+													<span class="size-item">XXL</span>
+													<span class="size-item">XXXL</span>
+													<span class="size-item">XXXXL</span>
+												</span>
+											</a>
+											<a href="#" class="item-catalog__title">Howlin`</a>
+											<a href="#" class="item-catalog__name">Свитер Polijecia Jamaca</a>
+											<div class="price-main">16.999 ₽</div>
+										</div>
+									</div>
+								</div>
+								<div class="bottom-link">
+									<a href="#" class="link-page">Ещё</a>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg">
-						<div class="footer__title">Автосалоны Ssang Yong, UAZ, FIAT Professional</div>
-						<div class="footer__content">
-							<div class="footer__contacts">
-								<p>Россия, УР, г. Ижевск, ул. Промышленная, 2</p>
-								<div><a href="tel:3412658283">(3412) 65-82-83</a></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="footer__bottom">
-					<p>©2013–2021. Все права защищены. <br>Данный сайт носит информационно-справочный характер и ни при каких условиях не является публичной офертой.</p>
-					<a href="#">Правовая информация</a>
-					<a href="#">Пользовательское соглашение</a>
-				</div>
-			</div>
-		</footer>
+				</section>
 
-	</div>
+				<section class="catalog-category catalog-category_reverse">
+					<div class="container">
+						<div class="row row_category">
+							<div class="col-lg-6">
+								<a href="#" class="item-catalog-big item-catalog-big_second">
+									<span class="item-catalog-big__image">
+										<picture>
+											<source srcset="img/catalog_big2_mob.jpg" media="(max-width: 380px)">
+												<source srcset="img/catalog_big2_laptop.jpg" media="(max-width: 992px)">
+													<img src="img/catalog_big2.jpg" alt="alt">
+												</picture>
+												<span class="item-catalog-big__content">
+													<span class="item-catalog-big__name">NIKE </span><br>
+													<span class="item-catalog-big__descr">new <br>collection</span>
+												</span>
+											</span>
+											<span class="item-catalog-big__title">NIKE AIR MAX 96 II</span>
+										</a>
+									</div>
+									<div class="col-lg-6">
+										<div class="row row_category row_slider">
+											<div class="col-lg-6 col-md-4 col-6">
+												<div class="item-catalog">
+													<a href="#" class="btn-like"></a>
+													<a href="#" class="item-catalog__image">
+														<img src="img/catalog3_1.jpg" alt="alt">
+														<span class="wrap-sizes">
+															<span class="size-item">XS</span>
+															<span class="size-item">S</span>
+															<span class="size-item">M</span>
+															<span class="size-item">L</span>
+															<span class="size-item">XL</span>
+															<span class="size-item">XXL</span>
+															<span class="size-item">XXXL</span>
+															<span class="size-item">XXXXL</span>
+														</span>
+													</a>
+													<a href="#" class="item-catalog__title">Nike</a>
+													<a href="#" class="item-catalog__name">Кроссовки Air Max 96 II</a>
+													<div class="price-main">12.999 ₽</div>
+												</div>
+											</div>
+											<div class="col-lg-6 col-md-4 col-6">
+												<div class="item-catalog">
+													<a href="#" class="btn-like"></a>
+													<a href="#" class="item-catalog__image">
+														<img src="img/catalog3_2.jpg" alt="alt">
+														<span class="wrap-sizes">
+															<span class="size-item">XS</span>
+															<span class="size-item">S</span>
+															<span class="size-item">M</span>
+															<span class="size-item">L</span>
+															<span class="size-item">XL</span>
+															<span class="size-item">XXL</span>
+															<span class="size-item">XXXL</span>
+															<span class="size-item">XXXXL</span>
+														</span>
+													</a>
+													<a href="#" class="item-catalog__title">Nike</a>
+													<a href="#" class="item-catalog__name">Кроссовки Air Max 96 II</a>
+													<div class="price-main">18.999 ₽</div>
+												</div>
+											</div>
+											<div class="col-lg-6 col-md-4 col-6">
+												<div class="item-catalog">
+													<a href="#" class="btn-like"></a>
+													<a href="#" class="item-catalog__image">
+														<img src="img/catalog3_3.jpg" alt="alt">
+														<span class="wrap-sizes">
+															<span class="size-item">XS</span>
+															<span class="size-item">S</span>
+															<span class="size-item">M</span>
+															<span class="size-item">L</span>
+															<span class="size-item">XL</span>
+															<span class="size-item">XXL</span>
+															<span class="size-item">XXXL</span>
+															<span class="size-item">XXXXL</span>
+														</span>
+													</a>
+													<a href="#" class="item-catalog__title">Nike</a>
+													<a href="#" class="item-catalog__name">Кроссовки Air Max 96 II</a>
+													<div class="price-main">29.999 ₽</div>
+												</div>
+											</div>
+											<div class="col-lg-6 col-md-4 col-6">
+												<div class="item-catalog">
+													<a href="#" class="btn-like"></a>
+													<a href="#" class="item-catalog__image">
+														<img src="img/catalog3_4.jpg" alt="alt">
+														<span class="wrap-sizes">
+															<span class="size-item">XS</span>
+															<span class="size-item">S</span>
+															<span class="size-item">M</span>
+															<span class="size-item">L</span>
+															<span class="size-item">XL</span>
+															<span class="size-item">XXL</span>
+															<span class="size-item">XXXL</span>
+															<span class="size-item">XXXXL</span>
+														</span>
+													</a>
+													<a href="#" class="item-catalog__title">Nike</a>
+													<a href="#" class="item-catalog__name">Кроссовки Air Max 96 II</a>
+													<div class="price-main">16.999 ₽</div>
+												</div>
+											</div>
+										</div>
+										<div class="bottom-link">
+											<a href="#" class="link-page">Ещё</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="article-page">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-7">
+										<div class="article-page__image">
+											<img src="img/article1.jpg" alt="alt">
+										</div>
+									</div>
+									<div class="col-md-5">
+										<h2 class="title-page">STONE ISLAND</h2>
+										<h3 class="title-middle">MODIFIED PANAMA 6/3 HT NYLON</h3>
+										<div class="text-page">
+											<p>Бушлат из плотной ткани переплетения Panama 6/3. Ткань выполнена из высокопрочной кручёной нейлоновой пряжи. <br>Смоляная пропитка придаёт материалу влагозащитные свойства средней степени. Окрашено в готовом виде: отделочные детали из кожи специально обработаны, чтобы избежать повреждений при окраске. <br>Изделие оснащено съёмной пуховой подстёжкой с передней частью из овчины, что превращает демисезонное пальто в зимнюю куртку.</p>
+										</div>
+										<div class="bottom-link">
+											<a href="#" class="link-page">Читать далее</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="news-page">
+							<div class="container">
+								<div class="row row_news">
+									<div class="col-lg-4 col-md-6">
+										<div class="item-news">
+											<a href="#" class="item-news__image">
+												<img src="img/news1.jpg" alt="alt">
+											</a>
+											<a href="#" class="item-news__title">NANAMICA</a>
+											<p>Делаете все на лету? С вещами Nanamica у вас будет полный контроль в воздушном пространстве, ведь технология Gore-Tex обеспечивает надежную защиту от непредвиденной погоды  и турбулентности.</p>
+											<div class="item-news__bottom">
+												<a href="#" class="link-page">Узнать больше</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6">
+										<div class="item-news">
+											<a href="#" class="item-news__image">
+												<img src="img/news2.jpg" alt="alt">
+											</a>
+											<a href="#" class="item-news__title">stone island</a>
+											<p>Новое поступление Весенне-Летней коллекции одежды знаменитного бренда Stone Island. Представляем вашиму вниманию нашу подборку вещей.</p>
+											<div class="item-news__bottom">
+												<a href="#" class="link-page">За покупками</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6">
+										<div class="item-news">
+											<a href="#" class="item-news__image">
+												<img src="img/news3.jpg" alt="alt">
+											</a>
+											<a href="#" class="item-news__title">YEezy 500 Black shock</a>
+											<p>Новинки этой недели представленные в нашем онлайн магазине. Вы влюбитесь с первого взгляда в женские модели. А мужские полуспортивыне кроссовки уйдут из нашего магазина вместе с вами. </p>
+											<div class="item-news__bottom">
+												<a href="#" class="link-page">Смотреть коллецию</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="catalog-category">
+							<div class="container">
+								<div class="row row_category">
+									<div class="col-lg-6">
+										<a href="#" class="item-catalog-big item-catalog-big_third">
+											<span class="item-catalog-big__image">
+												<picture>
+													<source srcset="img/catalog_big3_mob.jpg" media="(max-width: 380px)">
+														<source srcset="img/catalog_big3_laptop.jpg" media="(max-width: 992px)">
+															<img src="img/catalog_big3.jpg" alt="alt">
+														</picture>
+														<span class="item-catalog-big__content">
+															<img src="img/logo_footbox.svg" alt="alt">
+														</span>
+													</span>
+													<span class="item-catalog-big__title">НОВИНКИ В FOOTBOX</span>
+												</a>
+											</div>
+											<div class="col-lg-6">
+												<div class="row row_category row_slider">
+													<div class="col-lg-6 col-md-4 col-6">
+														<div class="item-catalog">
+															<a href="#" class="btn-like"></a>
+															<a href="#" class="item-catalog__image">
+																<img src="img/catalog5_1.jpg" alt="alt">
+																<span class="wrap-sizes">
+																	<span class="size-item">XS</span>
+																	<span class="size-item">S</span>
+																	<span class="size-item">M</span>
+																	<span class="size-item">L</span>
+																	<span class="size-item">XL</span>
+																	<span class="size-item">XXL</span>
+																	<span class="size-item">XXXL</span>
+																	<span class="size-item">XXXXL</span>
+																</span>
+															</a>
+															<a href="#" class="item-catalog__title">Nike</a>
+															<a href="#" class="item-catalog__name">Кроссовки Air Max 96 II</a>
+															<div class="price-main">12.999 ₽</div>
+														</div>
+													</div>
+													<div class="col-lg-6 col-md-4 col-6">
+														<div class="item-catalog">
+															<a href="#" class="btn-like"></a>
+															<a href="#" class="item-catalog__image">
+																<img src="img/catalog5_2.jpg" alt="alt">
+																<span class="wrap-sizes">
+																	<span class="size-item">XS</span>
+																	<span class="size-item">S</span>
+																	<span class="size-item">M</span>
+																	<span class="size-item">L</span>
+																	<span class="size-item">XL</span>
+																	<span class="size-item">XXL</span>
+																	<span class="size-item">XXXL</span>
+																	<span class="size-item">XXXXL</span>
+																</span>
+															</a>
+															<a href="#" class="item-catalog__title">Nike</a>
+															<a href="#" class="item-catalog__name">Кроссовки Air Max 96 II</a>
+															<div class="price-main">18.999 ₽</div>
+														</div>
+													</div>
+													<div class="col-lg-6 col-md-4 col-6">
+														<div class="item-catalog">
+															<a href="#" class="btn-like"></a>
+															<a href="#" class="item-catalog__image">
+																<img src="img/catalog5_3.jpg" alt="alt">
+																<span class="wrap-sizes">
+																	<span class="size-item">XS</span>
+																	<span class="size-item">S</span>
+																	<span class="size-item">M</span>
+																	<span class="size-item">L</span>
+																	<span class="size-item">XL</span>
+																	<span class="size-item">XXL</span>
+																	<span class="size-item">XXXL</span>
+																	<span class="size-item">XXXXL</span>
+																</span>
+															</a>
+															<a href="#" class="item-catalog__title">Nike</a>
+															<a href="#" class="item-catalog__name">Кроссовки Air Max 96 II</a>
+															<div class="price-main">29.999 ₽</div>
+														</div>
+													</div>
+													<div class="col-lg-6 col-md-4 col-6">
+														<div class="item-catalog">
+															<a href="#" class="btn-like"></a>
+															<a href="#" class="item-catalog__image">
+																<img src="img/catalog5_4.jpg" alt="alt">
+																<span class="wrap-sizes">
+																	<span class="size-item">XS</span>
+																	<span class="size-item">S</span>
+																	<span class="size-item">M</span>
+																	<span class="size-item">L</span>
+																	<span class="size-item">XL</span>
+																	<span class="size-item">XXL</span>
+																	<span class="size-item">XXXL</span>
+																	<span class="size-item">XXXXL</span>
+																</span>
+															</a>
+															<a href="#" class="item-catalog__title">Nike</a>
+															<a href="#" class="item-catalog__name">Кроссовки Air Max 96 II</a>
+															<div class="price-main">16.999 ₽</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom-link">
+													<a href="#" class="link-page">Ещё</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+
+								<section class="catalog-page">
+									<div class="container">
+										<div class="head-section">
+											<h2 class="title-section">ВЫ ПРОСМАТРИВАЛИ</h2>
+											<a href="#" class="link-page">ПОСМОТРЕТЬ</a>
+										</div>
+										<div class="row row_catalog row_slider row_catalog row_slider_min">
+											<div class="col-main">
+												<div class="item-catalog">
+													<a href="#" class="btn-like"></a>
+													<a href="#" class="item-catalog__image">
+														<img src="img/catalog6.jpg" alt="alt">
+														<span class="wrap-sizes">
+															<span class="size-item">XS</span>
+															<span class="size-item">S</span>
+															<span class="size-item">M</span>
+															<span class="size-item">L</span>
+															<span class="size-item">XL</span>
+															<span class="size-item">XXL</span>
+															<span class="size-item">XXXL</span>
+															<span class="size-item">XXXXL</span>
+														</span>
+													</a>
+													<a href="#" class="item-catalog__title">A.P.C.</a>
+													<a href="#" class="item-catalog__name">Джинсы Flet Jacket Overwide</a>
+													<div class="price-main">17.990 ₽</div>
+												</div>
+											</div>
+											<div class="col-main">
+												<div class="item-catalog">
+													<a href="#" class="btn-like"></a>
+													<a href="#" class="item-catalog__image">
+														<img src="img/catalog7.jpg" alt="alt">
+														<span class="wrap-sizes">
+															<span class="size-item">XS</span>
+															<span class="size-item">S</span>
+															<span class="size-item">M</span>
+															<span class="size-item">L</span>
+															<span class="size-item">XL</span>
+															<span class="size-item">XXL</span>
+															<span class="size-item">XXXL</span>
+															<span class="size-item">XXXXL</span>
+														</span>
+													</a>
+													<a href="#" class="item-catalog__title">You Must Create</a>
+													<a href="#" class="item-catalog__name">Брюки Olive Brown Spunch</a>
+													<div class="price-main">37.999 ₽</div>
+												</div>
+											</div>
+											<div class="col-main">
+												<div class="item-catalog">
+													<a href="#" class="btn-like"></a>
+													<a href="#" class="item-catalog__image">
+														<img src="img/catalog8.jpg" alt="alt">
+														<span class="wrap-sizes">
+															<span class="size-item">XS</span>
+															<span class="size-item">S</span>
+															<span class="size-item">M</span>
+															<span class="size-item">L</span>
+															<span class="size-item">XL</span>
+															<span class="size-item">XXL</span>
+															<span class="size-item">XXXL</span>
+															<span class="size-item">XXXXL</span>
+														</span>
+													</a>
+													<a href="#" class="item-catalog__title">C.P. Company</a>
+													<a href="#" class="item-catalog__name">Пуховик Garment Dyed Crinkle</a>
+													<div class="price-old">56.299 ₽</div>
+													<div class="price-main">49.999 ₽</div>
+												</div>
+											</div>
+											<div class="col-main">
+												<div class="item-catalog">
+													<a href="#" class="btn-like"></a>
+													<a href="#" class="item-catalog__image">
+														<img src="img/catalog9.jpg" alt="alt">
+														<span class="wrap-sizes">
+															<span class="size-item">XS</span>
+															<span class="size-item">S</span>
+															<span class="size-item">M</span>
+															<span class="size-item">L</span>
+															<span class="size-item">XL</span>
+															<span class="size-item">XXL</span>
+															<span class="size-item">XXXL</span>
+															<span class="size-item">XXXXL</span>
+														</span>
+													</a>
+													<a href="#" class="item-catalog__title">Stone Island</a>
+													<a href="#" class="item-catalog__name">Пуховик Dyemend Cryspoonw</a>
+													<div class="price-main">19.999 ₽</div>
+												</div>
+											</div>
+											<div class="col-main">
+												<div class="item-catalog">
+													<a href="#" class="btn-like"></a>
+													<a href="#" class="item-catalog__image">
+														<img src="img/catalog10.jpg" alt="alt">
+														<span class="wrap-sizes">
+															<span class="size-item">XS</span>
+															<span class="size-item">S</span>
+															<span class="size-item">M</span>
+															<span class="size-item">L</span>
+															<span class="size-item">XL</span>
+															<span class="size-item">XXL</span>
+															<span class="size-item">XXXL</span>
+															<span class="size-item">XXXXL</span>
+														</span>
+													</a>
+													<a href="#" class="item-catalog__title">Premiata</a>
+													<a href="#" class="item-catalog__name"> Кроссовки женские Lucy 4802</a>
+													<div class="price-old">16.999 ₽</div>
+													<div class="price-main">12.999 ₽</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+
+								<footer class="footer">
+									<div class="container">
+										<div class="footer__top">
+											<div class="row">
+												<div class="col-xl-7">
+													<div class="row">
+														<div class="col-md-4">
+															<div class="footer__contacts">
+																<div>
+																	<p>г.Санкт-Петербург</p>
+																	<p>Большой проспект П.С., 48</p>
+																</div>
+																<div>
+																	<p><a href="tel:+78124495171">+7 812 449-51-71</a></p>
+																	<p><a href="mailto:shop@mintstore.ru">shop@mintstore.ru</a></p>
+																</div>
+															</div>
+														</div>
+														<div class="col-md-8 od_mob">
+															<ul class="footer__nav">
+																<li class="footer__nav_big"><a href="#">магазин</a></li>
+																<li class="footer__nav_big"><a href="#">онлайн-магазин</a></li>
+																<li><a href="#">о нас </a></li>
+																<li><a href="#">доставка</a></li>
+																<li><a href="#">программа лояльности</a></li>
+																<li><a href="#">Оплата</a></li>
+																<li><a href="#">Блог</a></li>
+																<li><a href="#">Обмен и возврат</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="col-xl-5">
+													<ul class="list-social hidden-desc">
+														<li><a href="#"><img src="img/insta.svg" alt="alt"></a></li>
+														<li><a href="#"><img src="img/vk.svg" alt="alt"></a></li>
+														<li><a href="#"><img src="img/fb.svg" alt="alt"></a></li>
+													</ul>
+													<div class="title-min">Подпишитесь на рассылку наших новостей и акций</div>
+													<form>
+														<div class="row">
+															<div class="col-6">
+																<div class="item-form">
+																	<input type="email" placeholder="введите ваш email ..." required="required">
+																</div>
+															</div>
+															<div class="col-6">
+																<button class="btn-main">ПОДПИСАТЬСЯ</button>
+															</div>
+														</div>
+													</form>
+													<ul class="list-social hidden-mob">
+														<li><a href="#"><img src="img/insta.svg" alt="alt"></a></li>
+														<li><a href="#"><img src="img/vk.svg" alt="alt"></a></li>
+														<li><a href="#"><img src="img/fb.svg" alt="alt"></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="footer__bottom">
+											<div class="row">
+												<div class="col-lg-2">
+													<div class="copyright">© MINTSTORE, 2021</div>
+												</div>
+												<div class="col-lg-3">
+													<div class="footer__name">ИП Волох Анна Валерьевна</div>
+												</div>
+												<div class="col show-mob">
+													<ul class="list-payments">
+														<li><img src="img/ic_payment1.png" alt="alt"></li>
+														<li><img src="img/ic_payment2.png" alt="alt"></li>
+													</ul>
+												</div>
+												<div class="col-lg-4">
+													<div class="center__footer">
+														<ul class="list-payments">
+															<li><img src="img/ic_payment1.png" alt="alt"></li>
+															<li><img src="img/ic_payment2.png" alt="alt"></li>
+														</ul>
+														<a href="#">пользовательское соглашение</a>
+													</div>
+												</div>
+												<div class="col-lg-3">
+													<div class="footer__right"><a href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</footer>
+
+							</div>
 
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
@@ -497,11 +992,14 @@
 <script src="libs/jquery/jquery-1.11.1.min.js"></script>
 <script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
 <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+<script src="libs/countdown/jquery.plugin.js"></script>
+<script src="libs/countdown/jquery.countdown.min.js"></script>
+<script src="libs/countdown/jquery.countdown-ru.js"></script>
 <script src="libs/slick-1.5.9/slick/slick.min.js"></script>
 <script src="libs/scroll2id/PageScroll2id.min.js"></script>
 <script src="libs/mask/jquery.maskedinput.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.4"></script>
+<script src="js/common.js?ver=1.7"></script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
