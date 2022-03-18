@@ -1208,6 +1208,9 @@
 .text-middle_desctop {
 	display: none;
 }
+.row_big > div.col_mobile {
+	padding: 0 25px;
+}
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 640px) {
