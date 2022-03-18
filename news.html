@@ -16,332 +16,306 @@
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
 	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.4" />
-	<link rel="stylesheet" href="css/media.css?ver=1.4" />
+	<link rel="stylesheet" href="css/main.css?ver=1.9" />
+	<link rel="stylesheet" href="css/media.css?ver=1.9" />
 </head>
 <body>
 
-	<div class="wrapper"> 
+	<div class="wrapper">
 
-		<header class="header header_page">
-			<div class="container-fluid">
+		<header class="header default">
+			<div class="header__top">
+				<span>Бесплатная доставка при заказе на сумму от 3000 рублей</span>
+			</div>
+			<div class="container">
 				<div class="header__wrap">
-					<a href="#" class="logo">
+					<a href="#" class="logo"> 
 						<img src="img/logo.svg" alt="alt">
 					</a>
 					<ul class="menu">
-						<li><a href="#">О компании</a></li>
-						<li><a href="#">Карьера в компании</a></li>
-						<li><a href="#">Направление деятельности</a></li>
-						<li><a href="#">Услуги</a></li>
-						<li><a href="#">Пресс-центр</a></li>
-						<li><a href="#">Контакты</a></li>
+						<li><a href="#">скидки</a></li>
+						<li><a href="#">одежда</a></li>
+						<li><a href="#">обувь</a></li>
+						<li><a href="#">аксессуары</a></li>
+						<li><a href="#">бренды</a></li>
+						<li class="menu__special"><a href="#">новинки</a></li>
 					</ul>
-					<a href="tel:+73412637800" class="phone-main">+7 (3412) 63-78-00</a>
-					<ul class="social-list">
-						<li><a href="#"><img src="img/instagram.svg" alt="alt"></a></li>
-						<li><a href="#"><img src="img/fb.svg" alt="alt"></a></li>
-						<li><a href="#"><img src="img/youtube.svg" alt="alt"></a></li>
-						<li><a href="#"><img src="img/vk.svg" alt="alt"></a></li>
-					</ul>
-					<a href="#" class="btn-search"><img src="img/search.svg" alt="alt"></a>
+					<div class="form-search">
+						<form>
+							<input type="text" placeholder="Поиск">
+							<div class="search-btn"><i class="far fa-search"></i></div>
+						</form>
+					</div>
+					<a href="#" class="btn-header btn-header_like"><img src="img/ic_like.svg" alt="alt">3</a>
+					<a href="#" class="btn-header"><img src="img/ic_bag.svg" alt="alt">12</a>
+					<a href="#" class="btn-header btn-header_user"><img src="img/ic_user.svg" alt="alt"> Виктор</a>
+					<span class="btn_nav">
+						<span class="sandwich">
+							<span class="sw-topper"></span>
+							<span class="sw-bottom"></span>
+						</span>
+					</span>
 				</div>
+			</div>
+			<div class="menu-mobile">
+				<ul class="menu">
+					<li><a href="#">скидки</a></li>
+					<li><a href="#">одежда</a></li>
+					<li><a href="#">обувь</a></li>
+					<li><a href="#">аксессуары</a></li>
+					<li><a href="#">бренды</a></li>
+					<li class="menu__special"><a href="#">новинки</a></li>
+				</ul>
 			</div>
 		</header>
 
-		<section class="news-page">
-			<div class="container">
-				<ul class="breadcrumbs breadcrumbs_main">
-					<li><a href="#">Главная</a></li>
-					<li><a href="#">О компании</a></li>
-					<li>Новости</li>
-				</ul>
-				<h1 class="title-main">Новости</h1>
-				<div class="row row_news">
-					<div class="col-lg-4 col-md-6">
-						<a href="#" class="item-news">
-							<span class="item-news__image">
-								<img src="img/news_page1.jpg" alt="alt">
-							</span>
-							<span class="date-main">15 мая 2020</span>
-							<span class="title-small">Ростсельмаш премирует лучших операторов своей техники легковыми автомобилями</span>
-							<span class="text-main">Ростсельмаш объявляет о старте программы «Ставим рекорды вместе»</span>
-						</a>
+		<section class="news">
+			<div class="breadcrumbs-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-9 offset-lg-3">
+							<ul class="breadcrumb">
+								<li><a href="#">главная</a></li>
+								<li><span>БЛОГ</span></li>
+							</ul>
+						</div>
 					</div>
-					<div class="col-lg-4 col-md-6">
-						<a href="#" class="item-news">
-							<span class="item-news__image">
-								<img src="img/news_page2.jpg" alt="alt">
-							</span>
-							<span class="date-main">02 июня 2020</span>
-							<span class="title-small">Автогудронатор ДС-142Б на шасси КАМАЗ 65115</span>
-							<span class="text-main">Крупнейшее предприятие дорожной отрасли Удмуртской Республики приобрело </span>
-						</a>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<a href="#" class="item-news">
-							<span class="item-news__image">
-								<img src="img/news_page3.jpg" alt="alt">
-							</span>
-							<span class="date-main">22 июня 2020</span>
-							<span class="title-small">Реанимобили на базе УАЗ ПРОФИ для медучреждений Удмуртской Республики.</span>
-							<span class="text-main">В дилерском центе УАЗ-Интерпартнер прошла отгрузка первой партии </span>
-						</a>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<a href="#" class="item-news">
-							<span class="item-news__image">
-								<img src="img/news_page4.jpg" alt="alt">
-							</span>
-							<span class="date-main">15 мая 2020</span>
-							<span class="title-small">Аграрии Удмуртии оценили почвообрабатывающую технику Ростсельмаш</span>
-							<span class="text-main">Ростсельмаш объявляет о старте программы «Ставим рекорды вместе»</span>
-						</a>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<a href="#" class="item-news">
-							<span class="item-news__image">
-								<img src="img/news_page5.jpg" alt="alt">
-							</span>
-							<span class="date-main">02 июня 2020</span>
-							<span class="title-small">Старт продаж УАЗ ПИКАП с АКПП</span>
-							<span class="text-main">Новая модификация УАЗ Пикап, созданная по многочисленным пожеланиям</span>
-						</a>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<a href="#" class="item-news">
-							<span class="item-news__image">
-								<img src="img/news_page6.jpg" alt="alt">
-							</span>
-							<span class="date-main">22 июня 2020</span>
-							<span class="title-small">Открытие автосалона CHERY</span>
-							<span class="text-main">Спешим сообщить об открытие автосалона CHERY – официального дилера</span>
-						</a>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<a href="#" class="item-news">
-							<span class="item-news__image">
-								<img src="img/news_page7.jpg" alt="alt">
-							</span>
-							<span class="date-main">15 мая 2020</span>
-							<span class="title-small">Старт продаж CHERY TIGGO 8 PRO</span>
-							<span class="text-main">Новый представитель городской среды в самом роскошном исполнении будет </span>
-						</a>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<a href="#" class="item-news">
-							<span class="item-news__image">
-								<img src="img/news_page8.jpg" alt="alt">
-							</span>
-							<span class="date-main">02 июня 2020</span>
-							<span class="title-small">Компания «Коммерческий транспорт Удмуртии»</span>
-							<span class="text-main">Крупнейшее предприятие дорожной отрасли Удмуртской Республики приобрело </span>
-						</a>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<a href="#" class="item-news">
-							<span class="item-news__image">
-								<img src="img/news_page9.jpg" alt="alt">
-							</span>
-							<span class="date-main">22 июня 2020</span>
-							<span class="title-small">Компания «Интерпартнер» осуществила поставку 17 школьных автобусов </span>
-							<span class="text-main">В дилерском центе УАЗ-Интерпартнер прошла отгрузка первой партии </span>
-						</a>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<a href="#" class="item-news">
-							<span class="item-news__image">
-								<img src="img/news_page10.jpg" alt="alt">
-							</span>
-							<span class="date-main">15 мая 2020</span>
-							<span class="title-small">На базе фирмы «Интерпартнер» состоялся демонстрационный показ автобуса </span>
-							<span class="text-main">Представители крупнейшего пассажироперевозчика Удмуртии </span>
-						</a>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<a href="#" class="item-news">
-							<span class="item-news__image">
-								<img src="img/news_page11.jpg" alt="alt">
-							</span>
-							<span class="date-main">02 июня 2020</span>
-							<span class="title-small">Скидка 10% по госпрограмме для всех!</span>
-							<span class="text-main">Дилерский центр «УАЗ-Интерпартер» с радостью сообщает</span>
-						</a>
-					</div>
-					<div class="col-lg-4 col-md-6">
-						<a href="#" class="item-news">
-							<span class="item-news__image">
-								<img src="img/news_page12.jpg" alt="alt">
-							</span>
-							<span class="date-main">22 июня 2020</span>
-							<span class="title-small">Выгода до 150 000 рублей на автомобили Fiat</span>
-							<span class="text-main">Официальный дилер Fiat в Ижевске ООО фирма «Интерпартнер» запускает </span>
-						</a>
-					</div>
-				</div>
-				<div class="more-button">
-					<a href="#" class="btn-page">Показать еще больше <i class="far fa-arrow-down"></i></a>
 				</div>
 			</div>
-		</section>
-
-		<section class="section-form">
 			<div class="container">
-				<div class="form-block">
-					<div class="title-content">Получить консультацию</div>
-					<form>
+				<h1 class="title-section title-section_desctop">STONE ISLAND ВЕСНА-ЛЕТО 21\22  GHOST PIECES</h1>
+			</div>
+			<a href="#" class="news-billbord">
+				<img src="img/big_blog1.jpg" alt="alt">
+			</a>
+			<div class="container">
+				<h1 class="title-section title-section_mobile">STONE ISLAND ВЕСНА-ЛЕТО 21\22  GHOST PIECES</h1>
+				<div class="text-middle">
+					<p>Одежда из линии Ghost, отсылающая к концепции камуфляжа, характеризуется однотонной расцветкой. Даже лейбл Stone Island, изготавливаемый специальным образом, полностью сливается с оттенком изделия. Теплые и органические – традиционные армейские детали и эстетика. Верхняя одежда выполнена из легкой ткани на основе Supima® – сертифицированной марки хлопка. Хлопок Pima характеризуется ультрадлинными, прочными и одновременно тонкими волокнами.</p>
+				</div>
+				<div class="bottom-link">
+					<a href="#" class="link-page">Читать далее</a>
+				</div>
+			</div>
+			<div class="blog-wrap">
+				<div class="item-blog">
+					<div class="container">
 						<div class="row">
-							<div class="col-lg-4 col-md-6">
-								<div class="item-form">
-									<input type="text" placeholder="Ваше имя" required="required">
-									<div class="descr-input">обязательно к заполнению</div>
+							<div class="col-md-6 item-blog__left">
+								<h2 class="title-section">NIKE ACG следует своей технологиИ Klimacool</h2>
+								<div class="item-blog__text">
+									<p>Свою историю линейка ACG берет с 1989-го года, когда подразделение Nike Hiking переформировалось из направления, которое занимается одеждой для покорения гор, в большой раздел бренда, созданный для создания одежды для абсолютно всех аутдор активностей. Все, что вы видите сейчас в линейке ACG, — это разработки на абсолютно все погодные сезоны. Именно такой посыл и вытеснил горную тематику в пользу полноценного аутдора.</p>
+									<p>Мы решили сделать для вас фотосет, в котором хотим показать ACG эстетику в природной среде, для которой она и была создана. Все фотографии сделаны на пленочный фотоаппарат, чтобы передать атмосферу того времени, когда была придумана линейка ACG. Главные герои — Димон и его песик Марли.</p>
+								</div>
+								<div class="bottom-link">
+									<a href="#" class="link-page">Читать</a>
 								</div>
 							</div>
-							<div class="col-lg-4 col-md-6">
-								<div class="item-form">
-									<input type="text" placeholder="Номер телефона" class="input-phone" required="required">
-									<div class="descr-input">обязательно к заполнению</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-6">
-								<div class="item-form">
-									<input type="email" placeholder="Ваш email" required="required">
-									<div class="descr-input">обязательно к заполнению</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-6">
-								<div class="item-form">
-									<select>
-										<option value="1">автострахование</option>
-										<option value="1">автострахование</option>
-										<option value="1">автострахование</option>
-										<option value="1">автострахование</option>
-									</select>
-								</div>
-							</div>
-							<div class="col-lg-12">
-								<div class="item-form">
-									<textarea placeholder="Сообщение"></textarea>
-									<div class="descr-input">обязательно к заполнению</div>
-								</div>
+							<div class="col-md-6">
+								<a href="#" class="item-blog__image">
+									<img src="img/blog1.jpg" alt="alt">
+								</a>
 							</div>
 						</div>
-						<div class="row align-items-end">
-							<div class="col-lg-6">
-								<div class="capcha-block">
-									<div class="capcha-block__title">Введите код с картинки</div>
-									<div class="capcha__wrap">
-										<div class="capcha-value">
-											<div class="capcha__text">89A28</div>
-											<div class="capcha__reload">
-												<img src="img/reload.svg" alt="alt">
-											</div>
-										</div>
-										<input type="text" class="input-capcha" value="89A28">
-									</div>
+					</div>
+				</div>
+				<div class="item-blog">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 item-blog__left">
+								<h2 class="title-section">MASTER PIECE  летняя коллекция 2022</h2>
+								<div class="item-blog__text">
+									<p>Японская компания, снискавшая популярность во всем мире, считается одним из лидеров в производстве сумок и рюкзаков. История бренда Master-Piece берет свое начало в 1994 году, когда Таичи Фужимацу основал фабрику, придерживаясь правил высокого качества и вместе с тем удобства и легкости продукции. Элегантность, функциональность, внимание к деталям – все это воплощается в рюкзаках, сумках и аксессуарах от Мастерпис, не зря это слово в переводе означает «шедевр».</p>
+								</div>
+								<div class="bottom-link">
+									<a href="#" class="link-page">Читать</a>
 								</div>
 							</div>
-							<div class="col-lg-6">
-								<div class="right-form">
-									<div class="form-agreement">Нажимая на кнопку “Задать вопрос” вы соглашаетесь с передачей <a href="#">персональных данных.</a></div>
-									<a href="#" class="btn-main btn-main_block">Задать вопрос</a>
-								</div>
+							<div class="col-md-6">
+								<a href="#" class="item-blog__image">
+									<img src="img/blog2.jpg" alt="alt">
+								</a>
 							</div>
 						</div>
-					</form>
+					</div>
+				</div>
+				<div class="item-blog">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 item-blog__left">
+								<h2 class="title-section">PREMIATA НОвые краски в этом году </h2>
+								<div class="item-blog__text">
+									<p>Несмотря на то что многие знают Premiata по актуальным моделям кроссовок вроде Zac-Zac, Lander, Mase и Eric, объединить современность и традиции в ДНК бренда стоило больших трудов. Например, металлические станки появились на фабрике лишь в 1982 году, когда 22-летний Грациано возглавил семейный бизнес.</p>
+									<p>Он старался соблюдать тонкую грань между инновациями и накопленными целыми поколениями знаниями об обувном искусстве: «Мои деды и прадеды делали обувь вручную. Когда я был маленьким, я спокойно приходил в мастерскую поесть или вздремнуть. Я спал прямо на кусках кожи. Поэтому работа с кожей — это не просто мастерство. Я учу своих детей чувствовать кожу с закрытыми глазами, потому что ты должен понять ее руками, уловить аромат»..</p>
+								</div>
+								<div class="bottom-link">
+									<a href="#" class="link-page">Читать</a>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<a href="#" class="item-blog__image">
+									<img src="img/blog3.jpg" alt="alt">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item-blog">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 item-blog__left">
+								<h2 class="title-section">HAN KJOBENHAVN х PUMA Коллаборация</h2>
+								<div class="item-blog__text">
+									<p>Han Kjøbenhavn и PUMA возвращаются к сотрудничеству в течение третьего сезона и на этот раз сосредоточились на теме «изнутри наружу», заново изобретая классическую винтажную рабочую одежду со спортивными нотками благодаря сочетанию простоты, функциональности, высокой моды и уличной одежды .</p>
+									<p>Таким образом, сырье и внутренняя часть продуктов, считающиеся центральными элементами, возвышаются и переопределяются, давая жизнь двум моделям кроссовок , Trailfox Disc и Avid , а также ряду предметов одежды, среди которых выделяется бомбер , разработанный как подкладка куртки с передними карманами и бархатной отделкой и спортивные штаны PUMA x HAN , вдохновленные подкладкой брюк оверсайз.</p>
+								</div>
+								<div class="bottom-link">
+									<a href="#" class="link-page">Читать</a>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<a href="#" class="item-blog__image">
+									<img src="img/blog4.jpg" alt="alt">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item-blog">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 item-blog__left">
+								<h2 class="title-section">STÜSSY x OUR LEGACY коллекция 2022</h2>
+								<div class="item-blog__text">
+									<p>Подобно прошлогоднему сотрудничеству между двумя брендами, в этом последнем объединении используются качественные ткани как в непринужденном, так и в более приталенном стиле. Кобрендинговые графические футболки, толстовки и аксессуары представлены вместе с индивидуальными моделями, в том числе двубортными костюмами, брюками и пальто с закрытой планкой. Обширная коллекция представлена ​​в приглушенной цветовой гамме, с дополнительными вариантами для пляжного отдыха, благодаря фланелевым рубашкам и шортам, банданам и холщовым сумкам.</p>
+								</div>
+								<div class="bottom-link">
+									<a href="#" class="link-page">Читать</a>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<a href="#" class="item-blog__image">
+									<img src="img/blog5.jpg" alt="alt">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="pager">
+					<a class="prev page-numbers disabled" href="#">назад</a> 
+					<span aria-current="page" class="page-numbers current" href="#">1</span> 
+					<a class="page-numbers" href="#">2</a> 
+					<a class="page-numbers" href="#">3</a>
+					<a class="page-numbers" href="#">4</a>
+					<a class="page-numbers" href="#">5</a>
+					<a class="page-numbers" href="#">6</a>
+					<span class="page-numbers dots">…</span> 
+					<a class="next page-numbers" href="#">вперёд</a>
+				</div>
+				<div class="bottom-link">
+					<a href="#" class="link-page">Показать ещё</a>
 				</div>
 			</div>
 		</section>
 
 		<footer class="footer">
-			<a href="#" class="btn_top default"><i class="far fa-arrow-up"></i></a>
 			<div class="container">
 				<div class="footer__top">
-					<a href="#" class="logo">
-						<img src="img/logo2.svg" alt="alt">
-					</a>
-					<ul class="social-list">
-						<li><a href="#"><img src="img/instagram2.svg" alt="alt"></a></li>
-						<li><a href="#"><img src="img/fb2.svg" alt="alt"></a></li>
-						<li><a href="#"><img src="img/youtube2.svg" alt="alt"></a></li>
-						<li><a href="#"><img src="img/vk2.svg" alt="alt"></a></li>
-					</ul>
-				</div>
-				<div class="row">
-					<div class="col-lg">
-						<div class="footer__title">О компании</div>
-						<div class="footer__content">
-							<ul class="footer__nav">
-								<li><a href="#">История компании</a></li>
-								<li><a href="#">Руководство</a></li>
-								<li><a href="#">Карьера в компании</a></li>
-								<li><a href="#">Документы и реквизиты</a></li>
-							</ul>
-						</div>
-						<br>
-						<br>
-						<div class="footer__title">Услуги</div>
-						<div class="footer__content">
-							<ul class="footer__nav">
-								<li><a href="#">Автокредитование</a></li>
-								<li><a href="#">Автострахование</a></li>
-								<li><a href="#">Лизинг</a></li>
-								<li><a href="#">Обучение и консультирование</a></li>
-								<li><a href="#">Сервисное обслуживание</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-footer">
-						<div class="footer__title">Направления деятельности</div>
-						<div class="footer__content">
-							<ul class="footer__nav">
-								<li><a href="#">Сельхозтехника</a></li>
-								<li><a href="#">Спецтехника</a></li>
-								<li><a href="#">Автобусы</a></li>
-								<li><a href="#">Грузовые автомобили</a></li>
-								<li><a href="#">Легковые автомобили и внедорожники</a></li>
-								<li><a href="#">Автомобили с пробегом</a></li>
-								<li><a href="#">Запасные части</a></li>
-								<li><a href="#">Техника в наличии</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-lg">
-						<div class="footer__title">ООО фирма "Интерпартнер"/</div>
-						<div class="footer__content">
-							<div class="footer__contacts">
-								<p>Россия, УР, 426049, г. <br>Ижевск, ул. Гагарина, 81</p>
-								<div><a href="tel:+73412637800">+7 (3412) 63-78-00 </a></div>
-								<div><a href="tel:+73412630036">+7 (3412) 63-00-36</a> <span>Сервис</span></div>
-								<br>
-								<p>Запчасти</p>
-								<div><a href="tel:+73412630007">+7 (3412) 63-00-07</a> <span>Спецтехника</span></div>
-								<div><a href="tel:+73412630003">+7 (3412) 63-00-03</a> <span>Сельхозтехника</span></div>
+					<div class="row">
+						<div class="col-xl-7">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="footer__contacts">
+										<div>
+											<p>г.Санкт-Петербург</p>
+											<p>Большой проспект П.С., 48</p>
+										</div>
+										<div>
+											<p><a href="tel:+78124495171">+7 812 449-51-71</a></p>
+											<p><a href="mailto:shop@mintstore.ru">shop@mintstore.ru</a></p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-8 od_mob">
+									<ul class="footer__nav">
+										<li class="footer__nav_big"><a href="#">магазин</a></li>
+										<li class="footer__nav_big"><a href="#">онлайн-магазин</a></li>
+										<li><a href="#">о нас </a></li>
+										<li><a href="#">доставка</a></li>
+										<li><a href="#">программа лояльности</a></li>
+										<li><a href="#">Оплата</a></li>
+										<li><a href="#">Блог</a></li>
+										<li><a href="#">Обмен и возврат</a></li>
+									</ul>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg">
-						<div class="footer__title">Автосалоны Ssang Yong, UAZ, FIAT Professional</div>
-						<div class="footer__content">
-							<div class="footer__contacts">
-								<p>Россия, УР, г. Ижевск, ул. Промышленная, 2</p>
-								<div><a href="tel:3412658283">(3412) 65-82-83</a></div>
-							</div>
+						<div class="col-xl-5">
+							<ul class="list-social hidden-desc">
+								<li><a href="#"><img src="img/insta.svg" alt="alt"></a></li>
+								<li><a href="#"><img src="img/vk.svg" alt="alt"></a></li>
+								<li><a href="#"><img src="img/fb.svg" alt="alt"></a></li>
+							</ul>
+							<div class="title-min">Подпишитесь на рассылку наших новостей и акций</div>
+							<form>
+								<div class="row">
+									<div class="col-6">
+										<div class="item-form">
+											<input type="email" placeholder="введите ваш email ..." required="required">
+										</div>
+									</div>
+									<div class="col-6">
+										<button class="btn-main">ПОДПИСАТЬСЯ</button>
+									</div>
+								</div>
+							</form>
+							<ul class="list-social hidden-mob">
+								<li><a href="#"><img src="img/insta.svg" alt="alt"></a></li>
+								<li><a href="#"><img src="img/vk.svg" alt="alt"></a></li>
+								<li><a href="#"><img src="img/fb.svg" alt="alt"></a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
 				<div class="footer__bottom">
-					<p>©2013–2021. Все права защищены. <br>Данный сайт носит информационно-справочный характер и ни при каких условиях не является публичной офертой.</p>
-					<a href="#">Правовая информация</a>
-					<a href="#">Пользовательское соглашение</a>
+					<div class="row">
+						<div class="col-lg-2">
+							<div class="copyright">© MINTSTORE, 2021</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="footer__name">ИП Волох Анна Валерьевна</div>
+						</div>
+						<div class="col show-mob">
+							<ul class="list-payments">
+								<li><img src="img/ic_payment1.png" alt="alt"></li>
+								<li><img src="img/ic_payment2.png" alt="alt"></li>
+							</ul>
+						</div>
+						<div class="col-lg-4">
+							<div class="center__footer">
+								<ul class="list-payments">
+									<li><img src="img/ic_payment1.png" alt="alt"></li>
+									<li><img src="img/ic_payment2.png" alt="alt"></li>
+								</ul>
+								<a href="#">пользовательское соглашение</a>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="footer__right"><a href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</footer>
 
 	</div>
+
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -351,75 +325,14 @@
 <script src="libs/jquery/jquery-1.11.1.min.js"></script>
 <script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
 <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+<script src="libs/countdown/jquery.plugin.js"></script>
+<script src="libs/countdown/jquery.countdown.min.js"></script>
+<script src="libs/countdown/jquery.countdown-ru.js"></script>
 <script src="libs/slick-1.5.9/slick/slick.min.js"></script>
 <script src="libs/scroll2id/PageScroll2id.min.js"></script>
 <script src="libs/mask/jquery.maskedinput.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.4"></script>
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-<script>
-	$(document).ready(function() {
-		ymaps.ready(init);
-
-		function init() {
-			var myMap = new ymaps.Map('map-contact1', {
-				center: [56.781890, 53.180637],
-				zoom: 17
-			}, {
-				searchControlProvider: 'yandex#search'
-			});		
-
-			myPlacemark1 = new ymaps.Placemark([56.781986, 53.179771], {
-				balloonContent: '<div class="balloon"><div class="balloon__title">ООО фирма "Интерпартнер"</div><div class="balloon__address">Ижевск, ул. Гагарина, 81</div><div class="balloon__time">Пн-Пт:  08:30 - 18:00 <br>Сб-Вс: Выходной</div></div>'
-			}, {
-				iconLayout: 'default#image',
-				iconImageHref: 'img/pin.svg',
-				hideIconOnBalloonOpen: false,
-				iconImageSize: [52, 58],
-				iconImageOffset: [-26, -58],
-				balloonOffset: [ 90, -10]
-			});
-
-			myMap.controls.remove('searchControl');
-			myMap.controls.remove('typeSelector'); 
-			myMap.controls.remove('trafficControl'); 
-			myMap.behaviors.disable('scrollZoom');
-			myMap.geoObjects.add(myPlacemark1);
-			myPlacemark1.balloon.open();
-		}
-	});
-
-	$(document).ready(function() {
-		ymaps.ready(init);
-
-		function init() {
-			var myMap = new ymaps.Map('map-contact2', {
-				center: [56.833379, 53.233470],
-				zoom: 17
-			}, {
-				searchControlProvider: 'yandex#search'
-			});		
-
-			myPlacemark1 = new ymaps.Placemark([56.833082, 53.232268], {
-				balloonContent: '<div class="balloon"><div class="balloon__title">Автосалоны Ssang Yong, UAZ, FIAT Professional</div><div class="balloon__address">Ижевск, </br>ул. Промышленная, 2</div><div class="balloon__time">Пн-Пт:  08:30 - 18:00 <br>Сб-Вс: Выходной</div></div>'
-			}, {
-				iconLayout: 'default#image',
-				iconImageHref: 'img/pin.svg',
-				hideIconOnBalloonOpen: false,
-				iconImageSize: [52, 58],
-				iconImageOffset: [-26, -58],
-				balloonOffset: [ 90, -10]
-			});
-
-			myMap.controls.remove('searchControl');
-			myMap.controls.remove('typeSelector'); 
-			myMap.controls.remove('trafficControl'); 
-			myMap.behaviors.disable('scrollZoom');
-			myMap.geoObjects.add(myPlacemark1);
-			myPlacemark1.balloon.open();
-		}
-	});
-</script>
+<script src="js/common.js?ver=1.9"></script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
