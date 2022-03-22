@@ -58,36 +58,36 @@ $(".tab-pane__title").click(function() {
 });
 
 jQuery('.quantity').each(function() {
-		var spinner = jQuery(this),
-		input = spinner.find('input[type="number"]'),
-		btnUp = spinner.find('.quantity-up'),
-		btnDown = spinner.find('.quantity-down'),
-		min = input.attr('min'),
-		max = input.attr('max');
+	var spinner = jQuery(this),
+	input = spinner.find('input[type="number"]'),
+	btnUp = spinner.find('.quantity-up'),
+	btnDown = spinner.find('.quantity-down'),
+	min = input.attr('min'),
+	max = input.attr('max');
 
-		btnUp.click(function() {
-			var oldValue = parseFloat(input.val());
-			if (oldValue >= max) {
-				var newVal = oldValue;
-			} else {
-				var newVal = oldValue + 1;
-			}
-			spinner.find("input").val(newVal);
-			spinner.find("input").trigger("change");
-		});
-
-		btnDown.click(function() {
-			var oldValue = parseFloat(input.val());
-			if (oldValue <= min) {
-				var newVal = oldValue;
-			} else {
-				var newVal = oldValue - 1;
-			}
-			spinner.find("input").val(newVal);
-			spinner.find("input").trigger("change");
-		});
-
+	btnUp.click(function() {
+		var oldValue = parseFloat(input.val());
+		if (oldValue >= max) {
+			var newVal = oldValue;
+		} else {
+			var newVal = oldValue + 1;
+		}
+		spinner.find("input").val(newVal);
+		spinner.find("input").trigger("change");
 	});
+
+	btnDown.click(function() {
+		var oldValue = parseFloat(input.val());
+		if (oldValue <= min) {
+			var newVal = oldValue;
+		} else {
+			var newVal = oldValue - 1;
+		}
+		spinner.find("input").val(newVal);
+		spinner.find("input").trigger("change");
+	});
+
+});
 
 
 	//плавный скролл
@@ -132,6 +132,27 @@ jQuery('.quantity').each(function() {
 		} else {
 			$(this).find("span").html("В КОРЗИНУ");
 		}
+	});
+
+	$(".btn-search").click(function(e) {
+		e.preventDefault();
+		if ($(".search-modal").is(":visible")) {
+			$(".search-overlay").fadeOut(200);
+		$(".search-modal").fadeOut(200);
+		} else {
+			$(".search-overlay").fadeIn(200);
+		$(".search-modal").fadeIn(200);
+		}
+		
+	});
+	$(".clear-search").click(function(e) {
+		e.preventDefault();
+		$(".search-top .item-input input").val('');
+	});
+	$(".close-search").click(function(e) {
+		e.preventDefault();
+		$(".search-overlay").fadeOut(200);
+		$(".search-modal").fadeOut(200);
 	});
 
 	var austDay = new Date($(".countdown").attr("date-time"));

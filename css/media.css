@@ -423,6 +423,21 @@
 	top: 109px;
 	right: 22px;
 }
+.search-modal .row_catalog {
+	margin: 0 -8px;
+}
+.search-modal .row_catalog > div {
+	padding: 0 8px;
+}
+.search-top__wrap {
+	padding-right: 0;
+}
+.close-search {
+	margin-left: 18px;
+}
+.search-modal {
+    max-height: calc(100vh - 92px);
+    }
 }
 
 
@@ -1210,6 +1225,41 @@
 }
 .row_big > div.col_mobile {
 	padding: 0 25px;
+}
+.history-search {
+	padding-bottom: 40px;
+	display: block;
+}
+.history-search__title {
+	margin: 0;
+	padding-bottom: 15px;
+}
+.history-search__content {
+	padding-left: 10px;
+}
+.history-search__content li {
+    margin-bottom: 12px;
+}
+.clear-sidebar-mobile {
+	padding-top: 10px;
+	display: block;
+	text-align: center;
+}
+.catalog-page_search .row_main {
+    padding-top: 23px;
+}
+.clear-sidebar {
+	font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+color: #807F7D;
+border-bottom: 1px solid #807F7D;
+text-transform: lowercase;
+transition: all 0.3s;
+}
+.clear-sidebar:hover {
+	color: #000;
+	border-color: #000;
 }
 }
 /* Small Devices, Tablets */
