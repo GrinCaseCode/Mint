@@ -20,8 +20,8 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.8" />
-	<link rel="stylesheet" href="css/media.css?ver=1.8" />
+	<link rel="stylesheet" href="css/main.css?ver=1.12" />
+	<link rel="stylesheet" href="css/media.css?ver=1.12" />
 </head>
 <body>
 
@@ -44,12 +44,7 @@
 						<li><a href="#">бренды</a></li>
 						<li class="menu__special"><a href="#">новинки</a></li>
 					</ul>
-					<div class="form-search">
-						<form>
-							<input type="text" placeholder="Поиск">
-							<div class="search-btn"><i class="far fa-search"></i></div>
-						</form>
-					</div>
+					<div class="btn-search"><i class="far fa-search"></i></div>
 					<a href="#" class="btn-header btn-header_like"><img src="img/ic_like.svg" alt="alt">3</a>
 					<a href="#" class="btn-header"><img src="img/ic_bag.svg" alt="alt">12</a>
 					<a href="#" class="btn-header btn-header_user"><img src="img/ic_user.svg" alt="alt"> Виктор</a>
@@ -70,6 +65,110 @@
 					<li><a href="#">бренды</a></li>
 					<li class="menu__special"><a href="#">новинки</a></li>
 				</ul>
+			</div>
+			<div class="search-overlay"></div>
+			<div class="search-modal">
+				<div class="search-top">
+					<div class="container">
+						<div class="search-top__wrap">
+							<div class="item-input">
+								<input type="text" required="required" placeholder="Поиск...">
+								<button class="clear-search"></button>
+							</div>
+							<div class="close-search">закрыть</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="title-section">ПОПУЛЯРНОЕ</div>
+					<div class="row row_catalog">
+						<div class="col-md-3 col-6">
+							<div class="item-catalog">
+								<a href="#" class="btn-like"></a>
+								<a href="#" class="item-catalog__image">
+									<img src="img/cat1.jpg" alt="alt">
+									<span class="wrap-sizes">
+										<span class="size-item">XS</span>
+										<span class="size-item">S</span>
+										<span class="size-item">M</span>
+										<span class="size-item">L</span>
+										<span class="size-item">XL</span>
+										<span class="size-item">XXL</span>
+										<span class="size-item">XXXL</span>
+										<span class="size-item">XXXXL</span>
+									</span>
+								</a>
+								<a href="#" class="item-catalog__title">A.P.C.</a>
+								<a href="#" class="item-catalog__name">Джинсы Flet Jacket Overwide</a>
+								<div class="price-main">17.990 ₽</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-6">
+							<div class="item-catalog">
+								<a href="#" class="btn-like"></a>
+								<a href="#" class="item-catalog__image">
+									<img src="img/cat2.jpg" alt="alt">
+									<span class="wrap-sizes">
+										<span class="size-item">XS</span>
+										<span class="size-item">S</span>
+										<span class="size-item">M</span>
+										<span class="size-item">L</span>
+										<span class="size-item">XL</span>
+										<span class="size-item">XXL</span>
+										<span class="size-item">XXXL</span>
+										<span class="size-item">XXXXL</span>
+									</span>
+								</a>
+								<a href="#" class="item-catalog__title">You Must Create</a>
+								<a href="#" class="item-catalog__name">Брюки Olive Brown Spunch</a>
+								<div class="price-main">37.999 ₽</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-6">
+							<div class="item-catalog">
+								<a href="#" class="btn-like"></a>
+								<a href="#" class="item-catalog__image">
+									<img src="img/cat3.jpg" alt="alt">
+									<span class="wrap-sizes">
+										<span class="size-item">XS</span>
+										<span class="size-item">S</span>
+										<span class="size-item">M</span>
+										<span class="size-item">L</span>
+										<span class="size-item">XL</span>
+										<span class="size-item">XXL</span>
+										<span class="size-item">XXXL</span>
+										<span class="size-item">XXXXL</span>
+									</span>
+								</a>
+								<a href="#" class="item-catalog__title">C.P. Company</a>
+								<a href="#" class="item-catalog__name">Пуховик Garment Dyed Crinkle</a>
+								<div class="price-old">56.299 ₽</div>
+								<div class="price-main">49.999 ₽</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-6">
+							<div class="item-catalog">
+								<a href="#" class="btn-like"></a>
+								<a href="#" class="item-catalog__image">
+									<img src="img/cat4.jpg" alt="alt">
+									<span class="wrap-sizes">
+										<span class="size-item">XS</span>
+										<span class="size-item">S</span>
+										<span class="size-item">M</span>
+										<span class="size-item">L</span>
+										<span class="size-item">XL</span>
+										<span class="size-item">XXL</span>
+										<span class="size-item">XXXL</span>
+										<span class="size-item">XXXXL</span>
+									</span>
+								</a>
+								<a href="#" class="item-catalog__title">Stone Island</a>
+								<a href="#" class="item-catalog__name">Пуховик Dyemend Cryspoonw</a>
+								<div class="price-main">19.999 ₽</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</header>
 
@@ -298,7 +397,7 @@
 <script src="libs/scroll2id/PageScroll2id.min.js"></script>
 <script src="libs/mask/jquery.maskedinput.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.8"></script>
+<script src="js/common.js?ver=1.12"></script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
