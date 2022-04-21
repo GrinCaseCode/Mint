@@ -197,7 +197,7 @@ form {
 	line-height: 17px;
 	height: 44px;
 	padding: 0 36px;
-	color: #999999;
+	color: #fff;
 	background-color: #262626;
 	border: none;
 	font-family: 'TTNorms';
@@ -2869,9 +2869,7 @@ a.unit-dropdown {
 	top: 8px;
 	right: 30px;
 }
-.btn-main {
-	color: #fff;
-}
+
 .block-buttons .btn-main {
 	margin-top: 22px;
 	width: 100%;
