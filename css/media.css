@@ -320,6 +320,34 @@
 .dropdown-header_user {
 	display: none !important;
 }
+.btn-header-wrap_basket {
+	order: -1;
+}
+.dropdown-header {
+    left: -60px;
+    right: auto;
+    margin-top: 20px;
+    max-width: 100vw;
+    overflow: auto;
+    max-height: calc(100vh - 58px);
+}
+.dropdown-header::-webkit-scrollbar {
+	-webkit-appearance: none;
+}
+.dropdown-header::-webkit-scrollbar:vertical {
+	width: 3px;
+}
+.dropdown-header::-webkit-scrollbar:horizontal {
+	height: 3px;
+}
+.dropdown-header::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, .5);
+	border-radius: 10px;
+}
+.dropdown-header::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: #ccc;
+}
 }
 
 /* Medium Devices, Desktops */
