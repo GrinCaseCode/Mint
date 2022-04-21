@@ -1,6 +1,34 @@
 $(document).ready(function() {
 
 
+$(".dropdown-header__close").click(function() {
+	$(".dropdown-header").fadeOut(200);
+});
+
+$(".btn-header_user").click(function(e) {
+	e.preventDefault();
+	$(".dropdown-header_user").fadeToggle(200);
+});
+$(".btn-header_basket").click(function(e) {
+	e.preventDefault();
+	$(".dropdown-header_basket").fadeToggle(200);
+});
+
+$(document).mouseup(function (e) {
+  var container = $(".btn-header_user").parent(".btn-header-wrap");
+  if (container.has(e.target).length === 0){
+      $(".dropdown-header_user").fadeOut(200);
+  }
+});
+
+$(document).mouseup(function (e) {
+  var container2 = $(".btn-header_basket").parent(".btn-header-wrap");
+  if (container2.has(e.target).length === 0){
+      $(".dropdown-header_basket").fadeOut(200);
+  }
+});
+
+
 //прилипающие меню
 var $menu = $(".header");
 $(window).scroll(function(){
@@ -90,12 +118,39 @@ jQuery('.quantity').each(function() {
 });
 
 
+$("#quick-modal .btn-main").click(function(e) {
+	e.preventDefault();
+	$.fancybox.open('#succeed-order');
+});
+
+
+$(".table-order_basket .remove-tr").click(function(e) {
+	e.preventDefault();
+	$(this).parent().parent().append("<td class='td-return' colspan='6'><a href='#' class='link-page'>вернуть</a></td>");
+	$(this).parent().parent().find("td:not(.td-return)").remove();
+});
+
+
+ $('.types-delivery input[type="radio"]').click(function(){
+            if($(this).attr("value")=="radio_own"){
+                $(".tab-delivery-del").hide();
+                $(".tab-delivery-own").fadeIn(200);
+            }
+            if($(this).attr("value")=="radio_del"){
+                $(".tab-delivery-own").hide();
+                $(".tab-delivery-del").fadeIn(200);
+            }
+        });
+
+
 	//плавный скролл
 	$(".navigat li a").mPageScroll2id();
 
 
 	//кнопка sandwich
 	$(".btn_nav").click(function() {
+		$(".search-overlay").fadeOut(200);
+		$(".search-modal").fadeOut(200);
 		$(".sandwich").toggleClass("active");
 		if ($(".menu-mobile").is(":hidden")) {
 			$(".menu-mobile").slideDown(200);
@@ -105,9 +160,9 @@ jQuery('.quantity').each(function() {
 		
 	});
 
-	$(".menu-mobile li a").click(function() {
-		$(".menu-mobile").slideUp(200);
-		$(".sandwich").removeClass("active");
+	$(".menu-mobile li.menu__haschild > a").click(function() {
+		$(this).toggleClass("active");
+		$(this).siblings(".menu-dropdown").slideToggle(200);
 	});
 
 	$(".btn-like, .btn-main_like").click(function(e) {
@@ -136,6 +191,8 @@ jQuery('.quantity').each(function() {
 
 	$(".btn-search").click(function(e) {
 		e.preventDefault();
+			$(".menu-mobile").slideUp(200);
+		$(".sandwich").removeClass("active");
 		if ($(".search-modal").is(":visible")) {
 			$(".search-overlay").fadeOut(200);
 		$(".search-modal").fadeOut(200);
@@ -256,6 +313,30 @@ jQuery('.quantity').each(function() {
 		prevArrow: '<div class="slick-prev slick-arrow"><svg width="23" height="42" viewBox="0 0 23 42" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 41L2 21.5L22 1" stroke="white" stroke-width="2"/></svg><div/>',
 		nextArrow: '<div class="slick-next slick-arrow"><svg width="23" height="42" viewBox="0 0 23 42" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 41L21 21.5L1 1" stroke="white" stroke-width="2"/></svg><div/>',
 		
+	});
+
+	$('.slider-brands').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		slidesToShow: 6,
+		slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><svg width="23" height="42" viewBox="0 0 23 42" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 41L2 21.5L22 1" stroke="white" stroke-width="2"/></svg><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><svg width="23" height="42" viewBox="0 0 23 42" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 41L21 21.5L1 1" stroke="white" stroke-width="2"/></svg><div/>',
+		responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 4,
+			}
+		},
+		{
+			breakpoint: 767,
+			settings: {
+				slidesToShow: 3,
+			}
+		}
+		]
 	});
 
 	$('.tabs li a').click(function(event) {
