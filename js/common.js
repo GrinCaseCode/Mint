@@ -46,7 +46,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	$menu.removeClass("fixed").addClass("default");
 }
 
-$('.item-input input').each(function() {
+$('.item-input input, .item-input textarea').each(function() {
 	$(this).on('keyup blur', function (e) {
 		if($(this).val()){
 			$(this).addClass("input-valid");
@@ -147,18 +147,16 @@ $(".table-order_basket .remove-tr").click(function(e) {
 	$(".navigat li a").mPageScroll2id();
 
 
-	//кнопка sandwich
-	$(".btn_nav").click(function() {
-		$(".search-overlay").fadeOut(200);
-		$(".search-modal").fadeOut(200);
-		$(".sandwich").toggleClass("active");
-		if ($(".menu-mobile").is(":hidden")) {
-			$(".menu-mobile").slideDown(200);
-		} else {
-			$(".menu-mobile").slideUp(200);
-		}
-		
+$(".btn-menu").click(function() {
+		$(".menu-mobile").slideToggle(200);
+			$(".btn_nav").fadeToggle(200);
 	});
+
+$(".btn_nav").click(function() {
+		$(".menu-mobile").slideUp(200);
+			$(".btn_nav").fadeOut(200);
+	});
+
 
 	$(".menu-mobile li.menu__haschild > a").click(function() {
 		$(this).toggleClass("active");
@@ -192,6 +190,7 @@ $(".table-order_basket .remove-tr").click(function(e) {
 	$(".btn-search").click(function(e) {
 		e.preventDefault();
 			$(".menu-mobile").slideUp(200);
+			$(".btn_nav").fadeOut(200);
 		$(".sandwich").removeClass("active");
 		if ($(".search-modal").is(":visible")) {
 			$(".search-overlay").fadeOut(200);
@@ -334,6 +333,24 @@ $(".table-order_basket .remove-tr").click(function(e) {
 			breakpoint: 767,
 			settings: {
 				slidesToShow: 3,
+			}
+		}
+		]
+	});
+
+	$('.slider-photos').slick({
+		arrows: false,
+		dots: true,
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><svg width="23" height="42" viewBox="0 0 23 42" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 41L2 21.5L22 1" stroke="white" stroke-width="2"/></svg><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><svg width="23" height="42" viewBox="0 0 23 42" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 41L21 21.5L1 1" stroke="white" stroke-width="2"/></svg><div/>',
+		responsive: [
+		{
+			breakpoint: 767,
+			settings: {
+				slidesToShow: 1,
 			}
 		}
 		]
