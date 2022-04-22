@@ -16,375 +16,1034 @@
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
 	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.4" />
-	<link rel="stylesheet" href="css/media.css?ver=1.4" />
+	<link rel="stylesheet" href="css/main.css?ver=1.17" />
+	<link rel="stylesheet" href="css/media.css?ver=1.17" />
 </head>
 <body>
 
 	<div class="wrapper">
 
-		<header class="header header_page">
-			<div class="container-fluid">
+		<div class="fixed-buttons">
+			<a href="#" class="btn-header"><img src="img/ic_like.svg" alt="alt"><span>13</span></a>
+			<a href="#" class="btn-header"><img src="img/ic_bag.svg" alt="alt"><span>2</span></a>
+			<a href="#" class="btn-menu">МЕНЮ</a>
+			<a href="#" class="btn-header"><img src="img/ic_user.svg" alt="alt"></a>
+			<div class="btn-search"><i class="far fa-search"></i></div>
+		</div>
+
+		<header class="header default">
+			<div class="header__top">
+				<span>Бесплатная доставка при заказе на сумму от 3000 рублей</span>
+			</div>
+			<div class="container">
 				<div class="header__wrap">
-					<a href="#" class="logo">
+					<a href="#" class="logo"> 
 						<img src="img/logo.svg" alt="alt">
-					</a> 
+					</a>
 					<ul class="menu">
-						<li><a href="#">О компании</a></li>
-						<li><a href="#">Карьера в компании</a></li>
-						<li><a href="#">Направление деятельности</a></li>
-						<li><a href="#">Услуги</a></li>
-						<li><a href="#">Пресс-центр</a></li>
-						<li><a href="#">Контакты</a></li>
+						<li><a href="#">скидки</a></li>
+						<li>
+							<a href="#">одежда</a>
+							<div class="menu-dropdown">
+								<div class="wrapper-dropdown">
+									<div class="content-dropdown">
+										<div class="container">
+											<div class="row">
+												<div class="col-lg-7">
+													<ul class="list-dropdown columns-3">
+														<li><a href="#">Футболки</a></li>
+														<li><a href="#">ПОЛО</a></li>
+														<li><a href="#">Свитшоты</a></li>
+														<li><a href="#">лонгсливы</a></li>
+														<li><a href="#">Худи</a></li>
+														<li><a href="#">Толстовки</a></li>
+														<li><a href="#">Свитера</a></li>
+														<li><a href="#">Рубашки</a></li>
+														<li><a href="#">Жакеты</a></li>
+														<li><a href="#">Пальто</a></li>
+														<li><a href="#">Куртки</a></li>
+														<li><a href="#">Жакеты</a></li>
+														<li><a href="#">Пальто</a></li>
+														<li><a href="#">Куртки</a></li>
+														<li><a href="#">Пуховики</a></li>
+														<li><a href="#">Парки</a></li>
+														<li><a href="#">Ветровки</a></li>
+														<li><a href="#">Жилеты</a></li>
+														<li><a href="#">Джинсы</a></li>
+														<li><a href="#">брюки</a></li>
+														<li><a href="#">спортивные штаны</a></li>
+														<li><a href="#">шорты</a></li>
+													</ul>
+												</div>
+												<div class="col-lg-5">
+													<div class="row">
+														<div class="col-lg-6">
+															<a href="#" class="unit-dropdown">
+																<span class="unit-dropdown__image">
+																	<img src="img/unit_dropdown1.jpg" alt="alt">
+																</span>
+																<span class="unit-dropdown__name">новинки</span>
+															</a>
+														</div>
+														<div class="col-lg-6">
+															<a href="#" class="unit-dropdown">
+																<span class="unit-dropdown__image">
+																	<img src="img/unit_dropdown2.jpg" alt="alt">
+																</span>
+																<span class="unit-dropdown__name">ЖЕНСКОЕ</span>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="bottom-dropdown">
+										<p><span>Интернет-магазин</span></p>
+										<p><a href="tel:+78124495171"><strong>+7 812 449-51-71</strong></a></p>
+										<p>Пн-Вс: с 11-00 до 21-00</p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#">обувь</a>
+							<div class="menu-dropdown">
+								<div class="wrapper-dropdown">
+									<div class="content-dropdown">
+										<div class="container">
+											<div class="row">
+												<div class="col-lg-7">
+													<ul class="list-dropdown columns-2">
+														<li><a href="#">Мужская обувь</a></li>
+														<li><a href="#">ботинки</a></li>
+														<li><a href="#">кеды</a></li>
+														<li><a href="#">кроссовки</a></li>
+														<li><a href="#">тапки</a></li>
+														<li><a href="#">женская обувь</a></li>
+														<li><a href="#">ботинки</a></li>
+														<li><a href="#">кеды</a></li>
+														<li><a href="#">кроссовки</a></li>
+														<li><a href="#">тапки</a></li>
+													</ul>
+												</div>
+												<div class="col-lg-5">
+													<div class="row">
+														<div class="col-lg-6">
+															<a href="#" class="unit-dropdown">
+																<span class="unit-dropdown__image">
+																	<img src="img/unit_dropdown1.jpg" alt="alt">
+																</span>
+																<span class="unit-dropdown__name">новинки</span>
+															</a>
+														</div>
+														<div class="col-lg-6">
+															<a href="#" class="unit-dropdown">
+																<span class="unit-dropdown__image">
+																	<img src="img/unit_dropdown2.jpg" alt="alt">
+																</span>
+																<span class="unit-dropdown__name">ЖЕНСКОЕ</span>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="bottom-dropdown">
+										<p><span>Интернет-магазин</span></p>
+										<p><a href="tel:+78124495171"><strong>+7 812 449-51-71</strong></a></p>
+										<p>Пн-Вс: с 11-00 до 21-00</p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#">аксессуары</a>
+							<div class="menu-dropdown">
+								<div class="wrapper-dropdown">
+									<div class="content-dropdown">
+										<div class="container">
+											<div class="row">
+												<div class="col-lg-7">
+													<ul class="list-dropdown columns-2">
+														<li><a href="#">шапки</a></li>
+														<li><a href="#">шарфы</a></li>
+														<li><a href="#">ОЧки</a></li>
+														<li><a href="#">банданы</a></li>
+														<li><a href="#">перчатки</a></li>
+														<li><a href="#">носки</a></li>
+														<li><a href="#">ремни</a></li>
+														<li><a href="#">рюкзаки</a></li>
+														<li><a href="#">сумки</a></li>
+														<li><a href="#">кошельки</a></li>
+														<li><a href="#">средство за уходом для обуви</a></li>
+													</ul>
+												</div>
+												<div class="col-lg-5">
+													<div class="row">
+														<div class="col-lg-6">
+															<a href="#" class="unit-dropdown">
+																<span class="unit-dropdown__image">
+																	<img src="img/unit_dropdown1.jpg" alt="alt">
+																</span>
+																<span class="unit-dropdown__name">новинки</span>
+															</a>
+														</div>
+														<div class="col-lg-6">
+															<a href="#" class="unit-dropdown">
+																<span class="unit-dropdown__image">
+																	<img src="img/unit_dropdown2.jpg" alt="alt">
+																</span>
+																<span class="unit-dropdown__name">ЖЕНСКОЕ</span>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="bottom-dropdown">
+										<p><span>Интернет-магазин</span></p>
+										<p><a href="tel:+78124495171"><strong>+7 812 449-51-71</strong></a></p>
+										<p>Пн-Вс: с 11-00 до 21-00</p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#">бренды</a>
+							<div class="menu-dropdown">
+								<div class="wrapper-dropdown">
+									<div class="content-dropdown">
+										<div class="container">
+											<div class="row">
+												<div class="col-lg-7">
+													<div class="wrapper-letters columns-3">
+														<div class="item-letter">
+															<div class="letter-brand">a</div>
+															<ul class="list-dropdown list-dropdown_letters">
+																<li><a href="#">Adidas</a></li>
+																<li><a href="#">A.p.c.</a></li>
+																<li><a href="#">arc`teryx</a></li>
+															</ul>
+														</div>
+														<div class="item-letter">
+															<div class="letter-brand">b</div>
+															<ul class="list-dropdown list-dropdown_letters">
+																<li><a href="#">blue blue japan</a></li>
+															</ul>
+														</div>
+														<div class="item-letter">
+															<div class="letter-brand">c</div>
+															<ul class="list-dropdown list-dropdown_letters">
+																<li><a href="#">c.p. company</a></li>
+																<li><a href="#">carhartt</a></li>
+															</ul>
+														</div>
+														<div class="item-letter">
+															<div class="letter-brand">d</div>
+															<ul class="list-dropdown list-dropdown_letters">
+																<li><a href="#">diemme</a></li>
+															</ul>
+														</div>
+														<div class="item-letter">
+															<div class="letter-brand">g</div>
+															<ul class="list-dropdown list-dropdown_letters">
+																<li><a href="#">GJO.explosion</a></li>
+																<li><a href="#">GITMANE VINTAGE</a></li>
+															</ul>
+														</div>
+														<div class="item-letter">
+															<div class="letter-brand">h</div>
+															<ul class="list-dropdown list-dropdown_letters">
+																<li><a href="#">han kjobenhavn</a></li>
+																<li><a href="#">howlin</a></li>
+															</ul>
+														</div>
+														<div class="item-letter">
+															<div class="letter-brand">n</div>
+															<ul class="list-dropdown list-dropdown_letters">
+																<li><a href="#">nanamica</a></li>
+																<li><a href="#">norse projects</a></li>
+															</ul>
+														</div>
+														<div class="item-letter">
+															<div class="letter-brand">o</div>
+															<ul class="list-dropdown list-dropdown_letters">
+																<li><a href="#">our legacy</a></li>
+															</ul>
+														</div>
+														<div class="item-letter">
+															<div class="letter-brand">p</div>
+															<ul class="list-dropdown list-dropdown_letters">
+																<li><a href="#">premiata</a></li>
+																<li><a href="#">puma</a></li>
+															</ul>
+														</div>
+														<div class="item-letter">
+															<div class="letter-brand">s</div>
+															<ul class="list-dropdown list-dropdown_letters">
+																<li><a href="#">stone island</a></li>
+																<li><a href="#">stussy</a></li>
+															</ul>
+														</div>
+														<div class="item-letter">
+															<div class="letter-brand">t</div>
+															<ul class="list-dropdown list-dropdown_letters">
+																<li><a href="#">the north face</a></li>
+															</ul>
+														</div>
+														<div class="item-letter">
+															<div class="letter-brand">y</div>
+															<ul class="list-dropdown list-dropdown_letters">
+																<li><a href="#">you must create</a></li>
+															</ul>
+														</div>
+														<div class="item-letter">
+															<div class="letter-brand">z</div>
+															<ul class="list-dropdown list-dropdown_letters">
+																<li><a href="#">zespa</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-5">
+													<div class="row">
+														<div class="col-lg-6">
+															<a href="#" class="unit-dropdown">
+																<span class="unit-dropdown__image">
+																	<img src="img/unit_dropdown1.jpg" alt="alt">
+																</span>
+																<span class="unit-dropdown__name">новинки</span>
+															</a>
+														</div>
+														<div class="col-lg-6">
+															<a href="#" class="unit-dropdown">
+																<span class="unit-dropdown__image">
+																	<img src="img/unit_dropdown2.jpg" alt="alt">
+																</span>
+																<span class="unit-dropdown__name">ЖЕНСКОЕ</span>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="bottom-dropdown">
+										<p><span>Интернет-магазин</span></p>
+										<p><a href="tel:+78124495171"><strong>+7 812 449-51-71</strong></a></p>
+										<p>Пн-Вс: с 11-00 до 21-00</p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="menu__special"><a href="#">новинки</a></li>
 					</ul>
-					<a href="tel:+73412637800" class="phone-main">+7 (3412) 63-78-00</a>
-					<ul class="social-list">
-						<li><a href="#"><img src="img/instagram.svg" alt="alt"></a></li>
-						<li><a href="#"><img src="img/fb.svg" alt="alt"></a></li>
-						<li><a href="#"><img src="img/youtube.svg" alt="alt"></a></li>
-						<li><a href="#"><img src="img/vk.svg" alt="alt"></a></li>
-					</ul>
-					<a href="#" class="btn-search"><img src="img/search.svg" alt="alt"></a>
+					<div class="btn-search"><i class="far fa-search"></i></div>
+					<a href="#" class="btn-header btn-header_like"><img src="img/ic_like.svg" alt="alt">3</a>
+					<div class="btn-header-wrap btn-header-wrap_basket">
+						<a href="#" class="btn-header btn-header_basket"><img src="img/ic_bag.svg" alt="alt">12</a>
+						<div class="dropdown-header dropdown-header_basket">
+							<div class="dropdown-header__close"><img src="img/remove.svg" alt="alt"></div>
+							<div class="dropdown-header__title">КОРЗИНА</div>
+							<div class="unit-basket">
+								<table>
+									<thead>
+										<tr>
+											<th colspan="3">Наименование:</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<div class="image-td">
+													<img src="img/order_history1.jpg" alt="alt">
+												</div>
+											</td>
+											<td>
+												<div class="info-td">
+													<div class="title-td">Stone Island</div>
+													<div class="descr-td">740613453-V029</div>
+													<div class="name-td">Куртка Nylon Ligth-TC </div>
+													<div class="descr-td">Цвет: голубой</div>
+													<div class="descr-td">Размер: S</div>
+													<div class="quantity">
+														<div class="quantity-button quantity-down">–</div>
+														<input type="number" min="1" step="1" value="1">
+														<div class="quantity-button quantity-up">+</div>
+													</div>
+													<div class="descr-td">Стоимость:</div>
+												</div>
+											</td>
+											<td class="td-price">
+												<div class="price-old">49 990 ₽</div>
+												<div class="price-main">39 990 ₽</div>
+												<div class="remove-tr"><img src="img/remove.svg" alt="alt"></div>
+											</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td></td>
+											<td>Сумма заказа:</td>
+											<td>142.495 ₽</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+							<div class="block-buttons">
+								<div class="row">
+									<div class="col-md-6">
+										<a href="#" class="btn-main">ОФОРМИТЬ ЗАКАЗ</a>
+									</div>
+									<div class="col-md-6">
+										<a href="#" class="btn-main btn-main_gray">БЫСТРАЯ ПОКУПКА</a>
+									</div>
+									<div class="col-12">
+										<a href="#" class="btn-main">ПЕРЕЙТИ В КОРЗИНУ</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="btn-header-wrap">
+						<a href="#" class="btn-header btn-header_user"><img src="img/ic_user.svg" alt="alt"> Виктор</a>
+						<span class="btn_nav">
+							<span class="sandwich">
+								<span class="sw-topper"></span>
+								<span class="sw-bottom"></span>
+							</span>
+						</span>
+						<div class="dropdown-header dropdown-header_user">
+							<ul class="dropdown-header__list">
+								<li><a href="#">профиль</a></li>
+								<li><a href="#">адрес доставки</a></li>
+								<li><a href="#">Заказы</a></li>
+								<li><a href="#">ИзБРАННОЕ</a></li>
+								<li><a href="#">КОРЗИНА</a></li>
+								<li><a href="#">Выйти</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu-mobile">
+				<div class="bottom-dropdown">
+					<p><span>Интернет-магазин</span></p>
+					<p><a href="tel:+78124495171"><strong>+7 812 449-51-71</strong></a></p>
+					<p>Пн-Вс: с 11-00 до 21-00</p>
+				</div>
+				<ul class="menu">
+					<li><a href="#">скидки</a></li>
+					<li class="menu__haschild">
+						<a href="#">одежда</a>
+						<div class="menu-dropdown">
+							<div class="wrapper-dropdown">
+								<div class="content-dropdown">
+									<div class="container">
+										<div class="row">
+											<div class="col-md-6">
+												<ul class="list-dropdown columns-2">
+													<li><a href="#">Футболки</a></li>
+													<li><a href="#">ПОЛО</a></li>
+													<li><a href="#">Свитшоты</a></li>
+													<li><a href="#">лонгсливы</a></li>
+													<li><a href="#">Худи</a></li>
+													<li><a href="#">Толстовки</a></li>
+													<li><a href="#">Свитера</a></li>
+													<li><a href="#">Рубашки</a></li>
+													<li><a href="#">Жакеты</a></li>
+													<li><a href="#">Пальто</a></li>
+													<li><a href="#">Куртки</a></li>
+													<li><a href="#">Жакеты</a></li>
+													<li><a href="#">Пальто</a></li>
+													<li><a href="#">Куртки</a></li>
+													<li><a href="#">Пуховики</a></li>
+													<li><a href="#">Парки</a></li>
+													<li><a href="#">Ветровки</a></li>
+													<li><a href="#">Жилеты</a></li>
+													<li><a href="#">Джинсы</a></li>
+													<li><a href="#">брюки</a></li>
+													<li><a href="#">спортивные штаны</a></li>
+													<li><a href="#">шорты</a></li>
+												</ul>
+											</div>
+											<div class="col-md-6 menu-dropdown__right">
+												<div class="row">
+													<div class="col-md-6">
+														<a href="#" class="unit-dropdown">
+															<span class="unit-dropdown__image">
+																<img src="img/unit_dropdown1.jpg" alt="alt">
+															</span>
+															<span class="unit-dropdown__name">новинки</span>
+														</a>
+													</div>
+													<div class="col-md-6">
+														<a href="#" class="unit-dropdown">
+															<span class="unit-dropdown__image">
+																<img src="img/unit_dropdown2.jpg" alt="alt">
+															</span>
+															<span class="unit-dropdown__name">ЖЕНСКОЕ</span>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="bottom-dropdown">
+									<p><span>Интернет-магазин</span></p>
+									<p><a href="tel:+78124495171"><strong>+7 812 449-51-71</strong></a></p>
+									<p>Пн-Вс: с 11-00 до 21-00</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="menu__haschild">
+						<a href="#">обувь</a>
+						<div class="menu-dropdown">
+							<div class="wrapper-dropdown">
+								<div class="content-dropdown">
+									<div class="container">
+										<div class="row">
+											<div class="col-md-6">
+												<ul class="list-dropdown columns-2">
+													<li><a href="#">Мужская обувь</a></li>
+													<li><a href="#">ботинки</a></li>
+													<li><a href="#">кеды</a></li>
+													<li><a href="#">кроссовки</a></li>
+													<li><a href="#">тапки</a></li>
+													<li><a href="#">женская обувь</a></li>
+													<li><a href="#">ботинки</a></li>
+													<li><a href="#">кеды</a></li>
+													<li><a href="#">кроссовки</a></li>
+													<li><a href="#">тапки</a></li>
+												</ul>
+											</div>
+											<div class="col-md-6 menu-dropdown__right">
+												<div class="row">
+													<div class="col-md-6">
+														<a href="#" class="unit-dropdown">
+															<span class="unit-dropdown__image">
+																<img src="img/unit_dropdown1.jpg" alt="alt">
+															</span>
+															<span class="unit-dropdown__name">новинки</span>
+														</a>
+													</div>
+													<div class="col-md-6">
+														<a href="#" class="unit-dropdown">
+															<span class="unit-dropdown__image">
+																<img src="img/unit_dropdown2.jpg" alt="alt">
+															</span>
+															<span class="unit-dropdown__name">ЖЕНСКОЕ</span>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="bottom-dropdown">
+									<p><span>Интернет-магазин</span></p>
+									<p><a href="tel:+78124495171"><strong>+7 812 449-51-71</strong></a></p>
+									<p>Пн-Вс: с 11-00 до 21-00</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="menu__haschild">
+						<a href="#">аксессуары</a>
+						<div class="menu-dropdown">
+							<div class="wrapper-dropdown">
+								<div class="content-dropdown">
+									<div class="container">
+										<div class="row">
+											<div class="col-md-6">
+												<ul class="list-dropdown columns-2">
+													<li><a href="#">шапки</a></li>
+													<li><a href="#">шарфы</a></li>
+													<li><a href="#">ОЧки</a></li>
+													<li><a href="#">банданы</a></li>
+													<li><a href="#">перчатки</a></li>
+													<li><a href="#">носки</a></li>
+													<li><a href="#">ремни</a></li>
+													<li><a href="#">рюкзаки</a></li>
+													<li><a href="#">сумки</a></li>
+													<li><a href="#">кошельки</a></li>
+													<li><a href="#">средство за уходом для обуви</a></li>
+												</ul>
+											</div>
+											<div class="col-md-6 menu-dropdown__right">
+												<div class="row">
+													<div class="col-md-6">
+														<a href="#" class="unit-dropdown">
+															<span class="unit-dropdown__image">
+																<img src="img/unit_dropdown1.jpg" alt="alt">
+															</span>
+															<span class="unit-dropdown__name">новинки</span>
+														</a>
+													</div>
+													<div class="col-md-6">
+														<a href="#" class="unit-dropdown">
+															<span class="unit-dropdown__image">
+																<img src="img/unit_dropdown2.jpg" alt="alt">
+															</span>
+															<span class="unit-dropdown__name">ЖЕНСКОЕ</span>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="bottom-dropdown">
+									<p><span>Интернет-магазин</span></p>
+									<p><a href="tel:+78124495171"><strong>+7 812 449-51-71</strong></a></p>
+									<p>Пн-Вс: с 11-00 до 21-00</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="menu__haschild">
+						<a href="#">бренды</a>
+						<div class="menu-dropdown">
+							<div class="wrapper-dropdown">
+								<div class="content-dropdown">
+									<div class="container">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="wrapper-letters columns-2">
+													<div class="item-letter">
+														<div class="letter-brand">a</div>
+														<ul class="list-dropdown list-dropdown_letters">
+															<li><a href="#">Adidas</a></li>
+															<li><a href="#">A.p.c.</a></li>
+															<li><a href="#">arc`teryx</a></li>
+														</ul>
+													</div>
+													<div class="item-letter">
+														<div class="letter-brand">b</div>
+														<ul class="list-dropdown list-dropdown_letters">
+															<li><a href="#">blue blue japan</a></li>
+														</ul>
+													</div>
+													<div class="item-letter">
+														<div class="letter-brand">c</div>
+														<ul class="list-dropdown list-dropdown_letters">
+															<li><a href="#">c.p. company</a></li>
+															<li><a href="#">carhartt</a></li>
+														</ul>
+													</div>
+													<div class="item-letter">
+														<div class="letter-brand">d</div>
+														<ul class="list-dropdown list-dropdown_letters">
+															<li><a href="#">diemme</a></li>
+														</ul>
+													</div>
+													<div class="item-letter">
+														<div class="letter-brand">g</div>
+														<ul class="list-dropdown list-dropdown_letters">
+															<li><a href="#">GJO.explosion</a></li>
+															<li><a href="#">GITMANE VINTAGE</a></li>
+														</ul>
+													</div>
+													<div class="item-letter">
+														<div class="letter-brand">h</div>
+														<ul class="list-dropdown list-dropdown_letters">
+															<li><a href="#">han kjobenhavn</a></li>
+															<li><a href="#">howlin</a></li>
+														</ul>
+													</div>
+													<div class="item-letter">
+														<div class="letter-brand">n</div>
+														<ul class="list-dropdown list-dropdown_letters">
+															<li><a href="#">nanamica</a></li>
+															<li><a href="#">norse projects</a></li>
+														</ul>
+													</div>
+													<div class="item-letter">
+														<div class="letter-brand">o</div>
+														<ul class="list-dropdown list-dropdown_letters">
+															<li><a href="#">our legacy</a></li>
+														</ul>
+													</div>
+													<div class="item-letter">
+														<div class="letter-brand">p</div>
+														<ul class="list-dropdown list-dropdown_letters">
+															<li><a href="#">premiata</a></li>
+															<li><a href="#">puma</a></li>
+														</ul>
+													</div>
+													<div class="item-letter">
+														<div class="letter-brand">s</div>
+														<ul class="list-dropdown list-dropdown_letters">
+															<li><a href="#">stone island</a></li>
+															<li><a href="#">stussy</a></li>
+														</ul>
+													</div>
+													<div class="item-letter">
+														<div class="letter-brand">t</div>
+														<ul class="list-dropdown list-dropdown_letters">
+															<li><a href="#">the north face</a></li>
+														</ul>
+													</div>
+													<div class="item-letter">
+														<div class="letter-brand">y</div>
+														<ul class="list-dropdown list-dropdown_letters">
+															<li><a href="#">you must create</a></li>
+														</ul>
+													</div>
+													<div class="item-letter">
+														<div class="letter-brand">z</div>
+														<ul class="list-dropdown list-dropdown_letters">
+															<li><a href="#">zespa</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6 menu-dropdown__right">
+												<div class="row">
+													<div class="col-md-6">
+														<a href="#" class="unit-dropdown">
+															<span class="unit-dropdown__image">
+																<img src="img/unit_dropdown1.jpg" alt="alt">
+															</span>
+															<span class="unit-dropdown__name">новинки</span>
+														</a>
+													</div>
+													<div class="col-md-6">
+														<a href="#" class="unit-dropdown">
+															<span class="unit-dropdown__image">
+																<img src="img/unit_dropdown2.jpg" alt="alt">
+															</span>
+															<span class="unit-dropdown__name">ЖЕНСКОЕ</span>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="bottom-dropdown">
+									<p><span>Интернет-магазин</span></p>
+									<p><a href="tel:+78124495171"><strong>+7 812 449-51-71</strong></a></p>
+									<p>Пн-Вс: с 11-00 до 21-00</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="menu__special"><a href="#">новинки</a></li>
+				</ul>
+				<div class="mobile-units">
+					<div class="row">
+						<div class="col-6">
+							<a href="#" class="unit-dropdown">
+								<span class="unit-dropdown__image">
+									<img src="img/unit_dropdown1.jpg" alt="alt">
+								</span>
+								<span class="unit-dropdown__name">новинки</span>
+							</a>
+						</div>
+						<div class="col-6">
+							<a href="#" class="unit-dropdown">
+								<span class="unit-dropdown__image">
+									<img src="img/unit_dropdown2.jpg" alt="alt">
+								</span>
+								<span class="unit-dropdown__name">ЖЕНСКОЕ</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="search-overlay"></div>
+			<div class="search-modal">
+				<div class="search-top">
+					<div class="container">
+						<div class="search-top__wrap">
+							<div class="item-input">
+								<input type="text" required="required" placeholder="Поиск...">
+								<button class="clear-search"></button>
+							</div>
+							<div class="close-search">закрыть</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="title-section">ПОПУЛЯРНОЕ</div>
+					<div class="row row_catalog">
+						<div class="col-md-3 col-6">
+							<div class="item-catalog">
+								<a href="#" class="btn-like"></a>
+								<a href="#" class="item-catalog__image">
+									<img src="img/cat1.jpg" alt="alt">
+									<span class="wrap-sizes">
+										<span class="size-item">XS</span>
+										<span class="size-item">S</span>
+										<span class="size-item">M</span>
+										<span class="size-item">L</span>
+										<span class="size-item">XL</span>
+										<span class="size-item">XXL</span>
+										<span class="size-item">XXXL</span>
+										<span class="size-item">XXXXL</span>
+									</span>
+								</a>
+								<a href="#" class="item-catalog__title">A.P.C.</a>
+								<a href="#" class="item-catalog__name">Джинсы Flet Jacket Overwide</a>
+								<div class="price-main">17.990 ₽</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-6">
+							<div class="item-catalog">
+								<a href="#" class="btn-like"></a>
+								<a href="#" class="item-catalog__image">
+									<img src="img/cat2.jpg" alt="alt">
+									<span class="wrap-sizes">
+										<span class="size-item">XS</span>
+										<span class="size-item">S</span>
+										<span class="size-item">M</span>
+										<span class="size-item">L</span>
+										<span class="size-item">XL</span>
+										<span class="size-item">XXL</span>
+										<span class="size-item">XXXL</span>
+										<span class="size-item">XXXXL</span>
+									</span>
+								</a>
+								<a href="#" class="item-catalog__title">You Must Create</a>
+								<a href="#" class="item-catalog__name">Брюки Olive Brown Spunch</a>
+								<div class="price-main">37.999 ₽</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-6">
+							<div class="item-catalog">
+								<a href="#" class="btn-like"></a>
+								<a href="#" class="item-catalog__image">
+									<img src="img/cat3.jpg" alt="alt">
+									<span class="wrap-sizes">
+										<span class="size-item">XS</span>
+										<span class="size-item">S</span>
+										<span class="size-item">M</span>
+										<span class="size-item">L</span>
+										<span class="size-item">XL</span>
+										<span class="size-item">XXL</span>
+										<span class="size-item">XXXL</span>
+										<span class="size-item">XXXXL</span>
+									</span>
+								</a>
+								<a href="#" class="item-catalog__title">C.P. Company</a>
+								<a href="#" class="item-catalog__name">Пуховик Garment Dyed Crinkle</a>
+								<div class="price-old">56.299 ₽</div>
+								<div class="price-main">49.999 ₽</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-6">
+							<div class="item-catalog">
+								<a href="#" class="btn-like"></a>
+								<a href="#" class="item-catalog__image">
+									<img src="img/cat4.jpg" alt="alt">
+									<span class="wrap-sizes">
+										<span class="size-item">XS</span>
+										<span class="size-item">S</span>
+										<span class="size-item">M</span>
+										<span class="size-item">L</span>
+										<span class="size-item">XL</span>
+										<span class="size-item">XXL</span>
+										<span class="size-item">XXXL</span>
+										<span class="size-item">XXXXL</span>
+									</span>
+								</a>
+								<a href="#" class="item-catalog__title">Stone Island</a>
+								<a href="#" class="item-catalog__name">Пуховик Dyemend Cryspoonw</a>
+								<div class="price-main">19.999 ₽</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</header>
 
-		<section class="billbord-page billbord-page_about" style="background-image: url(img/billbord_page3.jpg);">
+		<section class="about-article news news_article">
+			<div class="breadcrumbs-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-9 offset-lg-3">
+							<ul class="breadcrumb">
+								<li><a href="#">главная</a></li>
+								<li><span>О нас</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="container">
-				<ul class="breadcrumbs">
-					<li><a href="#">Главная</a></li>
-					<li>О компании</li>
+				<div class="logo-about">
+					<img src="img/logo.svg" alt="alt">
+				</div>
+			</div>
+			<div class="news-billbord">
+				<img src="img/blog_about.jpg" alt="alt">
+			</div>
+			<div class="container">
+				<div class="text-middle text-middle_about">
+					<p>MINT — мультибрендовый магазин в фешенебельном центре Санкт-Петербурга.</p>
+					<p> Магазин был открыт в 2012 году и за годы работы завоевал любовь жителей города дружеской атмосферой и уникальным ассортиментом товаров со всего мира.</p>
+					<p>MINT is a multibrand store in the fashionable heart <br>of Saint Petersburg. Opened in 2012</p>
+				</div>
+				<ul class="slider-photos">
+					<li>
+						<div class="unit-article">
+							<div class="unit-article__image">
+								<img src="img/unit_about1.jpg" alt="alt">
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="unit-article">
+							<div class="unit-article__image">
+								<img src="img/unit_about2.jpg" alt="alt">
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="unit-article">
+							<div class="unit-article__image">
+								<img src="img/unit_about3.jpg" alt="alt">
+							</div>
+						</div>
+					</li>
 				</ul>
-				<div class="row">
-					<div class="col-lg-6">
-						<h1 class="title-page">О компании Интерпартнер</h1>
-						<div class="subtitle-main">Компания «Интерпартнер» является официальным дилером более 30 брендов: </div>
-						<div class="descr-subtitle">строительной, дорожной, коммунальной, специальной техники, автобусов, сельскохозяйственной техники, легковых, коммерческих автомобилей и внедорожников отечественных и зарубежных автопроизводителей.</div>
-					</div>
-				</div>
 			</div>
-		</section>
-
-		<section class="advantages advantages_page">
+			<hr>
 			<div class="container">
-				<div class="advantages-wrap">
-					<div class="row align-items-center">
-						<div class="col-lg-3 col-md-6">
-							<div class="item-advantage"><img src="img/ic_avd1.svg" alt="alt">24 года на рынке</div>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<div class="item-advantage"><img src="img/ic_avd2.svg" alt="alt">30 брендов</div>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<div class="item-advantage"><img src="img/ic_avd3.svg" alt="alt">10 000 автомобилей</div>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<div class="item-advantage"><img src="img/ic_avd4.svg" alt="alt">64 000 запасных частей</div>
-						</div>
-					</div>
+				<div class="text-middle text-middle_about">
+					<p> Вот уже 9 лет в магазине существует и активно развивается беговой клуб — MINT Running Club. <br>Все желающие могут присоединиться к ребятам.</p>
+					<p> Костяк клуба бегает марафоны, а вновь присоединяющиеся тоже добиваются отличных результатов. <br>В то же время клуб не только про бег, но и про дружбу и общение.</p>
+					<p>There is a MINT Running Club at the store, which celebrates its 9th anniversary this year. <br>The club is not only about running but friendship and going out.</p>
 				</div>
-				<div class="text-advantages">
-					<p>Благодаря безукоризненному выполнению своих партнерских обязательств, мы занимаем лидирующие позиции в этом бизнесе. С каждым годом растет количество клиентов, доверяющих нам, а это показатель интереса не только к технике, которую мы предлагаем на рынке, но и выбор партнера в реализации производственных задач..</p>
-				</div>
-				<div class="text-big">
-					<p>За многие годы работы компания добилась значительных успехов, и во многом это заслуга сплоченной команды, грамотного менеджмента и надежных партнеров, которые с годами стали настоящими друзьями. </p>
-				</div>
-			</div>
-		</section>
-
-		<section class="article article_about">
-			<div class="container">
-				<h2 class="title-main">Наша миссия</h2>
-				<blockquote>
-					<p>Миссия компании «Интерпартнер» заключается в содействии стабильному экономическому развитию и благосостоянию всех работающих с нами посредством предоставления гражданам и организациям личных и коммерческих автотранспортных решений таким образом и в таком объеме, чтобы они соответствовали самым высоким профессиональным стандартам </p>
-					<span>и решали любые поставленные задачи, обеспечивая акционерам и партнерам компании стабильную и оптимальную прибыль,  а персоналу — достойное и справедливое вознаграждение.</span>
-				</blockquote>
-				<div class="bottom-blockquote-wrap">
-					<div class="bottom-blockquote">
-						<div class="descr-blockquote">Генеральный директор</div>
-						<div class="name-blockquote">Смирнов Сергей Юрьевич</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="team">
-			<div class="container">
-				<div class="title-content">Руководство компании</div>
-				<div class="row row_team">
-					<div class="col-lg-3 col-md-6">
-						<div class="item-team">
-							<div class="item-team__image">
-								<img src="img/team1.jpg" alt="alt">
-							</div>
-							<div class="item-team__descr">Генеральный директор</div>
-							<div class="item-team__name">Смирнов Сергей Юрьевич</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="item-team">
-							<div class="item-team__image">
-								<img src="img/team2.jpg" alt="alt">
-							</div>
-							<div class="item-team__descr">Руководитель направления «Спецтехника»</div>
-							<div class="item-team__name">Кондратенко Алла Вальерьевна</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="item-team">
-							<div class="item-team__image">
-								<img src="img/team3.jpg" alt="alt">
-							</div>
-							<div class="item-team__descr">Руководитель направления "Сельхозтехника"</div>
-							<div class="item-team__name">Маркова Альбина Сергеевна</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="item-team">
-							<div class="item-team__image">
-								<img src="img/team4.jpg" alt="alt">
-							</div>
-							<div class="item-team__descr">Руководитель направления «Русские автобусы»</div>
-							<div class="item-team__name">Шулика Александр Александрович</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="item-team">
-							<div class="item-team__image">
-								<img src="img/team5.jpg" alt="alt">
-							</div>
-							<div class="item-team__descr">Руководитель отдела продаж УАЗ</div>
-							<div class="item-team__name">Марков Дмитрий Валерьевич</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="item-team">
-							<div class="item-team__image">
-								<img src="img/team6.jpg" alt="alt">
-							</div>
-							<div class="item-team__descr">Руководитель отдела продаж FIAT </div>
-							<div class="item-team__name">Антропов Олег Владимирович</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="item-team">
-							<div class="item-team__image">
-								<img src="img/team7.jpg" alt="alt">
-							</div>
-							<div class="item-team__descr">Директор ООО «ИнтерпартнерСервис»</div>
-							<div class="item-team__name">Раков Юрий Васильевич</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="item-team">
-							<div class="item-team__image">
-								<img src="img/team8.jpg" alt="alt">
-							</div>
-							<div class="item-team__descr">Руководитель отдела реализации запчастей</div>
-							<div class="item-team__name">Румянцев Андрей Владимирович</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="history">
-			<div class="container">
-				<h2 class="title-section">История</h2>
-			</div>
-			<ul class="slider-history">
-				<li>
-					<div class="item-history">
-						<div class="item-history__year">1997</div>
-						<div class="item-history__content">
-							<div class="item-history__title">Начало пути</div>
-							<p>первые поставки нефтяного оборудования, комплектующих и спецтехники на рынок Удмуртии и РФ.</p>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="item-history">
-						<div class="item-history__year">2003</div>
-						<div class="item-history__content">
-							<div class="item-history__title">Новый шаг</div>
-							<p>первый дилерский договор на поставку и обслуживание автобусов (ПАЗ, КАВЗ, ЛиАЗ, ГолАЗ).</p>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="item-history">
-						<div class="item-history__year">2005</div>
-						<div class="item-history__content">
-							<div class="item-history__title">Новые бренды</div>
-							<p>подписаны наиболее значимые дилерские договора на поставку автомобилей УАЗ, грузовой техники HYUNDAI</p>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="item-history">
-						<div class="item-history__year">2006</div>
-						<div class="item-history__content">
-							<div class="item-history__title">Интерактивный рост</div>
-							<p>дилерский портфель пополнился договорами с: ОАО «Пожтехника», г. Торжок; ОАО «ПО ЕлАЗ»  <a href="#">подробнее</a></p>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="item-history">
-						<div class="item-history__year">1997</div>
-						<div class="item-history__content">
-							<div class="item-history__title">Начало пути</div>
-							<p>первые поставки нефтяного оборудования, комплектующих и спецтехники на рынок Удмуртии и РФ.</p>
-						</div>
-					</div>
-				</li>
-			</ul>
-			<div class="container">
-				<div class="video-block">
-					<div class="video-block__image">
-						<img src="img/video1.jpg" alt="alt">
-					</div>
-					<div class="video-block__content">
-						<div class="logo-video">
-							<img src="img/logo_min.svg" alt="alt">
-						</div>
-						<div class="video-block__title">Интерпартнер. <br>25 лет. </div>
-						<div class="descr-subtitle">Надежный партнёр на дороге и в бизнесе.</div>
-						<a href="#" class="btn-main"><img src="img/play_min.svg" alt="alt">Смотерть видео</a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="documents">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-4">
-						<h2 class="title-section">Документы</h2>
-					</div>
-					<div class="col-lg-8">
-						<div class="descr-subtitle">Команда профессионалов ООО фирма «Интерпартнер» за время своей деятельности накопила бесценный опыт и знания о потребностях клиентов. </div>
-						<div class="descr-documents">Для каждого заказчика мы ищем новые решения, которые успешно воплощаются в жизнь.</div>
-					</div>
-				</div>
-				<div class="row row_documents">
-					<div class="col-lg-6">
-						<div class="unit-document">
-							<div class="unit-document__icon">
-								<img src="img/ic_doc1.svg" alt="alt">
-							</div>
-							<a href="#" class="unit-document__title">Презентация Интерпартнер</a>
-							<div class="unit-document__content">
-								<div class="unit-document__descr">Файл в формате pdf 32мб. Презентацяи нашей компании</div>
-								<a href="#" class="btn-page">Скачать</a>
+				<ul class="slider-photos">
+					<li>
+						<div class="unit-article">
+							<div class="unit-article__image">
+								<img src="img/unit_about4.jpg" alt="alt">
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-6">
-						<div class="unit-document">
-							<div class="unit-document__icon">
-								<img src="img/ic_doc2.svg" alt="alt">
-							</div>
-							<a href="#" class="unit-document__title">Реквизиты компании</a>
-							<div class="unit-document__content">
-								<div class="unit-document__descr">Файл в формате pdf 32мб. Презентацяи нашей компании</div>
-								<a href="#" class="btn-page">Скачать</a>
+					</li>
+					<li>
+						<div class="unit-article">
+							<div class="unit-article__image">
+								<img src="img/unit_about5.jpg" alt="alt">
 							</div>
 						</div>
-					</div>
-				</div>
+					</li>
+					<li>
+						<div class="unit-article">
+							<div class="unit-article__image">
+								<img src="img/unit_about6.jpg" alt="alt">
+							</div>
+						</div>
+					</li>
+				</ul>
 			</div>
 		</section>
 
 		<footer class="footer">
-			<a href="#" class="btn_top default"><i class="far fa-arrow-up"></i></a>
 			<div class="container">
 				<div class="footer__top">
-					<a href="#" class="logo">
-						<img src="img/logo2.svg" alt="alt">
-					</a>
-					<ul class="social-list">
-						<li><a href="#"><img src="img/instagram2.svg" alt="alt"></a></li>
-						<li><a href="#"><img src="img/fb2.svg" alt="alt"></a></li>
-						<li><a href="#"><img src="img/youtube2.svg" alt="alt"></a></li>
-						<li><a href="#"><img src="img/vk2.svg" alt="alt"></a></li>
-					</ul>
-				</div>
-				<div class="row">
-					<div class="col-lg">
-						<div class="footer__title">О компании</div>
-						<div class="footer__content">
-							<ul class="footer__nav">
-								<li><a href="#">История компании</a></li>
-								<li><a href="#">Руководство</a></li>
-								<li><a href="#">Карьера в компании</a></li>
-								<li><a href="#">Документы и реквизиты</a></li>
-							</ul>
-						</div>
-						<br>
-						<br>
-						<div class="footer__title">Услуги</div>
-						<div class="footer__content">
-							<ul class="footer__nav">
-								<li><a href="#">Автокредитование</a></li>
-								<li><a href="#">Автострахование</a></li>
-								<li><a href="#">Лизинг</a></li>
-								<li><a href="#">Обучение и консультирование</a></li>
-								<li><a href="#">Сервисное обслуживание</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-footer">
-						<div class="footer__title">Направления деятельности</div>
-						<div class="footer__content">
-							<ul class="footer__nav">
-								<li><a href="#">Сельхозтехника</a></li>
-								<li><a href="#">Спецтехника</a></li>
-								<li><a href="#">Автобусы</a></li>
-								<li><a href="#">Грузовые автомобили</a></li>
-								<li><a href="#">Легковые автомобили и внедорожники</a></li>
-								<li><a href="#">Автомобили с пробегом</a></li>
-								<li><a href="#">Запасные части</a></li>
-								<li><a href="#">Техника в наличии</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-lg">
-						<div class="footer__title">ООО фирма "Интерпартнер"/</div>
-						<div class="footer__content">
-							<div class="footer__contacts">
-								<p>Россия, УР, 426049, г. <br>Ижевск, ул. Гагарина, 81</p>
-								<div><a href="tel:+73412637800">+7 (3412) 63-78-00 </a></div>
-								<div><a href="tel:+73412630036">+7 (3412) 63-00-36</a> <span>Сервис</span></div>
-								<br>
-								<p>Запчасти</p>
-								<div><a href="tel:+73412630007">+7 (3412) 63-00-07</a> <span>Спецтехника</span></div>
-								<div><a href="tel:+73412630003">+7 (3412) 63-00-03</a> <span>Сельхозтехника</span></div>
+					<div class="row">
+						<div class="col-xl-7">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="footer__contacts">
+										<div>
+											<p>г.Санкт-Петербург</p>
+											<p>Большой проспект П.С., 48</p>
+										</div>
+										<div>
+											<p><a href="tel:+78124495171">+7 812 449-51-71</a></p>
+											<p><a href="mailto:shop@mintstore.ru">shop@mintstore.ru</a></p>
+										</div>
+									</div>
+									<ul class="list-social hidden-mob">
+										<li><a href="#"><img src="img/insta.svg" alt="alt"></a></li>
+										<li><a href="#"><img src="img/tg.svg" alt="alt"></a></li>
+									</ul>
+								</div>
+								<div class="col-md-8 od_mob">
+									<ul class="footer__nav">
+										<li class="footer__nav_big"><a href="#">магазин</a></li>
+										<li class="footer__nav_big"><a href="#">онлайн-магазин</a></li>
+										<li><a href="#">о нас </a></li>
+										<li><a href="#">доставка</a></li>
+										<li><a href="#">программа лояльности</a></li>
+										<li><a href="#">Оплата</a></li>
+										<li><a href="#">Блог</a></li>
+										<li><a href="#">Обмен и возврат</a></li>
+										<li><a href="#">Контакты</a></li>
+										<li><a href="#">карта сайта</a></li>
+									</ul>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg">
-						<div class="footer__title">Автосалоны Ssang Yong, UAZ, FIAT Professional</div>
-						<div class="footer__content">
-							<div class="footer__contacts">
-								<p>Россия, УР, г. Ижевск, ул. Промышленная, 2</p>
-								<div><a href="tel:3412658283">(3412) 65-82-83</a></div>
-							</div>
+						<div class="col-xl-5">
+							<ul class="list-social hidden-desc">
+								<li><a href="#"><img src="img/insta.svg" alt="alt"></a></li>
+								<li><a href="#"><img src="img/tg.svg" alt="alt"></a></li>
+							</ul>
+							<div class="title-min">Подпишитесь на рассылку наших новостей и акций</div>
+							<form>
+								<div class="row">
+									<div class="col-6">
+										<div class="item-form">
+											<input type="email" placeholder="введите ваш email ..." required="required">
+										</div>
+									</div>
+									<div class="col-6">
+										<button class="btn-main">ПОДПИСАТЬСЯ</button>
+									</div>
+								</div>
+							</form>
+							
 						</div>
 					</div>
 				</div>
 				<div class="footer__bottom">
-					<p>©2013–2021. Все права защищены. <br>Данный сайт носит информационно-справочный характер и ни при каких условиях не является публичной офертой.</p>
-					<a href="#">Правовая информация</a>
-					<a href="#">Пользовательское соглашение</a>
+					<div class="row">
+						<div class="col-lg-2">
+							<div class="copyright">© MINTSTORE, 2021</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="footer__name">ИП Волох Анна Валерьевна</div>
+						</div>
+						<div class="col show-mob">
+							<ul class="list-payments">
+								<li><img src="img/ic_payment1.png" alt="alt"></li>
+								<li><img src="img/ic_payment2.png" alt="alt"></li>
+							</ul>
+						</div>
+						<div class="col-lg-4">
+							<div class="center__footer">
+								<ul class="list-payments">
+									<li><img src="img/ic_payment1.png" alt="alt"></li>
+									<li><img src="img/ic_payment2.png" alt="alt"></li>
+								</ul>
+								<a href="#">пользовательское соглашение</a>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="footer__right"><a href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</footer>
 
 	</div>
+
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -394,11 +1053,14 @@
 <script src="libs/jquery/jquery-1.11.1.min.js"></script>
 <script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
 <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+<script src="libs/countdown/jquery.plugin.js"></script>
+<script src="libs/countdown/jquery.countdown.min.js"></script>
+<script src="libs/countdown/jquery.countdown-ru.js"></script>
 <script src="libs/slick-1.5.9/slick/slick.min.js"></script>
 <script src="libs/scroll2id/PageScroll2id.min.js"></script>
 <script src="libs/mask/jquery.maskedinput.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.4"></script>
+<script src="js/common.js?ver=1.17"></script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>

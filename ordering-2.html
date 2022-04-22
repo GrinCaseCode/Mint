@@ -867,25 +867,278 @@
 			</div>
 		</header>
 
-		<section class="basket">
+		<section class="basket basket_ordering">
 			<div class="breadcrumbs-wrap">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-9 offset-md-3">
 							<ul class="breadcrumb">
 								<li><a href="#">главная</a></li>
-								<li><span>корзина</span></li>
+								<li><a href="#">корзина</a></li>
+								<li><span>оформление заказа</span></li>
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="container">
-				<div class="title-section">КОРЗИНА</div>
-				<div class="empty-wrap">
-					<img src="img/bag_empty.svg" alt="alt">
-					<div class="title-section">Ваша корзина пуста</div>
-					<a href="#" class="btn-main">НАЧАТЬ ПОКУПКИ</a>
+				<div class="title-section">оформление заказа</div>
+				<div class="basket-wrap">
+					<div class="table-order table-order_basket">
+						<table>
+							<thead>
+								<tr>
+									<th data-title="НОМЕР ЗАКАЗА:">№93753</th>
+									<th>Наименование:</th>
+									<th>Цвет:</th>
+									<th>Размер:</th>
+									<th>Количество:</th>
+									<th>Стоимость:</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<div class="image-td">
+											<img src="img/order_history1.jpg" alt="alt">
+										</div>
+									</td>
+									<td>
+										<div class="info-td">
+											<div class="title-td">Stone Island</div>
+											<div class="name-td">Куртка Nylon Ligth-TC </div>
+											<div class="descr-td">740613453-V029</div>
+										</div>
+									</td>
+									<td data-title="Цвет:">Голубой</td>
+									<td data-title="Размер:">S</td>
+									<td data-title="Кол-во:">
+										<div class="quantity">
+											<div class="quantity-button quantity-down">–</div>
+											<input type="number" min="1" step="1" value="1">
+											<div class="quantity-button quantity-up">+</div>
+										</div>
+									</td>
+									<td data-title="Стоимость:">
+										<strong>39 990 ₽</strong>
+										<div class="remove-tr"><img src="img/remove.svg" alt="alt"></div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="image-td">
+											<img src="img/order_history1.jpg" alt="alt">
+										</div>
+									</td>
+									<td>
+										<div class="info-td">
+											<div class="title-td">Stone Island</div>
+											<div class="name-td">Куртка Nylon Ligth-TC </div>
+											<div class="descr-td">740613453-V029</div>
+										</div>
+									</td>
+									<td data-title="Цвет:">Голубой</td>
+									<td data-title="Размер:">S</td>
+									<td data-title="Кол-во:">
+										<div class="quantity">
+											<div class="quantity-button quantity-down">–</div>
+											<input type="number" min="1" step="1" value="1">
+											<div class="quantity-button quantity-up">+</div>
+										</div>
+									</td>
+									<td data-title="Стоимость:">
+										<div>
+											<div class="price-old">49 990 ₽</div>
+											<strong>39 990 ₽</strong>
+										</div>
+										<div class="remove-tr"><img src="img/remove.svg" alt="alt"></div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="image-td">
+											<img src="img/order_history1.jpg" alt="alt">
+										</div>
+									</td>
+									<td>
+										<div class="info-td">
+											<div class="title-td">Stone Island</div>
+											<div class="name-td">Куртка Nylon Ligth-TC </div>
+											<div class="descr-td">740613453-V029</div>
+										</div>
+									</td>
+									<td data-title="Цвет:">Голубой</td>
+									<td data-title="Размер:">S</td>
+									<td data-title="Кол-во:">
+										<div class="quantity">
+											<div class="quantity-button quantity-down">–</div>
+											<input type="number" min="1" step="1" value="1">
+											<div class="quantity-button quantity-up">+</div>
+										</div>
+									</td>
+									<td data-title="Стоимость:">
+										<strong>39 990 ₽</strong>
+										<div class="remove-tr"><img src="img/remove.svg" alt="alt"></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="row row_bottom-basket">
+						<div class="col-lg-4 col-md-6 col_pr">
+							<div class="ordering-form">
+								<div class="title-section show-mob">ОФОРМЛЕНИЕ ЗАКАЗА</div>
+								<form>
+									<div class="item-input">
+										<input type="text" required="required" value="Олег" class="input-invalid">
+										<div class="item-input__placeholder">Имя: <span> *</span></div>
+										<div class="item-input__arrow"></div>
+										<div class="descr-input">введите данные</div>
+									</div>
+									<div class="item-input">
+										<input type="text" required="required" value="Андреевич" class="input-invalid">
+										<div class="item-input__placeholder">Фамилия: <span> *</span></div>
+										<div class="item-input__arrow"></div>
+										<div class="descr-input">введите данные</div>
+									</div>
+									<div class="row row_phone">
+										<div class="col-3">
+											<div class="item-input">
+												<input type="text" required="required" readonly="readonly" class="input-pretel input-invalid">
+												<div class="item-input__placeholder">+7</div>
+											</div>
+										</div>
+										<div class="col-9">
+											<div class="item-input">
+												<input type="text" required="required" value="9215689924" class="input-invalid">
+												<div class="item-input__placeholder">Мобильный телефон: <span> *</span></div>
+												<div class="item-input__arrow"></div>
+												<div class="descr-input">ошибка в номере телефона</div>
+											</div>
+										</div>
+									</div>
+									<div class="mobile-delivery">
+										<div class="title-small">ВЫБОР СПОСОБА ОПЛАТЫ</div>
+										<div class="checkbox">
+											<label>
+												<input type="radio" name="radio1_2">
+												<span>НАЛИЧНЫЕ</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="radio" name="radio1_2" checked="checked">
+												<span>ОНЛАЙН ОПЛАТА</span>
+											</label>
+										</div>
+										<br>
+										<div class="title-small">ВЫБОР СПОСОБА ДОСТАВКИ</div>
+										<div class="types-delivery">
+											<div class="checkbox">
+												<label>
+													<input type="radio" name="radio2_2" value="radio_own">
+													<span>САМОВЫВОЗ</span>
+												</label>
+											</div>
+											<div class="checkbox">
+												<label>
+													<input type="radio" name="radio2_2" value="radio_del" checked="checked">
+													<span>ДОСТАВКА CDEK  </span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="tab-delivery-own">
+										<div class="item-input">
+											<select>
+												<option value="1"></option>
+												<option value="1">Сантк-Петербург, Невский пр., 81</option>
+												<option value="1">Сантк-Петербург, Невский пр., 81</option>
+												<option value="1">Сантк-Петербург, Большой проспект П.С., 48</option>
+											</select>
+											<div class="item-input__placeholder">Магазин: <span> *</span></div>
+											<div class="item-input__arrow"></div>
+										</div>
+										<button class="btn-main btn-main_gray">ВЫБРАТЬ МАГАЗИН</button>
+										<button class="btn-main show-mob">ОФОРМИТЬ ЗАКАЗ</button>
+									</div>
+									<div class="tab-delivery-del">
+										<div class="item-input">
+											<input type="text" required="required" class="input-invalid">
+											<div class="item-input__placeholder">CDEK: <span> *</span></div>
+											<div class="item-input__arrow"></div>
+											<div class="descr-input">выберите пункт выдачи</div>
+										</div>
+										<button class="btn-main btn-main_gray">ВЫБРАТЬ ПУНКТ ВЫДАЧИ</button>
+										<button class="btn-main show-mob">ОФОРМИТЬ ЗАКАЗ</button>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-delivery">
+							<div class="title-small">ВЫБОР СПОСОБА ОПЛАТЫ</div>
+							<div class="checkbox">
+								<label>
+									<input type="radio" name="radio1">
+									<span>НАЛИЧНЫЕ</span>
+								</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="radio" name="radio1" checked="checked">
+									<span>ОНЛАЙН ОПЛАТА</span>
+								</label>
+							</div>
+							<br>
+							<div class="title-small">ВЫБОР СПОСОБА ДОСТАВКИ</div>
+							<div class="types-delivery">
+								<div class="checkbox">
+									<label>
+										<input type="radio" name="radio2" value="radio_own">
+										<span>САМОВЫВОЗ</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="radio" name="radio2" value="radio_del" checked="checked">
+										<span>ДОСТАВКА CDEK  </span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col_pl">
+							<div class="bottom-basket">
+								<div class="form-line">
+									<div class="item-input">
+										<input type="text" required="required" value="Qdzxc2" class="input-invalid">
+										<div class="item-input__placeholder">Введите промокод: <span> *</span></div>
+										<div class="item-input__arrow"></div>
+										<div class="descr-input">неверный код</div>
+									</div>
+									<button class="btn-main">ПРИМЕНИТЬ</button>
+								</div>
+								<div class="line-basket">
+									<span>Сумма заказа: </span>
+									<strong>119 970 ₽</strong>
+								</div>
+								<div class="line-basket">
+									<span>Доставка:</span>
+									<strong>1 130 ₽</strong>
+								</div>
+								<div class="line-basket">
+									<span>Скидка:</span>
+									<strong>10 000 ₽</strong>
+								</div>
+								<div class="line-basket">
+									<span>Итого:</span>
+									<strong>102 000 ₽</strong>
+								</div>
+								<div class="bottom-basket__button">
+									<a href="#" class="btn-main">ОФОРМИТЬ ЗАКАЗ</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
