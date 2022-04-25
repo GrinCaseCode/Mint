@@ -748,6 +748,12 @@
 	.list-letters li {
 		padding: 0 9px;
 	}
+	.breadcrumbs-wrap {
+		margin-bottom: 30px;
+	}
+	.buyers {
+		padding-bottom: 160px;
+	}
 }
 
 
@@ -1827,6 +1833,29 @@
 	}
 	.map-page {
 		padding-bottom: 60px;
+	}
+	.item-question__head {
+		font-size: 14px;
+		padding: 20px 0;
+	}
+	.buyers .title-section {
+		padding-top: 20px;
+	}
+	.modal-size {
+		padding: 25px 10px;
+		padding-bottom: 30px;
+	}
+	.image-size {
+		margin-bottom: 35px;
+	}
+	.table-size table {
+		font-size: 10px;
+	}
+	.table-size table td:first-child {
+		font-size: 11px;
+	}
+	.table-size table th {
+		font-size: 10px;
 	}
 }
 /* Small Devices, Tablets */

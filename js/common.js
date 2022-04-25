@@ -58,6 +58,13 @@ $('.item-input input, .item-input textarea').each(function() {
 	});
 });
 
+$(".item-question__head").click(function() {
+  $(this).parent().toggleClass("active");
+  $(this).siblings().slideToggle(200);
+  $(this).parent().siblings(".item-question").removeClass("active");
+  $(this).parent().siblings(".item-question").find(".item-question__content").slideUp(200);
+});
+
 $(".sidebar-open").click(function() {
 	$(".sidebar-catalog").slideToggle(200);
 });
