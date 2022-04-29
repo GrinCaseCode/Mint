@@ -755,8 +755,8 @@
 		padding-bottom: 160px;
 	}
 	.buyers .title-section {
-	margin-top: 0;
-}
+		margin-top: 0;
+	}
 }
 
 
@@ -1841,7 +1841,6 @@
 		font-size: 14px;
 		padding: 20px 0;
 	}
-
 	.modal-size {
 		padding: 25px 10px;
 		padding-bottom: 30px;
@@ -1859,18 +1858,18 @@
 		font-size: 10px;
 	}
 	.text-big {
-    font-size: 14px;
-    line-height: 27px;
-}
-.row_letters {
-	margin-top: 44px;
-}
-.row_letters > div:nth-child(3n+1) {
-	order: -4;
-}
-.row_letters > div:nth-child(3n+2) {
-	order: -3;
-}
+		font-size: 14px;
+		line-height: 27px;
+	}
+	.row_letters {
+		margin-top: 44px;
+	}
+	.row_letters > div:nth-child(3n+1) {
+		order: -4;
+	}
+	.row_letters > div:nth-child(3n+2) {
+		order: -3;
+	}
 
 }
 /* Small Devices, Tablets */
