@@ -380,7 +380,7 @@
 	}
 	.fixed-buttons .btn-header span {
 		top: -3px;
-		right: -8px;
+		right: -5px;
 		font-size: 12px;
 		line-height: 14px;
 		color: #fff;
@@ -754,6 +754,9 @@
 	.buyers {
 		padding-bottom: 160px;
 	}
+	.buyers .title-section {
+	margin-top: 0;
+}
 }
 
 
@@ -1838,9 +1841,7 @@
 		font-size: 14px;
 		padding: 20px 0;
 	}
-	.buyers .title-section {
-		padding-top: 20px;
-	}
+
 	.modal-size {
 		padding: 25px 10px;
 		padding-bottom: 30px;
@@ -1861,6 +1862,16 @@
     font-size: 14px;
     line-height: 27px;
 }
+.row_letters {
+	margin-top: 44px;
+}
+.row_letters > div:nth-child(3n+1) {
+	order: -4;
+}
+.row_letters > div:nth-child(3n+2) {
+	order: -3;
+}
+
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 640px) {

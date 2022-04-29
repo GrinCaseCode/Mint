@@ -326,9 +326,9 @@ $(".btn_nav").click(function() {
 		dots: false,
 		infinite: true,
 		slidesToShow: 6,
-		slidesToScroll: 1,
-		prevArrow: '<div class="slick-prev slick-arrow"><svg width="23" height="42" viewBox="0 0 23 42" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 41L2 21.5L22 1" stroke="white" stroke-width="2"/></svg><div/>',
-		nextArrow: '<div class="slick-next slick-arrow"><svg width="23" height="42" viewBox="0 0 23 42" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 41L21 21.5L1 1" stroke="white" stroke-width="2"/></svg><div/>',
+		slidesToScroll: 4,
+		prevArrow: '<div class="slick-prev slick-arrow"><svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.941293 10.9393C0.355507 11.5251 0.355507 12.4749 0.941293 13.0607L10.4872 22.6066C11.073 23.1924 12.0228 23.1924 12.6086 22.6066C13.1943 22.0208 13.1943 21.0711 12.6086 20.4853L4.12327 12L12.6086 3.51472C13.1943 2.92893 13.1943 1.97919 12.6086 1.3934C12.0228 0.807614 11.073 0.807614 10.4872 1.3934L0.941293 10.9393ZM3.00195 10.5H2.00195V13.5H3.00195L3.00195 10.5Z" fill="black"/></svg><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0627 13.0607C13.6484 12.4749 13.6484 11.5251 13.0627 10.9393L3.51672 1.3934C2.93093 0.807613 1.98118 0.807613 1.3954 1.3934C0.80961 1.97919 0.80961 2.92893 1.3954 3.51472L9.88068 12L1.3954 20.4853C0.80961 21.0711 0.80961 22.0208 1.3954 22.6066C1.98118 23.1924 2.93093 23.1924 3.51672 22.6066L13.0627 13.0607ZM11 13.5H12.002V10.5H11V13.5Z" fill="black"/></svg><div/>',
 		responsive: [
 		{
 			breakpoint: 1200,
@@ -339,6 +339,7 @@ $(".btn_nav").click(function() {
 		{
 			breakpoint: 767,
 			settings: {
+				slidesToScroll: 3,
 				slidesToShow: 3,
 			}
 		}
