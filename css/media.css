@@ -1430,6 +1430,7 @@
 		margin-top: 44px;
 		padding: 20px 15px;
 		padding-bottom: 90px;
+		max-width: initial;
 	}
 	.authorization-wrap .item-input__placeholder {
 		font-size: 16px;
@@ -1603,11 +1604,11 @@
 	.footer__bottom {
 		margin-top: 45px;
 	}
-	.fancybox-wrap {
+	.fancybox-wrap:not(.fancybox-type-image) {
 		left: 0 !important;
 		width: 100% !important;
 	}
-	.fancybox-inner {
+	.fancybox-wrap:not(.fancybox-type-image) .fancybox-inner {
 		width: 100% !important;
 	}
 	.unit-basket .descr-td {
@@ -1870,6 +1871,23 @@
 	.row_letters > div:nth-child(3n+2) {
 		order: -3;
 	}
+	.authorization .title-authorization {
+		padding-top: 34px;
+		padding-bottom: 33px;
+		font-size: 14px;
+line-height: 17px;
+	}
+	.registration-wrap .title-authorization {
+		padding-top: 0;
+	}
+	.authorization-wrap .title-authorization {
+		padding-top: 0;
+	}
+	.authorization-links {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 65px;
+}
 
 }
 /* Small Devices, Tablets */
