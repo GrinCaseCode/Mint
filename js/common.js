@@ -299,6 +299,7 @@ $(".btn_nav").click(function() {
 		{
 			breakpoint: 767,
 			settings: {
+				adaptiveHeight: true,
 				dots: false,
 			}
 		}
